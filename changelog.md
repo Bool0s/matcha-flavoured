@@ -18,6 +18,10 @@ This symbol (🖌️) means the art was added by community artists (music is art
 ### Major Additions and Changes 
 * Electrum & Adamant Reworks (See Below)
 - New Intrinsic/Effect Icons! (They look awesome, 💻/🖌️, Voxybuns)
+- Wither Effect is **VERY** nasty now (Easy mode is exempt)
+    * Shakudo Chestplate no longer cleanses wither
+    * Please bring milk or bread to Hell, please its very important
+    * This is me prepping for an update to the wither fight, but thought in the mean-time, it might make the wither fight more interesting, lmk
 ### Tweaks & Small Additions 
 - Enderman can only pick up melon, pumpkins, and TNT (💻, Linkershim)
 - Multiplayer support improvements! (💻, Linkershim)
@@ -35,6 +39,10 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Bulk Dirt added to Mason Trade
 - Bulk Blocks now have distinct models
 - Diamond, Amethyst, and Lapis Earrings (They don't do anything but they ARE very cute)
+- Emeralds are not found quadruply often in deepdarks (sculk covers most of them, so why not?)
+- Hard mode husks are slightly slower (But still faster than normal mode)
+- Lily pads can now be cloned
+- Chains can now be climbed
 
 
 
@@ -81,6 +89,10 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Elegy of the Abbe can no longer be crafted
 - Shakudo Elytra Bonus was not working (not sure how this was deleted)
 - Water bottles no longer dupe in creative
+- Oak and Dark Oak leaf LT updated to include electrum fortune
+- Lily pad item Texture fixed
+- Wither removed from warding stone targets
+- Warding stone particles updated to match new warding ones
 #### Lang
 - Warding Shield, Sword, Silver Sword now uses translate
 #### Recipe Unlocks Fixed
@@ -107,11 +119,9 @@ THESE ARE MY NOTES THEY AREN'T IMPORTANT BUT IM NOT PUTTING IT IN ANOTHER DOC
    - Pale Garden
    - Deep Dark
    - Sulfur Caves
-- Add { "text": ": " }, to all of junk item desc with only in biome text?
 
-# Scoreboards to be removed
+# Scoreboards to be removed (in the update function thing)
 - apotropaic
-- MAYBE NOT X_AGE scoreboards, Linkershim did some nonsense with hearts, and I think they use these, you need to look into it
 - scoreboard players add copper_age Hearts 0
 - scoreboard players add iron_age Hearts 0
 - scoreboard players add diamond_age Hearts 0
@@ -125,31 +135,29 @@ THESE ARE MY NOTES THEY AREN'T IMPORTANT BUT IM NOT PUTTING IT IN ANOTHER DOC
 - scoreboard players set minimum_hard_hearts Hearts 6
 - scoreboard players set maximum_hearts Hearts 60
 
-# Heart decrementing system
-- Still needs work, I forgot where I left off, It needs to be player-depedant rather than world dependant bc people want it that way idk
 
+# Release Checklist
+- Update mcmeta for RP and DP
+- Update current_version_number scoreboard
 
 # DOCKET
-- Steel Equip not done
-- Shepherd animal models (porb farmer then too)
-- Shepherds shear need "repaired with"
-- Villager summoning no longer makes particles
+- Adamant Elytra (What would it do?)
+- Artems fish doesn't list Lukewarm oceans (I think I messed something up)
+
 
 # BUGS
 - Update Abbey LT to have the good Abbey disc
 - Didn't update Pack mcmeta
 - REMOVE WITH SONGS
-- Would minecraft:wake_up_from_sleep work as a marker?
 - Add credits for all the new commit things in github
 - Check if warding enchants still used, and if so replace undead tag with warding targets tag
 - Poplar leaves crafting needs to be added to adv
 - The Advancements for the special elytras currently dont trigger on intem in inventory/wearing the item nor crafting either of the items?
-- if you GAINED max hearts between achievements it thinks you've lost yet another heart.
 - Add predicate for surface spawn that excludes structures
 - When running on mud brick slabs with traversal boots, when I jump I get the speed boost, but when I just run on it normally I don't get the speed boost
 - Villager Gift LT (Toolsmith give stone tools, laaame)
-- OAK LEAF and dark oak fortune and apple drop LT not updated
-- Add Silver to Deep Dark
+- Goat horns obtained from fishing always seem to be "Ponder". Can that be varied?
+
 
 
 ### Electrum
@@ -160,24 +168,6 @@ THESE ARE MY NOTES THEY AREN'T IMPORTANT BUT IM NOT PUTTING IT IN ANOTHER DOC
 So if more intrinisc books are added, they can have exlusions, like smelting for example
     * Incompatible with: Silk Touch, Warding
 - OH MY GOD WITH DRAGON'S BREATH YOU CAN EXTRACT AN INTRINSIC
-
-
-### Trims
-- Patina
-- Shakudo
-- Hepatizon
-- Silver
-- Electrum
-
-
-## Rebalancing Health Difficulty (Started this but never finished)
-- Let current minimum hearts be per player instead of per world...but how we could track advancement things? 
-- Current min could be its own scoreboard, and maybe the advncement would lower the score every time they got a new thing
-- So scoreboart objectives Current Minimum
-- Each player has their own
-- Advnacement runs a function (same function for all advancements)
-- 
-
 
 
 ## Langs
@@ -197,20 +187,13 @@ So if more intrinisc books are added, they can have exlusions, like smelting for
 - Harbinger of Fate: Smith Adamant Elytra 
 
 # Small Additions
-- Make steel 8 iron instead of 4
-- climable block tag???? Chains fs
-- Lilypad cloning
 - Increase resin amount in pale graden fishing
 - Potatoes and Molasses
 - French Fries
 - Jelly/Jam Bread (Or PBJ without the PB)
-- Lilypad cloning
 - Craftable Thorns
 - Add Cinnabar and Sulfur, dripstone, raw copper to dripstone caves, Badlands raw gold, deep dark, disc fragments, to fishing trash
-- Vertical planks :\
 - Increase resin amount in pale graden fishing
-- Add Cinnabar and Sulfur, dripstone, raw copper to dripstone caves, Badlands raw gold, deep dark, disc fragments, to fishing trash
-- Craftable Thorns
 
 ### Suggestions
 - Fermented Spider eye secret meal

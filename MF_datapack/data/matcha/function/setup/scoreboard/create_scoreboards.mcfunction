@@ -99,6 +99,9 @@ scoreboard players set 0 anvil_interaction 0
 scoreboard objectives add water_bucket_used minecraft.used:minecraft.water_bucket
 scoreboard players set 1 water_bucket_used 1
 
+#Used for Wither Effect (Heartbreaker)
+scoreboard objectives add wither_timer dummy
+
 # On load, set the wandering trader timer, and reset ALL people who summoned him, because if we don't, functions that should be looping wont be
 # and it'll never ever fix itself. So if the server crashes, or someone logs out whilst waiting, they will never have a wandering trader arrive :c
 # We will also kill any existing wandering traders, on load. Because again, that'll mess things up
