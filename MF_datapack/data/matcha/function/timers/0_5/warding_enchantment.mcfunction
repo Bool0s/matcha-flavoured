@@ -4,5 +4,5 @@
 execute as @a run function matcha:enchantment_effects/warding/value/calculate
 
 # Run the Warding levels which happen at 0.5s intervals
-execute as @a[scores={WardingPower=3}] run function matcha:enchantment_effects/warding_3
-execute as @a[scores={WardingPower=4}] run function matcha:enchantment_effects/warding_4
+execute as @a[scores={WardingPower=3}] run function matcha:enchantment_effects/warding/power_3
+execute as @a[scores={WardingPower=4}] run function matcha:enchantment_effects/warding/power_4
