@@ -74,6 +74,9 @@ stopwatch create shakudo_regen_6
 stopwatch create shakudo_regen_7
 stopwatch create shakudo_regen_8
 
+# Anemos enchantment
+scoreboard objectives add AnemosCooldown dummy
+
 #Used mostly for particles
 stopwatch create 3s
 stopwatch create 2s
