@@ -2,12 +2,12 @@ name: Create Nightly Release
 
 on:
   schedule:
-    - cron: '25 4 * * *'
+    - cron: '20 4 * * *'
   workflow-dispatch:
 
 jobs:
   nightly:
-    if: ${{ github.repository == 'kleiwright/matcha-flavoured' }}
+    if: github.repository == 'kleiwright/matcha-flavoured'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -25,14 +25,14 @@ jobs:
 
       - name: Create Release Description
         run: |
-          echo "This is an experimental release with the latest features and bugfixes. Last updated: " >> nightly.txt
-          date -u >> nightly.txt
+          echo -n "This is an experimental release with the latest features and bugfixes, updated every day. Last commit: " >> nightly.txt
+          git log --format="%H" HEAD^..HEAD >> nightly.txt
 
       - name: Create Release
         uses: softprops/action-gh-release@v3.0.3
         with:
           name: Nightly Release
-          body: This is an experimental release with the latest features and bugfixes.
+          body: This is an experimental release with the latest features and bugfixes, updated every day.
           body_path: nightly.txt
           prerelease: true
           files: |
