@@ -1,3 +1,9 @@
+# This function is called every 0.5s by a timer
+
+# Get nearby villagers that do not have regen and apply it
+execute as @e[distance=..16,type=#matcha:villager_friends,predicate=!matcha:effects/has_regeneration] run effect give @s minecraft:regeneration 3 0 true
+
+
 #Execute at all entities who quality for being slowed
 execute as @e[distance=..24,type=#matcha:warding_stone_targets] run function matcha:enchantment_effects/warding/effects/apply_slowness.macro {level:2}
 
