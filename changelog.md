@@ -12,7 +12,9 @@
 
 
 This symbol (👥) means the feature was changed/added per community feedback, or brought to attention by community bug reporters.
+
 This symbol (💻) means the feature was changed/added by community code contributors.
+
 This symbol (🖌️) means the art was added by community artists (music is art)
 
 ### Major Additions and Changes 
@@ -22,6 +24,8 @@ This symbol (🖌️) means the art was added by community artists (music is art
     * Shakudo Chestplate no longer cleanses wither
     * Please bring milk or bread to Hell, please its very important
     * This is me prepping for an update to the wither fight, but thought in the mean-time, it might make the wither fight more interesting, lmk
+- Crystal hearts are now "used" instead of "forced" on players, since the new death system provides enough incentive
+    * They also double as cheap totems (at max hearts), and great healing items when < max health, so have fun with them
 ### Tweaks & Small Additions 
 - Enderman can only pick up melon, pumpkins, and TNT (💻, Linkershim)
 - Multiplayer support improvements! (💻, Linkershim)
@@ -38,12 +42,13 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Elegy of the Abbey and Crete updated to their new versions
 - Bulk Dirt added to Mason Trade
 - Bulk Blocks now have distinct models
-- Diamond, Amethyst, and Lapis Earrings (They don't do anything but they ARE very cute)
-- Emeralds are not found quadruply often in deepdarks (sculk covers most of them, so why not?)
-- Hard mode husks are slightly slower (But still faster than normal mode)
-- Lily pads can now be cloned
+- Diamond, Amethyst, and Lapis Earrings (They don't do anything but they ARE very cute) (👥)
+- Emeralds are not found in deepdarks (sculk covers most of them, so why not?) (👥)
+- Hard mode husks are slightly slower (But still faster than normal mode) (👥)
+- Lily pads can now be cloned (👥)
 - Chains can now be climbed
 - Taiga Grass colour slightly changed to be a little less ugly
+- Mobs spawned from spawners no longer drop anything (💻, HapppySpud)
 
 
 
@@ -95,6 +100,8 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Lily pad item Texture fixed
 - Wither removed from warding stone targets
 - Warding stone particles updated to match new warding ones
+- Spawners no logner kill you when you place a block on them, only when you try to use a spawn egg on it (💻, HapppySpud)
+- Copper torches now consistent with soul torches (💻, MrHatsy)
 #### Lang
 - Warding Shield, Sword, Silver Sword now uses translate
 #### Recipe Unlocks Fixed
@@ -105,6 +112,7 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Removed Redstone Particles
 - Poplar Leaves, Log & Plank textures added
 - All Vertical Slab textures added (👥, specifically barce & fwhip's video)
+- Chisleled Sandstone Texture (🖌️, MrHatsy)
 
 #### Removed 
 
@@ -143,8 +151,11 @@ THESE ARE MY NOTES THEY AREN'T IMPORTANT BUT IM NOT PUTTING IT IN ANOTHER DOC
 - Update current_version_number scoreboard
 
 # DOCKET
+- Make scoreboard only run on loaddd
 - Adamant Elytra (What would it do?)
 - Artems fish doesn't list Lukewarm oceans (I think I messed something up)
+    - Plus texture!!
+- minecraft/loot_table/gameplay/fishing/junk.json
 
 
 # BUGS

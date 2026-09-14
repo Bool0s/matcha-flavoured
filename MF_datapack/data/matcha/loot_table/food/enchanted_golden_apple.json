@@ -7,19 +7,19 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:enchanted_golden_apple",
+					"name": "minecraft:golden_apple",
 					"functions": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:lore": [
 									{
-										"text": "❤❤",
+										"text": "\uE030\uE030",
 										"color": "red",
 										"italic": false
 									},
 									{
-										"text": "❤❤❤❤❤❤❤❤ (2:00)",
+										"text": "\uE030\uE030\uE030\uE030\uE030\uE030\uE030\uE030 (2:00)",
 										"color": "aqua",
 										"italic": false
 									},
@@ -102,6 +102,5 @@
 				}
 			]
 		}
-	],
-	"random_sequence": "matcha:kleis_items"
+	]
 }

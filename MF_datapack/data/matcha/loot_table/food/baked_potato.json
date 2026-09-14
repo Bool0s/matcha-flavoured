@@ -10,18 +10,11 @@
 					"name": "minecraft:baked_potato",
 					"functions": [
 						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 3,
-								"max": 5
-							}
-						},
-						{
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:lore": [
 									{
-									"text": "❤❤❣",
+									"text": "\uE030\uE030\uE032",
 									"color": "red",
 									"italic": false
 									}
@@ -56,6 +49,5 @@
 				}
 			]
 		}
-	],
-	"random_sequence": "matcha:kleis_items"
+	]
 }

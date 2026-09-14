@@ -10,13 +10,6 @@
 					"name": "minecraft:poisonous_potato",
 					"functions": [
 						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 3,
-								"max": 5
-							}
-						},
-						{
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:item_model": "matcha:pumpkin_empanada",
@@ -55,7 +48,7 @@
 								"minecraft:max_stack_size": 64,
 								"minecraft:lore": [
 									{
-										"text": "❤❤❤❤",
+										"text": "\uE030\uE030\uE030\uE030",
 										"color": "red",
 										"italic": false
 									},
@@ -74,6 +67,5 @@
 				}
 			]
 		}
-	],
-	"random_sequence": "matcha:kleis_items"
+	]
 }

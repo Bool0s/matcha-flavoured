@@ -7,49 +7,35 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:bread",
+					"name": "minecraft:golden_apple",
 					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 1,
-								"max": 3
-							}
-						},
 						{
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:lore": [
 									{
-										"text": "❤❤",
+										"text": "\uE030\uE030",
 										"color": "red",
 										"italic": false
 									},
 									{
-										"translate": "desc.kleispack.cleanses_maleffect",
-										"color": "gray",
+										"text": "\uE030\uE030 (2:00)",
+										"color": "aqua",
+										"italic": false
+									},
+									{
+										"translate": "effect.kleispack.regeneration",
+										"with": [
+											"0:30"
+										],
+										"color": "#e85e8f",
 										"italic": false
 									}
 								],
 								"minecraft:consumable": {
+									"consume_seconds": 1.6,
+									"has_consume_particles": true,
 									"on_consume_effects": [
-										{
-											"type": "minecraft:remove_effects",
-											"effects": [
-												"minecraft:poison",
-												"minecraft:mining_fatigue",
-												"minecraft:wither",
-												"minecraft:weakness",
-												"minecraft:bad_omen",
-												"minecraft:blindness",
-												"minecraft:darkness",
-												"minecraft:infested",
-												"minecraft:weaving",
-												"minecraft:nausea",
-												"minecraft:oozing",
-												"minecraft:slowness"
-											]
-										},
 										{
 											"type": "minecraft:apply_effects",
 											"effects": [
@@ -59,13 +45,26 @@
 													"duration": 48,
 													"show_particles": false,
 													"show_icon": false
+												},
+												{
+													"id": "minecraft:regeneration",
+													"amplifier": 0,
+													"duration": 600,
+													"show_particles": false,
+													"show_icon": true
+												},
+												{
+													"id": "minecraft:absorption",
+													"amplifier": 0,
+													"duration": 2400,
+													"show_particles": false,
+													"show_icon": true
 												}
 											],
 											"probability": 1
 										}
 									]
 								},
-								"minecraft:item_model": "minecraft:bread",
 								"minecraft:food": {
 									"nutrition": 0,
 									"saturation": 0,
@@ -77,6 +76,5 @@
 				}
 			]
 		}
-	],
-	"random_sequence": "matcha:kleis_items"
+	]
 }
