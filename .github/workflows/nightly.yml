@@ -40,7 +40,6 @@ jobs:
           body: This is an experimental release with the latest features and bugfixes, updated every day.
           body_path: nightly.txt
           tag_name: nightly
-          draft: true
           prerelease: true
           files: |
             MF_resourcepack.zip
