@@ -43,6 +43,8 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Hard mode husks are slightly slower (But still faster than normal mode)
 - Lily pads can now be cloned
 - Chains can now be climbed
+- Taiga Grass colour slightly changed to be a little less ugly
+
 
 
 

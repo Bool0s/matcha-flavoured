@@ -47,11 +47,15 @@ scoreboard objectives add sleepDuration dummy
 scoreboard objectives add divinity dummy
 scoreboard players set 0 divinity 0
 
+
 # Electrum and Warding
+scoreboard objectives add WardingPower dummy
 scoreboard objectives add electrum_armour dummy
-scoreboard players set 0 electrum_armour 0
 scoreboard objectives add warding_equipment dummy
-scoreboard players set 0 warding_equipment 0
+
+# Used to clamp the maximum level of Warding obtainable from equipment (to be lower than wearing a full set of Electrum Armor)
+scoreboard players set $Max warding_equipment 3
+
 
 # Adamant Armour
 scoreboard objectives add adamant_armour dummy
@@ -73,6 +77,9 @@ stopwatch create shakudo_regen_5
 stopwatch create shakudo_regen_6
 stopwatch create shakudo_regen_7
 stopwatch create shakudo_regen_8
+
+# Anemos enchantment
+scoreboard objectives add AnemosCooldown dummy
 
 #Used mostly for particles
 stopwatch create 3s
