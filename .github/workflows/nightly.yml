@@ -3,6 +3,7 @@ name: Create Nightly Release
 on:
   schedule:
     - cron: '20 4 * * *'
+  push:
   workflow_dispatch:
 
 jobs:
