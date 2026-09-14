@@ -1,5 +1,5 @@
 #Execute at all entities who quality for being slowed
-execute as @e[distance=..10,predicate=matcha:warding_targets_slowed] run function matcha:enchantment_effects/warding/effects/apply_slowness.macro {level:1}
+execute as @e[distance=..10,type=#matcha:warding_targets_slowed,predicate=!matcha:wearing_copper_armour] run function matcha:enchantment_effects/warding/effects/apply_slowness.macro {level:1}
 
 #Execute at the nearest valid target, and then check, to see if damage is actually applied
 execute as @n[type=!player,distance=..6,type=#matcha:warding_targets_no_wither] run function matcha:enchantment_effects/warding/effects/check_warding_resistance_1
