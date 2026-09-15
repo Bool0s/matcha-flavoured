@@ -188,7 +188,16 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Shakudo -> Silk Touch/Life Steal
 - ??? -> Protection?? NOTHING...maybe, I just think it should be something only sweats get. But maybe as a replacement we can offer different protections. Ie. Undead protection, PVP protection, and just remove protection entirely
 
-  
+## Copper Intrinsic
+- Lightning Rod/Conductive: redirects all "aura"-based nonsense to itsself, and nullifies it
+- This may need to work differently on players, Ex. Zombies need only one piece to be immune, players may need more to nullify all damage
+
+## Worldgen
+- Make Diamonds more rare
+- Add in Linkershim's dope ass portal things
+- Polish-up villages
+- Abbey, but better c:
+
 ## Low-Priority Bugs
 - Add predicate for surface spawn that excludes structures
 - When running on mud brick slabs with traversal boots, when I jump I get the speed boost, but when I just run on it normally I don't get the speed boost
