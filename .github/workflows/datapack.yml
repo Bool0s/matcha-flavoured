@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  test-26-2:
+  test-older:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -48,22 +48,22 @@ jobs:
           cd datapacks
           cp ../../MF_datapack.zip ./
           cd ../../
-          nohup java -jar $MINECRAFT nogui&> 26-2-server.log &
+          nohup java -jar $MINECRAFT nogui&> older-server.log &
           sleep 1
-          timeout 5m grep -Eq 'Done \([.[:digit:]]*s\)! For help, type "help"' <(tail -f 26-2-server.log) || exit 1
+          timeout 5m grep -Eq 'Done \([.[:digit:]]*s\)! For help, type "help"' <(tail -f older-server.log) || exit 1
 
       - name: Filter by errors
         if: ${{ !cancelled() }}
-        run: grep -E '\[.*\/ERROR\]' 26-2-server.log
+        run: grep -E '\[.*\/ERROR\]' older-server.log
 
       - name: Upload server logs
         if: ${{ !cancelled() }}
         uses: actions/upload-artifact@v7
         with:
-          path: release-server.log
+          path: older-server.log
           archive: false
 
-  test-26-3:
+  test-release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -78,7 +78,7 @@ jobs:
         id: minecraft
         uses: ReinIsNOTaDev/setup-minecraft@v0.1.0
         with:
-          version: "26.3"
+          version: "release"
 
       - uses: actions/setup-java@v5
         with:
@@ -99,13 +99,13 @@ jobs:
           cd datapacks
           cp ../../MF_datapack.zip ./
           cd ../../
-          nohup java -jar $MINECRAFT nogui&> 26-3-server.log &
+          nohup java -jar $MINECRAFT nogui&> release-server.log &
           sleep 1
-          timeout 5m grep -Eq 'Done \([.[:digit:]]*s\)! For help, type "help"' <(tail -f 26-3-server.log) || exit 1
+          timeout 5m grep -Eq 'Done \([.[:digit:]]*s\)! For help, type "help"' <(tail -f release-server.log) || exit 1
 
       - name: Filter by errors
         if: ${{ !cancelled() }}
-        run: grep -E '\[.*\/ERROR\]' 26-3-server.log
+        run: grep -E '\[.*\/ERROR\]' release-server.log
 
       - name: Upload server logs
         if: ${{ !cancelled() }}
