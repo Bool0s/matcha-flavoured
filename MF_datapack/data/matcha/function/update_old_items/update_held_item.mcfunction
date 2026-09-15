@@ -267,7 +267,7 @@ execute if entity @s[nbt={SelectedItem:{id:"minecraft:zoglin_spawn_egg"}}] run d
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:ghast_spawn_egg"}}] run data modify entity @n[type=item] Item merge value {'id': 'minecraft:ghast_spawn_egg', 'components': {'!minecraft:entity_data': {}}}
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:wither_skeleton_spawn_egg"}}] run data modify entity @n[type=item] Item merge value {'id': 'minecraft:wither_skeleton_spawn_egg', 'components': {'!minecraft:entity_data': {}}}
 
-# Merge Item Data 
+# Merge Item Data
 data modify entity @n[type=item] Item.components.minecraft:custom_name set from entity @s SelectedItem.components.minecraft:custom_name
 execute store result score #damage update_item run data get entity @s SelectedItem.components.minecraft:damage
 scoreboard players operation #damage update_item *= #1000 update_item
@@ -281,27 +281,15 @@ data modify entity @n[type=item] Item.components.minecraft:enchantments merge fr
 # minecraft:efficiency
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.minecraft:efficiency
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.netherite_axe"}}}}] if score #enchantmentLvl update_item matches ..2 run scoreboard players set #enchantmentLvl update_item 2
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.adamant_dolabra"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.netherite_hoe"}}}}] if score #enchantmentLvl update_item matches ..2 run scoreboard players set #enchantmentLvl update_item 2
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.adamant_mattock"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.netherite_pickaxe"}}}}] if score #enchantmentLvl update_item matches ..2 run scoreboard players set #enchantmentLvl update_item 2
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.netherite_shovel"}}}}] if score #enchantmentLvl update_item matches ..2 run scoreboard players set #enchantmentLvl update_item 2
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.minecraft:efficiency int 1 run scoreboard players get #enchantmentLvl update_item
 # matcha:adamant_tool
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.matcha:adamant_tool
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.netherite_axe"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.adamant_dolabra"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.netherite_hoe"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.adamant_mattock"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.netherite_pickaxe"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.netherite_shovel"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.matcha:adamant_tool int 1 run scoreboard players get #enchantmentLvl update_item
 # matcha:adamant_weapon
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.matcha:adamant_weapon
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.netherite_axe"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.adamant_claymore"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.netherite_spear"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.netherite_sword"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.matcha:adamant_weapon int 1 run scoreboard players get #enchantmentLvl update_item
 # minecraft:unbreaking
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.minecraft:unbreaking
@@ -321,23 +309,12 @@ execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{trans
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.minecraft:unbreaking int 1 run scoreboard players get #enchantmentLvl update_item
 # matcha:adamant_armour
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.matcha:adamant_armour
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.netherite_boots"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.netherite_chestplate"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.netherite_helmet"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.netherite_leggings"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.matcha:adamant_armour int 1 run scoreboard players get #enchantmentLvl update_item
 # minecraft:protection
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.minecraft:protection
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.netherite_boots"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.netherite_chestplate"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.netherite_helmet"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.netherite_leggings"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.minecraft:protection int 1 run scoreboard players get #enchantmentLvl update_item
 # minecraft:sharpness
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.minecraft:sharpness
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.adamant_claymore"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.netherite_spear"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.netherite_sword"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.minecraft:sharpness int 1 run scoreboard players get #enchantmentLvl update_item
 # matcha:electrum_tool
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.matcha:electrum_tool
@@ -353,9 +330,7 @@ execute store result score #enchantmentLvl update_item run data get entity @s Se
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.electrum_axe"}}}}] if score #enchantmentLvl update_item matches ..2 run scoreboard players set #enchantmentLvl update_item 2
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.electrum_spear"}}}}] if score #enchantmentLvl update_item matches ..2 run scoreboard players set #enchantmentLvl update_item 2
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.electrum_sword"}}}}] if score #enchantmentLvl update_item matches ..2 run scoreboard players set #enchantmentLvl update_item 2
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.golden_axe"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.golden_spear"}}}}] if score #enchantmentLvl update_item matches ..2 run scoreboard players set #enchantmentLvl update_item 2
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.golden_sword"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.minecraft:looting int 1 run scoreboard players get #enchantmentLvl update_item
 # minecraft:smite
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.minecraft:smite
@@ -366,28 +341,15 @@ execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{trans
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.minecraft:smite int 1 run scoreboard players get #enchantmentLvl update_item
 # matcha:warding_2
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.matcha:warding_2
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.electrum_axe"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.electrum_spear"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:blaze_spawn_egg"}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.matcha:warding_2 int 1 run scoreboard players get #enchantmentLvl update_item
 # matcha:electrum_armour
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.matcha:electrum_armour
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.electrum_boots"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.electrum_chestplate"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.electrum_helmet"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.electrum_leggings"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.matcha:electrum_armour int 1 run scoreboard players get #enchantmentLvl update_item
 # matcha:warding_1
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.matcha:warding_1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.electrum_mattock"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.silver_sword"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.warding_shield"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.warding_sword"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.wooden_cross"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.matcha:warding_1 int 1 run scoreboard players get #enchantmentLvl update_item
 # matcha:warding_3
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.matcha:warding_3
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.electrum_sword"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.matcha:warding_3 int 1 run scoreboard players get #enchantmentLvl update_item
 # minecraft:lunge
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.minecraft:lunge
@@ -399,61 +361,36 @@ execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{trans
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.matcha:riposte int 1 run scoreboard players get #enchantmentLvl update_item
 # minecraft:silk_touch
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.minecraft:silk_touch
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_axe"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_dolabra"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_hoe"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_mattock"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_pickaxe"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_shovel"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.minecraft:silk_touch int 1 run scoreboard players get #enchantmentLvl update_item
 # matcha:shakudo_weapon
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.matcha:shakudo_weapon
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_axe"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_spear"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_sword"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.matcha:shakudo_weapon int 1 run scoreboard players get #enchantmentLvl update_item
 # matcha:cleanse_armor_feet
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.matcha:cleanse_armor_feet
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_boots"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.matcha:cleanse_armor_feet int 1 run scoreboard players get #enchantmentLvl update_item
 # matcha:magic_protection
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.matcha:magic_protection
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_boots"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_chestplate"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_helmet"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_leggings"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.matcha:magic_protection int 1 run scoreboard players get #enchantmentLvl update_item
 # matcha:shakudo_armour
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.matcha:shakudo_armour
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_boots"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_chestplate"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_elytra"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_helmet"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_leggings"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.matcha:shakudo_armour int 1 run scoreboard players get #enchantmentLvl update_item
 # matcha:cleanse_armor_chest
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.matcha:cleanse_armor_chest
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_chestplate"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.matcha:cleanse_armor_chest int 1 run scoreboard players get #enchantmentLvl update_item
 # matcha:max_magic_protection
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.matcha:max_magic_protection
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_elytra"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.matcha:max_magic_protection int 1 run scoreboard players get #enchantmentLvl update_item
 # matcha:cleanse_armor_maleffect
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.matcha:cleanse_armor_maleffect
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_elytra"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.matcha:cleanse_armor_maleffect int 1 run scoreboard players get #enchantmentLvl update_item
 # matcha:cleanse_armor_head
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.matcha:cleanse_armor_head
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_helmet"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.matcha:cleanse_armor_head int 1 run scoreboard players get #enchantmentLvl update_item
 # matcha:cleanse_armor_legs
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.matcha:cleanse_armor_legs
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_leggings"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.matcha:cleanse_armor_legs int 1 run scoreboard players get #enchantmentLvl update_item
 # minecraft:sweeping_edge
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.minecraft:sweeping_edge
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.shakudo_sword"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.minecraft:sweeping_edge int 1 run scoreboard players get #enchantmentLvl update_item
 # minecraft:blast_protection
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.minecraft:blast_protection
@@ -472,10 +409,6 @@ execute if score #enchantmentLvl update_item matches 1.. store result entity @n[
 # minecraft:fortune
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.minecraft:fortune
 execute if score #enchantmentLvl update_item matches 1.. run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.golden_axe"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.golden_hoe"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.golden_pickaxe"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.minecraft.golden_shovel"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.minecraft:fortune int 1 run scoreboard players get #enchantmentLvl update_item
 # minecraft:fire_protection
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.minecraft:fire_protection
@@ -498,7 +431,6 @@ execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{trans
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.minecraft:projectile_protection int 1 run scoreboard players get #enchantmentLvl update_item
 # matcha:traversal
 execute store result score #enchantmentLvl update_item run data get entity @s SelectedItem.components.minecraft:enchantments.matcha:traversal
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:item_name":{translate:"item.kleispack.sturdy_leather_boots"}}}}] if score #enchantmentLvl update_item matches ..1 run scoreboard players set #enchantmentLvl update_item 1
 execute if score #enchantmentLvl update_item matches 1.. store result entity @n[type=item] Item.components.minecraft:enchantments.matcha:traversal int 1 run scoreboard players get #enchantmentLvl update_item
 #remove mainhand item if it was a valid item (summoned item is no longer stone) and display success/error message
 execute unless entity @n[type=item,nbt={Item:{id:"minecraft:stone"}}] run item replace entity @s weapon.mainhand with air
