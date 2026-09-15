@@ -49,6 +49,7 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Chains can now be climbed
 - Taiga Grass colour slightly changed to be a little less ugly
 - Mobs spawned from spawners no longer drop anything (💻, HapppySpud)
+- Withers can now only be spawned on the surface of the overworld
 
 
 
