@@ -138,6 +138,10 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Change Paradise Lost and Divine Comedy to be ofuda instead of hearts
 - Change some enchant recipes to use crystal hearts instead of just fragments
 - Make hard loose two hearts per death instead of 1, or make hearts lost scale with current amoutn of hearts, at max health you can loose ~4 hearts, high-mid you loose 2 in normal, 3 in hard, at high you loose 3 in normal, 5 in hard
+- Rough/Raw Diamonds (do a wikipedia) and replace all ingots in overworld structures with raw equivilents
+- Blast furnace to be made from Deepslate not stone, make deepslate only mineable with copper
+- Make gold only mineable with iron
+- Remove Gold pickaxes (maybe other stuff) from ruined portals
 
 ## Before Release
 - Add All of Imtlx' biome sprites
