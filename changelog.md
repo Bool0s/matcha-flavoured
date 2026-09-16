@@ -7,6 +7,7 @@
 - DeBlezyBestie: Music Discs (Check out their YT!: https://www.youtube.com/@deblezyboi)
 - Bingbongbooper: Food Ideas (Their YT!: https://www.youtube.com/@bingbongbooper)
 - HapppySpud: Nether World Gen Gravel Remover, Post-Smithing Enchants, Random Asylum Seekers
+- Linkershim: Optimisations, Multiplayer Support and various other coding things
 - All of the translation volunteers
 - Thank you so much everyone!
 
@@ -44,6 +45,8 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Opal Earrings now only give Conduit Power when in water (quick patch job probably needs optimisation)
 - Zephyr enchantment reworked so that its 3 levels (👥💻, freshdoktor)
 - Elegy of the Abbey and Crete updated to their new versions
+- Bulk Blocks now unpack directly into your inventory (💻, Linkershim)
+- All Mason trades are now Bulk Blocks (💻, Linkershim)
 - Bulk Dirt added to Mason Trade
 - Bulk Blocks now have distinct models
 - Diamond, Amethyst, and Lapis Earrings (They don't do anything but they ARE very cute) (👥)
@@ -201,7 +204,7 @@ This symbol (🖌️) means the art was added by community artists (music is art
 
 ## Worldgen
 - Make Diamonds more rare
-- Add in Linkershim's dope ass portal things
+- Add in TankyAibem & Linkershim's dope ass portal things
 - Polish-up villages
 - Abbey, but better c:
 
