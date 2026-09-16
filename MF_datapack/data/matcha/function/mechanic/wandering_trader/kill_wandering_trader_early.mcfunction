@@ -1,6 +1,6 @@
-kill @n[type=minecraft:wandering_trader,tag=summoned_by_beacon]
-execute at @n[type=marker,tag=beacon_kindling] run execute if block ~ ~ ~ minecraft:campfire run setblock ~ ~ ~ minecraft:campfire[lit=false]
+execute if score @s wandering_trader_timer_score >= 10min wandering_trader_timer_score run kill @n[type=minecraft:wandering_trader,tag=summoned_by_beacon]
+execute if block ~ ~ ~ minecraft:campfire run setblock ~ ~ ~ minecraft:campfire[lit=false]
 function matcha:mechanic/wandering_trader/kill_this_beacon
-execute at @a run execute if score @p wandering_trader_timer_score >= 0 wandering_trader_timer_score run tellraw @p {"translate":"log.kleispack.wandering_trader.kill_early","color":"gray"}
-execute as @a run execute if score @s wandering_trader_timer_score >= 0 wandering_trader_timer_score run tag @s remove SummonedTrader
-execute as @a run scoreboard players reset @p wandering_trader_timer_score
+execute as @a[distance=..128] run tellraw @s {"translate":"log.kleispack.wandering_trader.kill_early","color":"gray"}
+execute as @a if score @s wandering_trader_timer_score >= 0 wandering_trader_timer_score run tag @s remove SummonedTrader
+execute as @a run scoreboard players reset @s wandering_trader_timer_score
