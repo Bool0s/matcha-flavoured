@@ -164,7 +164,7 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - scoreboard players set maximum_hearts Hearts 60
   
 ## BUGS
-
+- Beacon Kindling Adv needs updated item model (not triggering)
 
 ## Testing Needed
 - All LTs
