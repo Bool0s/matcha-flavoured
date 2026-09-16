@@ -2,7 +2,8 @@
 scoreboard players set @s deaths 0
 
 # Remove the hearts
-scoreboard players remove @s Hearts 2
+execute if score current_world_settings_difficulty difficulty_score matches ..2 run scoreboard players remove @s Hearts 2
+execute if score current_world_settings_difficulty difficulty_score matches 3 run scoreboard players remove @s Hearts 4
 
 # Update Max HP
 execute as @s run function matcha:mechanic/heart_container/set_max_hp

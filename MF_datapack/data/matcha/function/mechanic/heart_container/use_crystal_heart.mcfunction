@@ -1,5 +1,5 @@
 # If they have less than the max HP, clear the heart container (kill them)
-execute if score @s Hearts < $Max Hearts run function matcha:mechanic/heart_container/clear_crystal_heart
+execute if predicate matcha:crystal_heart/not_holding_totem run execute if score @s Hearts < $Max Hearts run function matcha:mechanic/heart_container/clear_crystal_heart
 
 # Update Max HP
 execute as @s run function matcha:mechanic/heart_container/set_max_hp

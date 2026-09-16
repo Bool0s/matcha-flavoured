@@ -26,6 +26,10 @@ This symbol (🖌️) means the art was added by community artists (music is art
     * Wither skeleton feet stabbies won't work anymore, but you should try to do it anyways ;)
 - Crystal hearts are now "used" instead of "forced" on players, since the new death system provides enough incentive
     * They also double as cheap totems (at max hearts), and great healing items when < max health, so have fun with them
+- Progression Polish
+    * Blast furnace recipe tweaked, Raw Diamonds now exist, and require blast furnaces to smelt
+    * So no more naturally-occuring free diamonds should appear on surface structures
+    * This should extend the copper and iron age a bit more, and when you finally have a blast furnace, feel good to finally be able to USE the diamonds you collected
 ### Tweaks & Small Additions 
 - Enderman can only pick up melon, pumpkins, and TNT (💻, Linkershim)
 - Multiplayer support improvements! (💻, Linkershim)
@@ -43,14 +47,23 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Bulk Dirt added to Mason Trade
 - Bulk Blocks now have distinct models
 - Diamond, Amethyst, and Lapis Earrings (They don't do anything but they ARE very cute) (👥)
-- Emeralds are not found in deepdarks (sculk covers most of them, so why not?) (👥)
+- Silver is now found in deepdarks (sculk covers most of them, so why not?) (👥)
 - Hard mode husks are slightly slower (But still faster than normal mode) (👥)
 - Lily pads can now be cloned (👥)
 - Chains can now be climbed
 - Taiga Grass colour slightly changed to be a little less ugly
 - Mobs spawned from spawners no longer drop anything (💻, HapppySpud)
 - Withers can now only be spawned on the surface of the overworld
-
+- Silver added to ominous vault loot
+- Trash removed from trial spawners and vaults
+- Many LTs re-buffed! Because diamonds are now raw, it allows me to give more rewards without worrying about progression breaking so badly that people end up not having fun c:
+    * ALL Loottables will be rebalanced, cleaned up, and made more unique for each one, however, I don't have the time to do that right now
+- Silver can now be found in Ancient City Chests
+- Ruined portal LT nerfed, to prevent gold from being obtainable pre-iron (tech. pre-copper).
+    * This may be nerfed more depending on how many people I see use this to skip iron 
+    * If some people do it? Its fine, fun little shortcut you can do
+    * If a lot of people do it? Something's gone wrong
+- The Quran and Tanakh added to trial chamber loot (Temp fix)
 
 
 
@@ -99,7 +112,6 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Water bottles no longer dupe in creative
 - Oak and Dark Oak leaf LT updated to include electrum fortune
 - Lily pad item Texture fixed
-- Wither removed from warding stone targets
 - Warding stone particles updated to match new warding ones
 - Spawners no logner kill you when you place a block on them, only when you try to use a spawn egg on it (💻, HapppySpud)
 - Copper torches now consistent with soul torches (💻, MrHatsy)
@@ -132,26 +144,9 @@ This symbol (🖌️) means the art was added by community artists (music is art
 
 
 # DOCKET (MUST be done before next release)
-- Make scoreboard only run on loaddd
-- Imtlx' fish doesn't list Lukewarm oceans (I think I messed something up)
-    - Plus texture!!
-- Change Paradise Lost and Divine Comedy to be ofuda instead of hearts
-- Change some enchant recipes to use crystal hearts instead of just fragments
-- Make hard loose two hearts per death instead of 1, or make hearts lost scale with current amoutn of hearts, at max health you can loose ~4 hearts, high-mid you loose 2 in normal, 3 in hard, at high you loose 3 in normal, 5 in hard
-- Rough/Raw Diamonds (do a wikipedia) and replace all ingots in overworld structures with raw equivilents
-- Blast furnace to be made from Deepslate not stone, make deepslate only mineable with copper
-- Make gold only mineable with iron
-- Remove Gold pickaxes (maybe other stuff) from ruined portals
-
-## Before Release
-- Add All of Imtlx' biome sprites
-   - Pale Garden
-   - Deep Dark
-   - Sulfur Caves
 
 ## Abbey Rework
 - Replace abbey boon rooms with shard instead of crystal hearts
-- Abbey LT should also focus more on shards (since Hearts are now used/new death system the over-abundance is no longer necessary)
 
 ## Scoreboards to be removed (in the update function thing)
 - apotropaic
@@ -169,9 +164,17 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - scoreboard players set maximum_hearts Hearts 60
   
 ## BUGS
-- Update Abbey LT to have the good Abbey disc
-- The Advancements for the special elytras currently dont trigger on intem in inventory/wearing the item nor crafting either of the items?
-  
+
+
+## Testing Needed
+- All LTs
+- Fishing treasure LT (Does it give the buried treasure?)
+
+## Loottables Needed
+- Copper Eq
+- Chainmail Eq
+
+
 ## 26.3
 - Poplar leaves crafting needs to be added to adv
 - All concrete and wool needs to be in stonecutter
@@ -207,6 +210,13 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - When running on mud brick slabs with traversal boots, when I jump I get the speed boost, but when I just run on it normally I don't get the speed boost
 - Villager Gift LT (Toolsmith give stone tools, laaame)
 
+## Difficulty scaling
+- Use current_difficulty scoreboard to track individual difficulty, this changes as the amount of hearts does
+- This difficulty setting is only (so far) to be used to track how many hearts a player looses on death
+- Max -> 3
+- 20+ -> 2
+- 10+ -> 1
+- Hard mode adds +1 to n
 
 ## Langs
 "options.difficulty.peaceful.info"
@@ -265,15 +275,16 @@ While much advamcement has been made toward making the learning process of the p
 
 ## Textures
 - All beds are gone :c
-- Cactus Pot
-- Azalea Pot
 - Chest on boat texture n boat texture
 - Change Ender chest to be Eye
+- Add All of Imtlx' biome sprites
+   - Pale Garden
+   - Deep Dark
+   - Sulfur Caves
 
 ## Misc
 - Variant Villages to match with villager stories
 - Knowledge books??
-- Fishing Index (advancemnet only obtained by fisherman villager, with its own subtab with all the fish)
 - Sherds for Enchants?? From Archaeologist
 - Maps from Archaeologist based on books (I think Paradise Lost going to Abbey makes sense)
 - Upgraded horns for different mobs
@@ -286,7 +297,3 @@ While much advamcement has been made toward making the learning process of the p
 - Coal high in swamps
 - Sulfur high in sulfur caves
 - Iron high in Cold Biomes
-
-
-## Wither Rework
-- An attack that makes you loose a crystal heart
