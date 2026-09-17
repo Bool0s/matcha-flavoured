@@ -7,6 +7,7 @@
 - DeBlezyBestie: Music Discs (Check out their YT!: https://www.youtube.com/@deblezyboi)
 - Bingbongbooper: Food Ideas (Their YT!: https://www.youtube.com/@bingbongbooper)
 - HapppySpud: Nether World Gen Gravel Remover, Post-Smithing Enchants, Random Asylum Seekers
+- Linkershim: Optimisations, Multiplayer Support and various other coding things
 - All of the translation volunteers
 - Thank you so much everyone!
 
@@ -23,9 +24,13 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Wither Effect is **VERY** nasty now (Easy mode is exempt)
     * Shakudo Chestplate no longer cleanses wither
     * Please bring milk or bread to Hell, please its very important
-    * This is me prepping for an update to the wither fight, but thought in the mean-time, it might make the wither fight more interesting, lmk
+    * Wither skeleton feet stabbies won't work anymore, but you should try to do it anyways ;)
 - Crystal hearts are now "used" instead of "forced" on players, since the new death system provides enough incentive
     * They also double as cheap totems (at max hearts), and great healing items when < max health, so have fun with them
+- Progression Polish
+    * Blast furnace recipe tweaked, Raw Diamonds now exist, and require blast furnaces to smelt
+    * So no more naturally-occuring free diamonds should appear on surface structures
+    * This should extend the copper and iron age a bit more, and when you finally have a blast furnace, feel good to finally be able to USE the diamonds you collected
 ### Tweaks & Small Additions 
 - Enderman can only pick up melon, pumpkins, and TNT (💻, Linkershim)
 - Multiplayer support improvements! (💻, Linkershim)
@@ -40,17 +45,30 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Opal Earrings now only give Conduit Power when in water (quick patch job probably needs optimisation)
 - Zephyr enchantment reworked so that its 3 levels (👥💻, freshdoktor)
 - Elegy of the Abbey and Crete updated to their new versions
+- Bulk Blocks now unpack directly into your inventory (💻, Linkershim)
+- All Mason trades are now Bulk Blocks (💻, Linkershim)
 - Bulk Dirt added to Mason Trade
 - Bulk Blocks now have distinct models
 - Diamond, Amethyst, and Lapis Earrings (They don't do anything but they ARE very cute) (👥)
-- Emeralds are not found in deepdarks (sculk covers most of them, so why not?) (👥)
+- Silver is now found in deepdarks (sculk covers most of them, so why not?) (👥)
 - Hard mode husks are slightly slower (But still faster than normal mode) (👥)
 - Lily pads can now be cloned (👥)
 - Chains can now be climbed
 - Taiga Grass colour slightly changed to be a little less ugly
 - Mobs spawned from spawners no longer drop anything (💻, HapppySpud)
-
-
+- Withers can now only be spawned on the surface of the overworld
+- Silver added to ominous vault loot
+- Trash removed from trial spawners and vaults
+- Many LTs re-buffed! Because diamonds are now raw, it allows me to give more rewards without worrying about progression breaking so badly that people end up not having fun c:
+    * ALL Loottables will be rebalanced, cleaned up, and made more unique for each one, however, I don't have the time to do that right now
+- Silver can now be found in Ancient City Chests
+- Ruined portal LT nerfed, to prevent gold from being obtainable pre-iron (tech. pre-copper).
+    * This may be nerfed more depending on how many people I see use this to skip iron 
+    * If some people do it? Its fine, fun little shortcut you can do
+    * If a lot of people do it? Something's gone wrong
+- The Quran and Tanakh added to trial chamber loot (Temp fix)
+- Post-dragon, Abbeys can still spawn mobs
+- Ofuda trades now require Crystal hearts
 
 
 #### Cooking Changes & Additions 
@@ -86,9 +104,6 @@ This symbol (🖌️) means the art was added by community artists (music is art
 
 
 ### Bugs
-#### Multiplayer Bugs
-- 
-#### General
 - "Ophaned" villagers can only be children (💻, HapppySpud)
 - Fortune now works on: Tomatoes, Glow berry vines, Chorus Plant (I think some of this was vanilla-intended, but I added it in regardless)
 - Warding's (✟ x) effects were inconsistent at various levels, this was fixed
@@ -98,10 +113,12 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Water bottles no longer dupe in creative
 - Oak and Dark Oak leaf LT updated to include electrum fortune
 - Lily pad item Texture fixed
-- Wither removed from warding stone targets
 - Warding stone particles updated to match new warding ones
 - Spawners no logner kill you when you place a block on them, only when you try to use a spawn egg on it (💻, HapppySpud)
 - Copper torches now consistent with soul torches (💻, MrHatsy)
+- Allays did not spawn in The Abbey, they now spawn on generation instead
+- "Bonfire Lit" Advancement works now
+- Post-dragon, abbey mobs would vanish, this is no longer true
 #### Lang
 - Warding Shield, Sword, Silver Sword now uses translate
 #### Recipe Unlocks Fixed
@@ -113,6 +130,8 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Poplar Leaves, Log & Plank textures added
 - All Vertical Slab textures added (👥, specifically barce & fwhip's video)
 - Chisleled Sandstone Texture (🖌️, MrHatsy)
+- Nether Portal is now Purple (🖌️, LambS0up) (👥, Cosmoxnautica)
+- Skeletons (for Lore)
 
 #### Removed 
 
@@ -121,67 +140,69 @@ This symbol (🖌️) means the art was added by community artists (music is art
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-THESE ARE MY NOTES THEY AREN'T IMPORTANT BUT IM NOT PUTTING IT IN ANOTHER DOC
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-## Before Release
-- Add All of Imtlx' biome sprites
-   - Pale Garden
-   - Deep Dark
-   - Sulfur Caves
-
-# Scoreboards to be removed (in the update function thing)
-- apotropaic
-- scoreboard players add copper_age Hearts 0
-- scoreboard players add iron_age Hearts 0
-- scoreboard players add diamond_age Hearts 0
-- scoreboard players add nether_age Hearts 0
-- scoreboard players add electrum_age Hearts 0
-- scoreboard players add netherite_age Hearts 0
-- scoreboard players add end_age Hearts 0
-- scoreboard players set 1 deaths 1
-- scoreboard players add current_minimum_hearts Hearts 0
-- scoreboard players set minimum_normal_hearts Hearts 12
-- scoreboard players set minimum_hard_hearts Hearts 6
-- scoreboard players set maximum_hearts Hearts 60
-
 
 # Release Checklist
 - Update mcmeta for RP and DP
 - Update current_version_number scoreboard
-
-# DOCKET
-- Make scoreboard only run on loaddd
-- Adamant Elytra (What would it do?)
-- Artems fish doesn't list Lukewarm oceans (I think I messed something up)
-    - Plus texture!!
-- minecraft/loot_table/gameplay/fishing/junk.json
-
-
-# BUGS
-- Update Abbey LT to have the good Abbey disc
-- Didn't update Pack mcmeta
-- REMOVE WITH SONGS
+- REMOVE WITH SONGS, this should only be in the in-dev version
 - Add credits for all the new commit things in github
-- Check if warding enchants still used, and if so replace undead tag with warding targets tag
+
+
+# DOCKET (MUST be done before next release)
+  
+## BUGS
+-
+
+## Testing Needed
+- All LTs
+- Fishing treasure LT (Does it give the buried treasure?)
+
+
+
+## 26.3
 - Poplar leaves crafting needs to be added to adv
-- The Advancements for the special elytras currently dont trigger on intem in inventory/wearing the item nor crafting either of the items?
+- All concrete and wool needs to be in stonecutter
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Next Update
+
+### Aspects
+- Allows you to extract intrinsics from certain alloys, post-end enchanting
+- Uses dragon's breath (rename to something?)
+- Extracting an Aspect requires A withered Heart and a dragon's breath
+- Bronze -> Eff
+- Steel -> Unbreaking
+- Electrum -> Fortune III
+- Netherite -> Smelting
+- Shakudo -> Silk Touch/Life Steal
+- ??? -> Protection?? NOTHING...maybe, I just think it should be something only sweats get. But maybe as a replacement we can offer different protections. Ie. Undead protection, PVP protection, and just remove protection entirely
+- Unbreakable Enchant from Wither Heart
+
+## Copper Intrinsic
+- Lightning Rod/Conductive: redirects all "aura"-based nonsense to itsself, and nullifies it
+- This may need to work differently on players, Ex. Zombies need only one piece to be immune, players may need more to nullify all damage
+
+## Worldgen
+- Make Diamonds more rare
+- Add in TankyAibem & Linkershim's dope ass portal things
+- Polish-up villages
+- Abbey, but better c:
+
+## Low-Priority Bugs
 - Add predicate for surface spawn that excludes structures
 - When running on mud brick slabs with traversal boots, when I jump I get the speed boost, but when I just run on it normally I don't get the speed boost
 - Villager Gift LT (Toolsmith give stone tools, laaame)
-- Goat horns obtained from fishing always seem to be "Ponder". Can that be varied?
 
-
-
-### Electrum
-- Fortune III should come applied, but Fortune III should be attainble from other sources (Craftable Electrum intrinsic, maybe call it something else? like an intrinsic...book)
-- Intrinisc Book
-    * Have tooltip with:
-    * Incompatible with: Fortune
-So if more intrinisc books are added, they can have exlusions, like smelting for example
-    * Incompatible with: Silk Touch, Warding
-- OH MY GOD WITH DRAGON'S BREATH YOU CAN EXTRACT AN INTRINSIC
-
+## Difficulty scaling
+- Use current_difficulty scoreboard to track individual difficulty, this changes as the amount of hearts does
+- This difficulty setting is only (so far) to be used to track how many hearts a player looses on death
+- Max -> 3
+- 20+ -> 2
+- 10+ -> 1
+- Hard mode adds +1 to n
 
 ## Langs
 "options.difficulty.peaceful.info"
@@ -190,16 +211,14 @@ So if more intrinisc books are added, they can have exlusions, like smelting for
 "options.difficulty.hard.info"
 
 
-# Abbey Rework
-- Replace some abbey boon rooms with shard instead of crystal hearts (Or spawners)
-- Abbey Overhaul Build needs to be done before we can move forward with this.
-
 ### Advancements
 - Restore their memory, of what they used to be (Echoes: Restore an Echo Shard's memory)
 - Child of Moros: Smith Full Adamant Set 
 - Harbinger of Fate: Smith Adamant Elytra 
 
-# Small Additions
+# Stretch / Back-burner
+
+## Small Additions
 - Increase resin amount in pale graden fishing
 - Potatoes and Molasses
 - French Fries
@@ -207,8 +226,10 @@ So if more intrinisc books are added, they can have exlusions, like smelting for
 - Craftable Thorns
 - Add Cinnabar and Sulfur, dripstone, raw copper to dripstone caves, Badlands raw gold, deep dark, disc fragments, to fishing trash
 - Increase resin amount in pale graden fishing
+- Add secondary items for certain villager trades (ie empty map for map trades)
 
 ### Suggestions
+- Goat horns obtained from fishing always seem to be "Ponder". Can that be varied?
 - Fermented Spider eye secret meal
 - New paintings (with hints!)
 - Bag of Sugar!
@@ -222,7 +243,7 @@ So if more intrinisc books are added, they can have exlusions, like smelting for
 - Cold biomes (and oceans) should have better loot due to freezing water
 - Rebalance obol to be more rare in chests? Trial chambers esp...idk
 
-# Medium Additions
+## Medium Additions
 - "Have recipes or hints toward features appear in abandoned camp loot pools, or possibly other loot pools as well.
 - Have spawners (aside from dungeons, wait no LT can't read entity data...)
     * I wanted to have a way for spawners to make mobs that won't drop anything, by spawning them with a tag
@@ -233,23 +254,23 @@ While much advamcement has been made toward making the learning process of the p
 - Wandering Trader trade more than just village maps
 
 
-# Adv
+## Adv
 - Get Full Health Advancement
 - Craft a secret weapon advancemnt
 
 
 ## Textures
-- Chiseled Sandstone
 - All beds are gone :c
-- Cactus Pot
-- Azalea Pot
 - Chest on boat texture n boat texture
 - Change Ender chest to be Eye
+- Add All of Imtlx' biome sprites
+   - Pale Garden
+   - Deep Dark
+   - Sulfur Caves
 
-## Stretch
+## Misc
 - Variant Villages to match with villager stories
 - Knowledge books??
-- Fishing Index (advancemnet only obtained by fisherman villager, with its own subtab with all the fish)
 - Sherds for Enchants?? From Archaeologist
 - Maps from Archaeologist based on books (I think Paradise Lost going to Abbey makes sense)
 - Upgraded horns for different mobs
@@ -262,7 +283,3 @@ While much advamcement has been made toward making the learning process of the p
 - Coal high in swamps
 - Sulfur high in sulfur caves
 - Iron high in Cold Biomes
-
-
-## Wither Rework
-- An attack that makes you loose a crystal heart
