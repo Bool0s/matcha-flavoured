@@ -20,11 +20,11 @@
 						"tags": [
 							{
 								"expected": true,
-								"id": "minecraft:is_fall"
+								"id": "#minecraft:is_fall"
 							},
 							{
 								"expected": false,
-								"id": "minecraft:bypasses_invulnerability"
+								"id": "#minecraft:bypasses_invulnerability"
 							}
 						]
 					}
