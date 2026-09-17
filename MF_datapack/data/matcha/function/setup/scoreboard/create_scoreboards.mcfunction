@@ -116,7 +116,7 @@ scoreboard objectives add wither_timer dummy
 # and it'll never ever fix itself. So if the server crashes, or someone logs out whilst waiting, they will never have a wandering trader arrive :c
 # We will also kill any existing wandering traders, on load. Because again, that'll mess things up
 kill @e[type=minecraft:wandering_trader,tag=summoned_by_beacon]
-execute as @e[type=marker,tag=beacon_kindling] at @s run function matcha:mechanic/wandering_trader/kill_wandering_trader_early
+execute as @e[type=marker,tag=beacon_kindling] at @s run function matcha:mechanics/wandering_trader/kill_wandering_trader_early
 scoreboard objectives add wandering_trader_timer_score dummy
 scoreboard players reset @a wandering_trader_timer_score
 tag @a remove SummonedTrader
@@ -144,7 +144,7 @@ scoreboard players set normal difficulty_score 2
 scoreboard players set hard difficulty_score 3
 execute store result score current_world_settings_difficulty difficulty_score run difficulty
 
-#Used in main/function/mechanic/intrinsic_enchants/
+#Used in main/function/mechanics/intrinsic_enchants/
 scoreboard objectives add intrinsic_enchants_levels dummy
 
 # Add Trigger Scoreboard to update your old items
