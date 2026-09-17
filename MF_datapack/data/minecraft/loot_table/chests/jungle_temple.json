@@ -6,7 +6,7 @@
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
-					"value": "matcha:uncommon/treasure_ores",
+					"value": "matcha:chests/uncommon/treasure_ores",
 					"functions": [],
 					"weight": 6
 				}
