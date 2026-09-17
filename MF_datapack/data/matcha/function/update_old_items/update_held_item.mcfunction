@@ -1,4 +1,7 @@
 summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:stone",count:1},PickupDelay:0s}
+data modify storage matcha:update_item id set value ""
+data modify storage matcha:update_item translate set value ""
+data modify storage matcha:update_item enchantments set value {}
 data modify storage matcha:update_item id set from entity @s SelectedItem.id
 data modify storage matcha:update_item translate set from entity @s SelectedItem.components.minecraft:item_name.translate
 execute if data storage matcha:update_item {translate:"item.minecraft.netherite_axe"} run data modify entity @n[type=item] Item merge value {'id': 'minecraft:netherite_axe', 'components': {'minecraft:max_damage': 5000, 'minecraft:tool': {'rules': [{'blocks': '#minecraft:mineable/axe', 'speed': 15, 'correct_for_drops': True}], 'default_mining_speed': 1, 'damage_per_block': 1}, 'minecraft:custom_data': {'has_intrinsic_enchants': 1}, 'minecraft:lore': [{'translate': 'desc.kleispack.mining_speed', 'with': [{'text': '15'}], 'color': 'blue', 'italic': False}, {'translate': 'desc.kleispack.attack_damage', 'with': [{'text': '10'}], 'color': 'dark_green', 'italic': False}, {'translate': 'desc.kleispack.cooldown', 'with': [{'text': '1'}], 'color': 'dark_green', 'italic': False}, {'translate': 'desc.kleispack.repaired_with', 'color': 'gray', 'italic': False}, {'translate': 'block.minecraft.diamond_block', 'color': 'dark_gray', 'italic': False}, {'translate': 'item.minecraft.netherite_scrap', 'color': 'dark_gray', 'italic': False}], 'minecraft:tooltip_display': {'hidden_components': ['minecraft:attribute_modifiers']}, 'minecraft:repairable': {'items': ['minecraft:diamond_block', 'minecraft:netherite_scrap']}, 'minecraft:item_name': {'translate': 'item.minecraft.netherite_axe', 'color': 'gold'}, 'minecraft:enchantments': {'minecraft:efficiency': 2, 'matcha:adamant_tool': 1, 'matcha:adamant_weapon': 1, 'minecraft:unbreaking': 2}}}
@@ -270,6 +273,7 @@ execute if data storage matcha:update_item {id:"minecraft:ghast_spawn_egg"} run 
 execute if data storage matcha:update_item {id:"minecraft:wither_skeleton_spawn_egg"} run data modify entity @n[type=item] Item merge value {'id': 'minecraft:wither_skeleton_spawn_egg', 'components': {'!minecraft:entity_data': {}}}
 
 # Merge Item Data 
+data modify entity @n[type=item] Item.count set from entity @s SelectedItem.count
 data modify entity @n[type=item] Item.components.minecraft:custom_name set from entity @s SelectedItem.components.minecraft:custom_name
 execute store result score #damage update_item run data get entity @s SelectedItem.components.minecraft:damage
 scoreboard players operation #damage update_item *= #1000 update_item
