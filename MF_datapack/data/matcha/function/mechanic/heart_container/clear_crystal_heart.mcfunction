@@ -7,4 +7,5 @@ effect give @s regeneration 3 10 true
 effect give @s resistance 1 4 true
 
 # If they achieved max hearts in this last pick-up, grant the with_songs advancement
-execute if score @s Hearts >= maximum_hearts Hearts run advancement grant @s only matcha:with_songs/max_health
+# This is commented out until "With Songs" is added
+# execute if score @s Hearts >= maximum_hearts Hearts run advancement grant @s only matcha:with_songs/max_health
