@@ -130,6 +130,8 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Poplar Leaves, Log & Plank textures added
 - All Vertical Slab textures added (👥, specifically barce & fwhip's video)
 - Chisleled Sandstone Texture (🖌️, MrHatsy)
+- Nether Portal is now Purple (🖌️, LambS0up) (👥, Cosmoxnautica)
+- Skeletons (for Lore)
 
 #### Removed 
 
