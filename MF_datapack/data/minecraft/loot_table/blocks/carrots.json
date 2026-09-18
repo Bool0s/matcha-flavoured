@@ -22,7 +22,7 @@
 			"conditions": [
 				{
 					"block": "minecraft:carrots",
-					"condition": "minecraft:block_state_property",
+					"type": "minecraft:block_state_property",
 					"properties": {
 						"age": "7"
 					}

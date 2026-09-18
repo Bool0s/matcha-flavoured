@@ -6,13 +6,13 @@
 			"conditions": [
 				{
 					"block": "minecraft:large_fern",
-					"condition": "minecraft:block_state_property",
+					"type": "minecraft:block_state_property",
 					"properties": {
 						"half": "lower"
 					}
 				},
 				{
-					"condition": "minecraft:location_check",
+					"type": "minecraft:location_check",
 					"offsetY": 1,
 					"predicate": {
 						"block": {
@@ -32,7 +32,7 @@
 							"type": "minecraft:item",
 							"conditions": [
 								{
-									"condition": "minecraft:match_tool",
+									"type": "minecraft:match_tool",
 									"predicate": {
 										"items": "minecraft:shears"
 									}
@@ -51,7 +51,7 @@
 							"type": "minecraft:item",
 							"conditions": [
 								{
-									"condition": "minecraft:match_tool",
+									"type": "minecraft:match_tool",
 									"predicate": {
 										"items": "#minecraft:hoes"
 									}
@@ -76,13 +76,13 @@
 			"conditions": [
 				{
 					"block": "minecraft:large_fern",
-					"condition": "minecraft:block_state_property",
+					"type": "minecraft:block_state_property",
 					"properties": {
 						"half": "upper"
 					}
 				},
 				{
-					"condition": "minecraft:location_check",
+					"type": "minecraft:location_check",
 					"offsetY": -1,
 					"predicate": {
 						"block": {
@@ -102,7 +102,7 @@
 							"type": "minecraft:item",
 							"conditions": [
 								{
-									"condition": "minecraft:match_tool",
+									"type": "minecraft:match_tool",
 									"predicate": {
 										"items": "minecraft:shears"
 									}
@@ -121,7 +121,7 @@
 							"type": "minecraft:item",
 							"conditions": [
 								{
-									"condition": "minecraft:match_tool",
+									"type": "minecraft:match_tool",
 									"predicate": {
 										"items": "#minecraft:hoes"
 									}

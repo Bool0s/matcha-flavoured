@@ -8,7 +8,7 @@
 					"type": "minecraft:item",
 					"conditions": [
 						{
-							"condition": "minecraft:match_tool",
+							"type": "minecraft:match_tool",
 							"predicate": {
 								"items": "#matcha:vegetation_mineable"
 							}
@@ -20,7 +20,7 @@
 							"conditions": [
 								{
 									"block": "minecraft:glow_lichen",
-									"condition": "minecraft:block_state_property",
+									"type": "minecraft:block_state_property",
 									"properties": {
 										"down": "true"
 									}
@@ -34,7 +34,7 @@
 							"conditions": [
 								{
 									"block": "minecraft:glow_lichen",
-									"condition": "minecraft:block_state_property",
+									"type": "minecraft:block_state_property",
 									"properties": {
 										"up": "true"
 									}
@@ -48,7 +48,7 @@
 							"conditions": [
 								{
 									"block": "minecraft:glow_lichen",
-									"condition": "minecraft:block_state_property",
+									"type": "minecraft:block_state_property",
 									"properties": {
 										"north": "true"
 									}
@@ -62,7 +62,7 @@
 							"conditions": [
 								{
 									"block": "minecraft:glow_lichen",
-									"condition": "minecraft:block_state_property",
+									"type": "minecraft:block_state_property",
 									"properties": {
 										"south": "true"
 									}
@@ -76,7 +76,7 @@
 							"conditions": [
 								{
 									"block": "minecraft:glow_lichen",
-									"condition": "minecraft:block_state_property",
+									"type": "minecraft:block_state_property",
 									"properties": {
 										"west": "true"
 									}
@@ -90,7 +90,7 @@
 							"conditions": [
 								{
 									"block": "minecraft:glow_lichen",
-									"condition": "minecraft:block_state_property",
+									"type": "minecraft:block_state_property",
 									"properties": {
 										"east": "true"
 									}

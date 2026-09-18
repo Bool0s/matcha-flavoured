@@ -32,7 +32,7 @@
 			],
 			"conditions": [
 				{
-					"condition": "minecraft:killed_by_player"
+					"type": "minecraft:killed_by_player"
 				}
 			]
 		},
@@ -71,7 +71,7 @@
 			],
 			"conditions": [
 				{
-					"condition": "minecraft:killed_by_player"
+					"type": "minecraft:killed_by_player"
 				}
 			]
 		},
@@ -79,10 +79,10 @@
 			"bonus_rolls": 0,
 			"conditions": [
 				{
-					"condition": "minecraft:killed_by_player"
+					"type": "minecraft:killed_by_player"
 				},
 				{
-					"condition": "minecraft:entity_properties",
+					"type": "minecraft:entity_properties",
 					"entity": "this",
 					"predicate": {
 						"flags": {

@@ -11,10 +11,10 @@
 							"type": "minecraft:item",
 							"conditions": [
 								{
-									"condition": "minecraft:any_of",
+									"type": "minecraft:any_of",
 									"terms": [
 										{
-											"condition": "minecraft:match_tool",
+											"type": "minecraft:match_tool",
 											"predicate": {
 												"items": "minecraft:shears"
 											}
@@ -29,10 +29,10 @@
 							"conditions": [
 								{
 									"chance": 0.125,
-									"condition": "minecraft:random_chance"
+									"type": "minecraft:random_chance"
 								},
 								{
-									"condition": "minecraft:match_tool",
+									"type": "minecraft:match_tool",
 									"predicate": {
 										"items": "#minecraft:hoes"
 									}
@@ -58,7 +58,7 @@
 							"name": "minecraft:short_grass",
 							"conditions": [
 								{
-									"condition": "minecraft:match_tool",
+									"type": "minecraft:match_tool",
 									"predicate": {
 										"items": "#minecraft:hoes"
 									}

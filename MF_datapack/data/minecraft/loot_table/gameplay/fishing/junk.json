@@ -80,7 +80,7 @@
 					"type": "minecraft:item",
 					"conditions": [
 						{
-							"condition": "minecraft:location_check",
+							"type": "minecraft:location_check",
 							"predicate": {
 								"biomes": [
 									"minecraft:jungle",
@@ -99,7 +99,7 @@
 					"weight": 5,
 					"conditions": [
 						{
-							"condition": "minecraft:location_check",
+							"type": "minecraft:location_check",
 							"predicate": {
 								"biomes": [
 									"minecraft:mangrove_swamp",
@@ -126,7 +126,7 @@
 					"weight": 10,
 					"conditions": [
 						{
-							"condition": "minecraft:location_check",
+							"type": "minecraft:location_check",
 							"predicate": {
 								"biomes": [
 									"minecraft:mangrove_swamp",
@@ -153,7 +153,7 @@
 					"weight": 10,
 					"conditions": [
 						{
-							"condition": "minecraft:location_check",
+							"type": "minecraft:location_check",
 							"predicate": {
 								"biomes": [
 									"minecraft:dripstone_caves",

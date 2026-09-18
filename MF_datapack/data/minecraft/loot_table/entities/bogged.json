@@ -6,7 +6,7 @@
 			"bonus_rolls": 0,
 			"conditions": [
 				{
-					"condition": "minecraft:killed_by_player"
+					"type": "minecraft:killed_by_player"
 				}
 			],
 			"entries": [
@@ -72,7 +72,7 @@
 			],
 			"conditions": [
 				{
-					"condition": "minecraft:killed_by_player"
+					"type": "minecraft:killed_by_player"
 				}
 			]
 		},
@@ -101,7 +101,7 @@
 			],
 			"conditions": [
 				{
-					"condition": "minecraft:killed_by_player"
+					"type": "minecraft:killed_by_player"
 				}
 			]
 		},
@@ -139,7 +139,7 @@
 			],
 			"conditions": [
 				{
-					"condition": "minecraft:killed_by_player"
+					"type": "minecraft:killed_by_player"
 				}
 			]
 		}

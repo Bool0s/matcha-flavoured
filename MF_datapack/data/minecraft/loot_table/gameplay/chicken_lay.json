@@ -20,7 +20,7 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "condition": "minecraft:entity_properties",
+                  "type": "minecraft:entity_properties",
                   "entity": "this",
                   "predicate": {
                     "components": {
@@ -35,7 +35,7 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "condition": "minecraft:entity_properties",
+                  "type": "minecraft:entity_properties",
                   "entity": "this",
                   "predicate": {
                     "components": {
@@ -50,7 +50,7 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "condition": "minecraft:entity_properties",
+                  "type": "minecraft:entity_properties",
                   "entity": "this",
                   "predicate": {
                     "components": {

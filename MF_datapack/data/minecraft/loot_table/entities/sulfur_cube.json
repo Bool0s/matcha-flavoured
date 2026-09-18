@@ -9,7 +9,7 @@
 					"name": "minecraft:gunpowder",
 					"conditions": [
 						{
-							"condition": "minecraft:killed_by_player"
+							"type": "minecraft:killed_by_player"
 						}
 					],
 					"functions": [
@@ -38,7 +38,7 @@
 					"name": "minecraft:slime_ball",
 					"conditions": [
 						{
-							"condition": "minecraft:killed_by_player"
+							"type": "minecraft:killed_by_player"
 						}
 					],
 					"functions": [

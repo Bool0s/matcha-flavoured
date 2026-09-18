@@ -6,13 +6,13 @@
 			"conditions": [
 				{
 					"block": "minecraft:tall_grass",
-					"condition": "minecraft:block_state_property",
+					"type": "minecraft:block_state_property",
 					"properties": {
 						"half": "lower"
 					}
 				},
 				{
-					"condition": "minecraft:location_check",
+					"type": "minecraft:location_check",
 					"offsetY": 1,
 					"predicate": {
 						"block": {
@@ -32,7 +32,7 @@
 							"type": "minecraft:item",
 							"conditions": [
 								{
-									"condition": "minecraft:match_tool",
+									"type": "minecraft:match_tool",
 									"predicate": {
 										"items": "minecraft:shears"
 									}
@@ -51,14 +51,14 @@
 							"type": "minecraft:item",
 							"conditions": [
 								{
-									"condition": "minecraft:survives_explosion"
+									"type": "minecraft:survives_explosion"
 								},
 								{
 									"chance": 0.125,
-									"condition": "minecraft:random_chance"
+									"type": "minecraft:random_chance"
 								},
 								{
-									"condition": "minecraft:match_tool",
+									"type": "minecraft:match_tool",
 									"predicate": {
 										"items": "#minecraft:hoes"
 									}
@@ -80,7 +80,7 @@
 									],
 									"conditions": [
 										{
-											"condition": "minecraft:match_tool",
+											"type": "minecraft:match_tool",
 											"predicate": {
 												"items": "#minecraft:hoes"
 											}
@@ -99,13 +99,13 @@
 			"conditions": [
 				{
 					"block": "minecraft:tall_grass",
-					"condition": "minecraft:block_state_property",
+					"type": "minecraft:block_state_property",
 					"properties": {
 						"half": "upper"
 					}
 				},
 				{
-					"condition": "minecraft:location_check",
+					"type": "minecraft:location_check",
 					"offsetY": -1,
 					"predicate": {
 						"block": {
@@ -125,7 +125,7 @@
 							"type": "minecraft:item",
 							"conditions": [
 								{
-									"condition": "minecraft:match_tool",
+									"type": "minecraft:match_tool",
 									"predicate": {
 										"items": "minecraft:shears"
 									}
@@ -144,14 +144,14 @@
 							"type": "minecraft:item",
 							"conditions": [
 								{
-									"condition": "minecraft:survives_explosion"
+									"type": "minecraft:survives_explosion"
 								},
 								{
 									"chance": 0.125,
-									"condition": "minecraft:random_chance"
+									"type": "minecraft:random_chance"
 								},
 								{
-									"condition": "minecraft:match_tool",
+									"type": "minecraft:match_tool",
 									"predicate": {
 										"items": "#minecraft:hoes"
 									}
@@ -173,7 +173,7 @@
 									],
 									"conditions": [
 										{
-											"condition": "minecraft:match_tool",
+											"type": "minecraft:match_tool",
 											"predicate": {
 												"items": "#minecraft:hoes"
 											}

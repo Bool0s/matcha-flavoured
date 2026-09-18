@@ -13,7 +13,7 @@
               "name": "minecraft:deepslate_iron_ore",
               "conditions": [
                 {
-                  "condition": "minecraft:match_tool",
+                  "type": "minecraft:match_tool",
                   "predicate": {
                     "predicates": {
                       "minecraft:enchantments": [
@@ -34,7 +34,7 @@
               "name": "minecraft:iron_ingot",
               "conditions": [
                 {
-                  "condition": "minecraft:match_tool",
+                  "type": "minecraft:match_tool",
                   "predicate": {
                     "predicates": {
                       "minecraft:enchantments": [

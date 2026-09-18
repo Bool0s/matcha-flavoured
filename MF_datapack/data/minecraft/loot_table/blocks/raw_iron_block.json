@@ -4,7 +4,7 @@
 		{
 			"conditions": [
 				{
-					"condition": "minecraft:survives_explosion"
+					"type": "minecraft:survives_explosion"
 				}
 			],
 			"entries": [
@@ -15,7 +15,7 @@
 							"type": "minecraft:item",
 							"conditions": [
 								{
-									"condition": "minecraft:match_tool",
+									"type": "minecraft:match_tool",
 									"predicate": {
 										"predicates": {
 											"minecraft:enchantments": [
