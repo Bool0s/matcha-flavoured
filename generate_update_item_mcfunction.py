@@ -31,14 +31,14 @@ output.close()
 UPDATE_HELD_LOCATION = os.path.join("MF_datapack", "data", "matcha", "function", "update_old_items", "update_held_item.mcfunction")
 print(f"update_held_item.mcfunction located at: {UPDATE_HELD_LOCATION}\n")
 output = open(UPDATE_HELD_LOCATION, "w", encoding="utf-8")
-# Write command to summon an "empty" item
-output.write('summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:stone",count:1},PickupDelay:0s}\n')
+
 # Save selected item identifiers to storage for more performance
 output.write('data modify storage matcha:update_item id set value ""\n')
 output.write('data modify storage matcha:update_item translate set value ""\n')
 output.write('data modify storage matcha:update_item enchantments set value {}\n')
 output.write('data modify storage matcha:update_item id set from entity @s SelectedItem.id\n')
 output.write('data modify storage matcha:update_item translate set from entity @s SelectedItem.components.minecraft:item_name.translate\n')
+output.write('data remove storage matcha:update_item item\n')
 # Go trough recipe directories and copy data from the json files
 skipped_file_count = 0
 files_without_components = []
@@ -96,7 +96,7 @@ ID_CHECKED_START = 'execute if data storage matcha:update_item {id:"'
 ID_CHECKED_END = '"}'
 NAME_CHECKED_START = 'execute if data storage matcha:update_item {translate:"'
 NAME_CHECKED_END = '"}'
-DATA_MERGE = ' run data modify entity @n[type=item] Item merge value '
+DATA_MERGE = ' run data modify storage matcha:update_item item set value '
 for file in final_jsons:
     open_file = open(file, "r", encoding="utf-8")
     result_data = json.load(open_file)["result"]
@@ -122,29 +122,31 @@ for file in final_jsons:
     output.write(hand_check + DATA_MERGE + str(result_data) + '\n')
     open_file.close()
 
+# return if item couldn't be identified (item in storage doesn't exist)
+output.write('execute unless data storage matcha:update_item item run tellraw @s {"text":"The held item cannot be updated.","color":"red"}\n')
+output.write('execute unless data storage matcha:update_item item run return fail\n')
+
 # merge components based on item (enchantments, durability, current name)
 MERGE_DATA = [
     '\n# Merge Item Data \n',
-    'data modify entity @n[type=item] Item.count set from entity @s SelectedItem.count\n'
-    'data modify entity @n[type=item] Item.components.minecraft:custom_name set from entity @s SelectedItem.components.minecraft:custom_name\n',
+    'data modify storage matcha:update_item item.count set from entity @s SelectedItem.count\n'
+    'data modify storage matcha:update_item item.components.minecraft:custom_name set from entity @s SelectedItem.components.minecraft:custom_name\n',
     'execute store result score #damage update_item run data get entity @s SelectedItem.components.minecraft:damage\n',
     'scoreboard players operation #damage update_item *= #1000 update_item\n',
     'execute store result score #durability update_item run data get entity @s SelectedItem.components.minecraft:max_damage\n',
     'scoreboard players operation #damage update_item /= #durability update_item\n',
-    'execute store result score #durability update_item run data get entity @n[type=item] Item.components.minecraft:max_damage\n',
+    'execute store result score #durability update_item run data get storage matcha:update_item item.components.minecraft:max_damage\n',
     'scoreboard players operation #damage update_item *= #durability update_item\n',
     'scoreboard players operation #damage update_item /= #1000 update_item\n',
-    'execute store result entity @n[type=item] Item.components.minecraft:damage int 1 run scoreboard players get #damage update_item\n',
-    'data modify entity @n[type=item] Item.components.minecraft:enchantments merge from entity @s SelectedItem.components.minecraft:enchantments\n',
+    'execute store result storage matcha:update_item item.components.minecraft:damage int 1 run scoreboard players get #damage update_item\n',
+    'data modify storage matcha:update_item item.components.minecraft:enchantments merge from entity @s SelectedItem.components.minecraft:enchantments\n',
     ]
 output.writelines(MERGE_DATA)
 
-#store enchantments in storage for more performance
-output.write('data modify storage matcha:update_item enchantments set from entity @n[type=item] Item.components.minecraft:enchantments\n')
 # raise enchantments to intrinsic levels and lower fortune if not electrum
 for enchantment in enchantments.keys():
     output.write(f'# {enchantment}\n')
-    output.write(f'execute store result score #enchantmentLvl update_item run data get storage matcha:update_item enchantments.{enchantment} 1\n')
+    output.write(f'execute store result score #enchantmentLvl update_item run data get storage matcha:update_item item.components.minecraft:enchantments.{enchantment} 1\n')
 
     if enchantment == "minecraft:fortune":
         output.write('execute if score #enchantmentLvl update_item matches 1.. run scoreboard players set #enchantmentLvl update_item 1\n')
@@ -154,16 +156,15 @@ for enchantment in enchantments.keys():
         if level <= 1: continue
         output.write(f'{check} if score #enchantmentLvl update_item matches ..{level} run scoreboard players set #enchantmentLvl update_item {level}\n')
     #store level
-    output.write(f'execute if score #enchantmentLvl update_item matches 1.. store result storage matcha:update_item enchantments.{enchantment} int 1 run scoreboard players get #enchantmentLvl update_item\n')
-#copy enchantments from storage
-output.write('data modify entity @n[type=item] Item.components.minecraft:enchantments set from storage matcha:update_item enchantments\n')
+    output.write(f'execute if score #enchantmentLvl update_item matches 1.. store result storage matcha:update_item item.components.minecraft:enchantments.{enchantment} int 1 run scoreboard players get #enchantmentLvl update_item\n')
+
 # cleanup stone base item or hand item depending on whether the held item could be identified
 CLEANUP = [
-    '#remove mainhand item if it was a valid item (summoned item is no longer stone) and display success/error message\n',
-    'execute unless entity @n[type=item,nbt={Item:{id:"minecraft:stone"}}] run item replace entity @s weapon.mainhand with air\n',
-    'execute unless entity @n[type=item,nbt={Item:{id:"minecraft:stone"}}] run tellraw @s {"text":"The held item has been successfully updated.","color":"green"}\n',
-    'execute if entity @n[type=item,nbt={Item:{id:"minecraft:stone"}}] run tellraw @s {"text":"The held item cannot be updated.","color":"red"}\n',
-    'execute if entity @n[type=item,nbt={Item:{id:"minecraft:stone"}}] run kill @n[type=item]\n'
+    '#remove mainhand item, summon new item and set data, display success message\n',
+    'item replace entity @s weapon.mainhand with air\n',
+    'summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:stone",count:1},Tags:["update_item"],PickupDelay:0s}\n',
+    'data modify entity @n[type=item,tag=update_item] Item set from storage matcha:update_item item\n',
+    'tellraw @s {"text":"The held item has been successfully updated.","color":"green"}\n',
     ]
 output.writelines(CLEANUP)
 
