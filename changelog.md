@@ -154,14 +154,10 @@ This symbol (🖌️) means the art was added by community artists (music is art
 ## BUGS
 -
 
-## Testing Needed
-- All LTs
-- Fishing treasure LT (Does it give the buried treasure?)
-
-
 
 ## 26.3
 - Poplar leaves crafting needs to be added to adv
+- Poplar Leaves LTs need to be added
 - All concrete and wool needs to be in stonecutter
 
 
