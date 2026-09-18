@@ -2,7 +2,7 @@
   "type": "minecraft:blasting",
   "group": "netherite_ingot",
   "category": "misc",
-  "cookingtime": 100,
+  "cookingtime": 200,
   "experience": 0.2,
   "ingredient": [
     "minecraft:netherite_pickaxe",
