@@ -3,10 +3,10 @@
 	"criteria": {
 		"get_primary_material": {
 			"trigger": "minecraft:item_used_on_block",
-			"conditions": {
+			"types": {
 				"location": [
 					{
-						"condition": "minecraft:location_check",
+						"type": "minecraft:location_check",
 						"predicate": {
 							"block": {
 								"blocks": "minecraft:campfire"
@@ -14,7 +14,7 @@
 						}
 					},
 					{
-						"condition": "minecraft:match_tool",
+						"type": "minecraft:match_tool",
 						"predicate": {
 							"items": "minecraft:flint_and_steel"
 						}

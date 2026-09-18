@@ -1,10 +1,10 @@
 {
 	"criteria": {
 		"on_sulfur": {
-			"conditions": {
+			"types": {
 				"player": [
 					{
-						"condition": "minecraft:entity_properties",
+						"type": "minecraft:entity_properties",
 						"entity": "this",
 						"predicate": {
 							"minecraft:stepping_on": {

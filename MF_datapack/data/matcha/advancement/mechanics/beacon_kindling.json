@@ -2,10 +2,10 @@
 	"criteria": {
 		"use_item": {
 			"trigger": "minecraft:item_used_on_block",
-			"conditions": {
+			"types": {
 				"location": [
 					{
-						"condition": "minecraft:match_tool",
+						"type": "minecraft:match_tool",
 						"predicate": {
 							"components": {
 								"minecraft:item_model": "matcha:beacon_kindling"

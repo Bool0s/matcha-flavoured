@@ -1,7 +1,7 @@
 {
 	"criteria": {
 		"summon_wither": {
-			"conditions": {
+			"types": {
 				"entity": {
 					"minecraft:entity_type": "minecraft:wither"
 				}

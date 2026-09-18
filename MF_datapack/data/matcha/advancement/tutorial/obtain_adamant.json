@@ -3,7 +3,7 @@
   "criteria": {
     "get_smithing": {
       "trigger": "minecraft:inventory_changed",
-      "conditions": {
+      "types": {
         "items": [
           {
             "items": "minecraft:netherite_ingot"
