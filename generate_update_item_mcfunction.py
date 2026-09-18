@@ -35,7 +35,6 @@ output = open(UPDATE_HELD_LOCATION, "w", encoding="utf-8")
 # Save selected item identifiers to storage for more performance
 output.write('data modify storage matcha:update_item id set value ""\n')
 output.write('data modify storage matcha:update_item translate set value ""\n')
-output.write('data modify storage matcha:update_item enchantments set value {}\n')
 output.write('data modify storage matcha:update_item id set from entity @s SelectedItem.id\n')
 output.write('data modify storage matcha:update_item translate set from entity @s SelectedItem.components.minecraft:item_name.translate\n')
 output.write('data remove storage matcha:update_item item\n')

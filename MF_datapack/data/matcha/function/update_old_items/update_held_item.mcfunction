@@ -1,6 +1,5 @@
 data modify storage matcha:update_item id set value ""
 data modify storage matcha:update_item translate set value ""
-data modify storage matcha:update_item enchantments set value {}
 data modify storage matcha:update_item id set from entity @s SelectedItem.id
 data modify storage matcha:update_item translate set from entity @s SelectedItem.components.minecraft:item_name.translate
 data remove storage matcha:update_item item
