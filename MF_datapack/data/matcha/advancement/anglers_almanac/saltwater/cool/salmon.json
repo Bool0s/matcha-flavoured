@@ -33,7 +33,7 @@
   "criteria": {
     "catch": {
       "trigger": "minecraft:fishing_rod_hooked",
-      "conditions": {
+      "types": {
         "player": {
           "minecraft:type_specific/player": {
             "advancements": {

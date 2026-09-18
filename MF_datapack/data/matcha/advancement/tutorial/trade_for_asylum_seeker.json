@@ -3,7 +3,7 @@
 	"criteria": {
 		"traded": {
 			"trigger": "minecraft:villager_trade",
-			"conditions": {
+			"types": {
 				"villager": {},
 				"item": {
 					"items": "minecraft:villager_spawn_egg"

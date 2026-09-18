@@ -3,10 +3,10 @@
 	"criteria": {
 		"opened_door": {
 			"trigger": "minecraft:any_block_use",
-			"conditions": {
+			"types": {
 				"location": [
 					{
-						"condition": "minecraft:block_state_property",
+						"type": "minecraft:block_state_property",
 						"block": "minecraft:oak_door",
 						"properties": {
 							"open": "true"

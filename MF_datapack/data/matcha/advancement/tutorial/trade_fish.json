@@ -3,7 +3,7 @@
 	"criteria": {
 		"traded": {
 			"trigger": "minecraft:villager_trade",
-			"conditions": {
+			"types": {
 				"villager": {
 					"minecraft:nbt": "{VillagerData:{profession:\"minecraft:fisherman\"}}"
 				},

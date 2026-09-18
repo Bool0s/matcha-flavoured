@@ -3,7 +3,7 @@
 	"criteria": {
 		"killed_villager": {
 			"trigger": "minecraft:player_killed_entity",
-			"conditions": {
+			"types": {
 				"entity": {
 					"minecraft:entity_type": "minecraft:villager"
 				}
@@ -11,7 +11,7 @@
 		},
 		"killed_wandering_traveller": {
 			"trigger": "minecraft:player_killed_entity",
-			"conditions": {
+			"types": {
 				"entity": {
 					"minecraft:entity_type": "minecraft:wandering_trader"
 				}

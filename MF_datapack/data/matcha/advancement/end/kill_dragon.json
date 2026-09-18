@@ -2,10 +2,10 @@
     "parent": "matcha:end/root",
     "criteria": {
         "killed_dragon": {
-            "conditions": {
+            "types": {
                 "entity": [
                     {
-                        "condition": "minecraft:entity_properties",
+                        "type": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
                             "minecraft:entity_type": "minecraft:ender_dragon"
