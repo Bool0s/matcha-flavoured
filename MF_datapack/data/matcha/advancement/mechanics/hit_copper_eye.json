@@ -2,10 +2,10 @@
 	"parent": "minecraft:recipes/root",
 	"criteria": {
 		"hit_target": {
-			"types": {
+			"conditions": {
 				"projectile": [
 					{
-						"type": "minecraft:entity_properties",
+						"condition": "minecraft:entity_properties",
 						"entity": "this",
 						"predicate": {}
 					}

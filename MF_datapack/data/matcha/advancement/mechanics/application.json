@@ -2,10 +2,10 @@
 	"criteria": {
 		"use_item": {
 			"trigger": "minecraft:item_used_on_block",
-			"types": {
+			"conditions": {
 				"location": [
 					{
-						"type": "minecraft:match_tool",
+						"condition": "minecraft:match_tool",
 						"predicate": {
 							"components": {
 								"minecraft:item_model": "matcha:application"

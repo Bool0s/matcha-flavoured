@@ -2,10 +2,10 @@
 	"parent": "matcha:tutorial/enter_nether",
 	"criteria": {
 		"in_stronghold": {
-			"types": {
+			"conditions": {
 				"player": [
 					{
-						"type": "minecraft:entity_properties",
+						"condition": "minecraft:entity_properties",
 						"entity": "this",
 						"predicate": {
 							"location": {

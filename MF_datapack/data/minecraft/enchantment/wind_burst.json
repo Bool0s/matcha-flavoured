@@ -35,7 +35,7 @@
         },
         "enchanted": "attacker",
         "requirements": {
-          "type": "minecraft:entity_properties",
+          "condition": "minecraft:entity_properties",
           "entity": "direct_attacker",
           "predicate": {
             "minecraft:flags": {

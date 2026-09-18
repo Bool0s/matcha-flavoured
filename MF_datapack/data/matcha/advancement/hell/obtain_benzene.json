@@ -3,7 +3,7 @@
   "criteria": {
     "get_benzene": {
       "trigger": "minecraft:inventory_changed",
-      "types": {
+      "conditions": {
         "items": [
           {
             "items": "minecraft:endermite_spawn_egg"

@@ -80,7 +80,7 @@
 													}
 												},
 												{
-													"type": "minecraft:entity_properties",
+													"condition": "minecraft:entity_properties",
 													"entity": "this",
 													"predicate": {
 														"flags": {
@@ -109,10 +109,10 @@
 											}
 										},
 										{
-											"type": "minecraft:any_of",
+											"condition": "minecraft:any_of",
 											"terms": [
 												{
-													"type": "minecraft:entity_properties",
+													"condition": "minecraft:entity_properties",
 													"entity": "this",
 													"predicate": {
 														"movement_affected_by": {
@@ -123,7 +123,7 @@
 													}
 												},
 												{
-													"type": "minecraft:entity_properties",
+													"condition": "minecraft:entity_properties",
 													"entity": "this",
 													"predicate": {
 														"stepping_on": {
@@ -167,10 +167,10 @@
 							}
 						},
 						{
-							"type": "minecraft:any_of",
+							"condition": "minecraft:any_of",
 							"terms": [
 								{
-									"type": "minecraft:entity_properties",
+									"condition": "minecraft:entity_properties",
 									"entity": "this",
 									"predicate": {
 										"movement_affected_by": {
@@ -181,7 +181,7 @@
 									}
 								},
 								{
-									"type": "minecraft:entity_properties",
+									"condition": "minecraft:entity_properties",
 									"entity": "this",
 									"predicate": {
 										"stepping_on": {
@@ -221,10 +221,10 @@
 					}
 				},
 				"requirements": {
-					"type": "minecraft:all_of",
+					"condition": "minecraft:all_of",
 					"terms": [
 						{
-							"type": "minecraft:entity_properties",
+							"condition": "minecraft:entity_properties",
 							"entity": "this",
 							"predicate": {
 								"flags": {
@@ -240,10 +240,10 @@
 							}
 						},
 						{
-							"type": "minecraft:any_of",
+							"condition": "minecraft:any_of",
 							"terms": [
 								{
-									"type": "minecraft:entity_properties",
+									"condition": "minecraft:entity_properties",
 									"entity": "this",
 									"predicate": {
 										"movement_affected_by": {
@@ -254,7 +254,7 @@
 									}
 								},
 								{
-									"type": "minecraft:entity_properties",
+									"condition": "minecraft:entity_properties",
 									"entity": "this",
 									"predicate": {
 										"stepping_on": {
