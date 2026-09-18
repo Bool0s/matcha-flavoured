@@ -50,7 +50,7 @@
   "criteria": {
     "root": {
       "trigger": "minecraft:tick",
-      "conditions": {
+      "types": {
         "player": {
           "minecraft:type_specific/player": {
             "advancements": {
