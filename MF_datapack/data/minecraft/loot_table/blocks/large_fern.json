@@ -5,9 +5,9 @@
 			"bonus_rolls": 0,
 			"conditions": [
 				{
-					"block": "minecraft:large_fern",
-					"type": "minecraft:block_state_property",
-					"properties": {
+					"blocks": "minecraft:large_fern",
+					"type": "minecraft:match_block",
+					"state": {
 						"half": "lower"
 					}
 				},
@@ -75,9 +75,9 @@
 			"bonus_rolls": 0,
 			"conditions": [
 				{
-					"block": "minecraft:large_fern",
-					"type": "minecraft:block_state_property",
-					"properties": {
+					"blocks": "minecraft:large_fern",
+					"type": "minecraft:match_block",
+					"state": {
 						"half": "upper"
 					}
 				},

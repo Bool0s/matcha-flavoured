@@ -6,9 +6,9 @@
 			"conditions": {
 				"location": [
 					{
-						"type": "minecraft:block_state_property",
-						"block": "minecraft:oak_door",
-						"properties": {
+						"type": "minecraft:match_block",
+						"blocks": "minecraft:oak_door",
+						"state": {
 							"open": "true"
 						}
 					}

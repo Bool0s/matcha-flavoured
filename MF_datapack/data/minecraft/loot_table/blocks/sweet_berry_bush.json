@@ -10,9 +10,9 @@
 			"bonus_rolls": 0,
 			"conditions": [
 				{
-					"block": "minecraft:sweet_berry_bush",
-					"type": "minecraft:block_state_property",
-					"properties": {
+					"blocks": "minecraft:sweet_berry_bush",
+					"type": "minecraft:match_block",
+					"state": {
 						"age": "3"
 					}
 				}
@@ -57,9 +57,9 @@
 			"bonus_rolls": 0,
 			"conditions": [
 				{
-					"block": "minecraft:sweet_berry_bush",
-					"type": "minecraft:block_state_property",
-					"properties": {
+					"blocks": "minecraft:sweet_berry_bush",
+					"type": "minecraft:match_block",
+					"state": {
 						"age": "2"
 					}
 				}

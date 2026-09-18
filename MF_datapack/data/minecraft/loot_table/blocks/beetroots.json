@@ -14,8 +14,8 @@
 							"conditions": [
 								{
 									"block": "minecraft:beetroots",
-									"type": "minecraft:block_state_property",
-									"properties": {
+									"type": "minecraft:match_block",
+									"state": {
 										"age": "3"
 									}
 								}

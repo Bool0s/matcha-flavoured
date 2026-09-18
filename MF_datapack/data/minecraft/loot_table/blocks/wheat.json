@@ -25,9 +25,9 @@
 							],
 							"conditions": [
 								{
-									"block": "minecraft:wheat",
-									"type": "minecraft:block_state_property",
-									"properties": {
+									"blocks": "minecraft:wheat",
+									"type": "minecraft:match_block",
+									"state": {
 										"age": "7"
 									}
 								}
@@ -47,9 +47,9 @@
 			"bonus_rolls": 0,
 			"conditions": [
 				{
-					"block": "minecraft:wheat",
-					"type": "minecraft:block_state_property",
-					"properties": {
+					"blocks": "minecraft:wheat",
+					"type": "minecraft:match_block",
+					"state": {
 						"age": "7"
 					}
 				}

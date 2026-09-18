@@ -19,9 +19,9 @@
 							"add": true,
 							"conditions": [
 								{
-									"block": "minecraft:glow_lichen",
-									"type": "minecraft:block_state_property",
-									"properties": {
+									"blocks": "minecraft:glow_lichen",
+									"type": "minecraft:match_block",
+									"state": {
 										"down": "true"
 									}
 								}
@@ -33,9 +33,9 @@
 							"add": true,
 							"conditions": [
 								{
-									"block": "minecraft:glow_lichen",
-									"type": "minecraft:block_state_property",
-									"properties": {
+									"blocks": "minecraft:glow_lichen",
+									"type": "minecraft:match_block",
+									"state": {
 										"up": "true"
 									}
 								}
@@ -47,9 +47,9 @@
 							"add": true,
 							"conditions": [
 								{
-									"block": "minecraft:glow_lichen",
-									"type": "minecraft:block_state_property",
-									"properties": {
+									"blocks": "minecraft:glow_lichen",
+									"type": "minecraft:match_block",
+									"state": {
 										"north": "true"
 									}
 								}
@@ -61,9 +61,9 @@
 							"add": true,
 							"conditions": [
 								{
-									"block": "minecraft:glow_lichen",
-									"type": "minecraft:block_state_property",
-									"properties": {
+									"blocks": "minecraft:glow_lichen",
+									"type": "minecraft:match_block",
+									"state": {
 										"south": "true"
 									}
 								}
@@ -75,9 +75,9 @@
 							"add": true,
 							"conditions": [
 								{
-									"block": "minecraft:glow_lichen",
-									"type": "minecraft:block_state_property",
-									"properties": {
+									"blocks": "minecraft:glow_lichen",
+									"type": "minecraft:match_block",
+									"state": {
 										"west": "true"
 									}
 								}
@@ -89,9 +89,9 @@
 							"add": true,
 							"conditions": [
 								{
-									"block": "minecraft:glow_lichen",
-									"type": "minecraft:block_state_property",
-									"properties": {
+									"blocks": "minecraft:glow_lichen",
+									"type": "minecraft:match_block",
+									"state": {
 										"east": "true"
 									}
 								}
