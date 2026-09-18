@@ -12,7 +12,7 @@
 					"probability": 0.3
 				},
 				"output_state": {
-					"Name": "minecraft:cobweb"
+					"id": "minecraft:cobweb"
 				}
 			},
 			{
@@ -24,7 +24,7 @@
 					"block": "minecraft:magenta_glazed_terracotta"
 				},
 				"output_state": {
-					"Name": "minecraft:air"
+					"id": "minecraft:air"
 				}
 			}
 		]
@@ -42,8 +42,8 @@
 					"probability": 0.25
 				},
 				"output_state": {
-					"Name": "minecraft:decorated_pot",
-					"Properties": {
+					"id": "minecraft:decorated_pot",
+					"properties": {
 						"cracked": "true"
 					}
 				},
@@ -62,7 +62,7 @@
 					"probability": 0.25
 				},
 				"output_state": {
-					"Name": "minecraft:flower_pot"
+					"id": "minecraft:flower_pot"
 				}
 			},
 			{
@@ -75,7 +75,7 @@
 					"probability": 0.0625
 				},
 				"output_state": {
-					"Name": "minecraft:vault"
+					"id": "minecraft:vault"
 				}
 			},
 			{
@@ -88,7 +88,7 @@
 					"probability": 0.25
 				},
 				"output_state": {
-					"Name": "minecraft:cobweb"
+					"id": "minecraft:cobweb"
 				}
 			},
 			{
@@ -100,7 +100,7 @@
 					"block": "minecraft:yellow_glazed_terracotta"
 				},
 				"output_state": {
-					"Name": "minecraft:air"
+					"id": "minecraft:air"
 				}
 			}
 		]
@@ -118,7 +118,7 @@
 					"probability": 0.5
 				},
 				"output_state": {
-					"Name": "minecraft:decorated_pot",
+					"id": "minecraft:decorated_pot",
 					"Properties": {
 						"cracked": "true"
 					}
@@ -138,7 +138,7 @@
 					"probability": 0.3
 				},
 				"output_state": {
-					"Name": "minecraft:flower_pot"
+					"id": "minecraft:flower_pot"
 				}
 			},
 			{
@@ -150,7 +150,7 @@
 					"block": "minecraft:brown_glazed_terracotta"
 				},
 				"output_state": {
-					"Name": "minecraft:air"
+					"id": "minecraft:air"
 				}
 			}
 		]
@@ -168,7 +168,7 @@
 					"probability": 0.65
 				},
 				"output_state": {
-					"Name": "minecraft:stone_bricks"
+					"id": "minecraft:stone_bricks"
 				}
 			},
 			{
@@ -181,7 +181,7 @@
 					"probability": 0.15
 				},
 				"output_state": {
-					"Name": "minecraft:cracked_stone_bricks"
+					"id": "minecraft:cracked_stone_bricks"
 				}
 			},
 			{
@@ -193,7 +193,7 @@
 					"block": "minecraft:tuff_bricks"
 				},
 				"output_state": {
-					"Name": "minecraft:mossy_stone_bricks"
+					"id": "minecraft:mossy_stone_bricks"
 				}
 			}
 		]
@@ -210,7 +210,7 @@
 					"block": "minecraft:polished_tuff"
 				},
 				"output_state": {
-					"Name": "minecraft:andesite"
+					"id": "minecraft:andesite"
 				}
 			}
 		]
@@ -228,8 +228,8 @@
 					"block": "minecraft:cyan_glazed_terracotta"
 				},
 				"output_state": {
-					"Name": "minecraft:vault",
-					"Properties": {
+					"id": "minecraft:vault",
+					"properties": {
 						"ominous": "true"
 					}
 				}
@@ -243,8 +243,8 @@
 					"block": "minecraft:orange_glazed_terracotta"
 				},
 				"output_state": {
-					"Name": "minecraft:vault",
-					"Properties": {}
+					"id": "minecraft:vault",
+					"properties": {}
 				}
 			}
 		]
@@ -262,7 +262,7 @@
 					"probability": 0.3
 				},
 				"output_state": {
-					"Name": "minecraft:deepslate_emerald_ore"
+					"id": "minecraft:deepslate_emerald_ore"
 				}
 			},
 			{
@@ -274,7 +274,7 @@
 					"block": "minecraft:blue_glazed_terracotta"
 				},
 				"output_state": {
-					"Name": "minecraft:deepslate"
+					"id": "minecraft:deepslate"
 				}
 			}
 		]
@@ -292,7 +292,7 @@
 					"probability": 0.3
 				},
 				"output_state": {
-					"Name": "minecraft:emerald_ore"
+					"id": "minecraft:emerald_ore"
 				}
 			},
 			{
@@ -304,7 +304,7 @@
 					"block": "minecraft:pink_glazed_terracotta"
 				},
 				"output_state": {
-					"Name": "minecraft:stone"
+					"id": "minecraft:stone"
 				}
 			}
 		]

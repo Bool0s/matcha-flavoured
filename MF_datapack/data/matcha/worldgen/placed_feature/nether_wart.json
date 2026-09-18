@@ -21,8 +21,8 @@
 			"count": 16
 		},
 		{
-			"type": "minecraft:random_offset",
-			"xz_spread": {
+			"type": "minecraft:offset",
+			"x": {
 				"type": "minecraft:weighted_list",
 				"distribution": [
 					{
@@ -44,7 +44,29 @@
 					}
 				]
 			},
-			"y_spread": {
+			"z": {
+				"type": "minecraft:weighted_list",
+				"distribution": [
+					{
+						"data": {
+							"type": "uniform",
+							"min_inclusive": -1,
+							"max_inclusive": 1
+						},
+						"weight": 5
+					},
+					{
+						"data": {
+							"type": "trapezoid",
+							"min": -3,
+							"max": 3,
+							"plateau": 2
+						},
+						"weight": 1
+					}
+				]
+			},
+			"y": {
 				"type": "minecraft:constant",
 				"value": 2
 			}

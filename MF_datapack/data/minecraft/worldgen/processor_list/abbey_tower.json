@@ -12,7 +12,7 @@
 					"probability": 0.3
 				},
 				"output_state": {
-					"Name": "minecraft:cobweb"
+					"id": "minecraft:cobweb"
 				}
 			},
 			{
@@ -24,7 +24,7 @@
 					"block": "minecraft:magenta_glazed_terracotta"
 				},
 				"output_state": {
-					"Name": "minecraft:air"
+					"id": "minecraft:air"
 				}
 			}
 		]
@@ -42,8 +42,8 @@
 					"probability": 0.203125
 				},
 				"output_state": {
-					"Name": "minecraft:decorated_pot",
-					"Properties": {
+					"id": "minecraft:decorated_pot",
+					"properties": {
 						"cracked": "true"
 					}
 				},
@@ -62,7 +62,7 @@
 					"probability": 0.203125
 				},
 				"output_state": {
-					"Name": "minecraft:flower_pot"
+					"id": "minecraft:flower_pot"
 				}
 			},
 			{
@@ -75,7 +75,7 @@
 					"probability": 0.125
 				},
 				"output_state": {
-					"Name": "minecraft:skeleton_skull"
+					"id": "minecraft:skeleton_skull"
 				}
 			},
 			{
@@ -88,7 +88,7 @@
 					"probability": 0.0625
 				},
 				"output_state": {
-					"Name": "minecraft:vault"
+					"id": "minecraft:vault"
 				}
 			},
 			{
@@ -101,7 +101,7 @@
 					"probability": 0.203125
 				},
 				"output_state": {
-					"Name": "minecraft:cobweb"
+					"id": "minecraft:cobweb"
 				}
 			},
 			{
@@ -113,7 +113,7 @@
 					"block": "minecraft:yellow_glazed_terracotta"
 				},
 				"output_state": {
-					"Name": "minecraft:air"
+					"id": "minecraft:air"
 				}
 			}
 		]
@@ -131,8 +131,8 @@
 					"probability": 0.33
 				},
 				"output_state": {
-					"Name": "minecraft:decorated_pot",
-					"Properties": {
+					"id": "minecraft:decorated_pot",
+					"properties": {
 						"cracked": "true"
 					}
 				},
@@ -151,7 +151,7 @@
 					"probability": 0.21
 				},
 				"output_state": {
-					"Name": "minecraft:flower_pot"
+					"id": "minecraft:flower_pot"
 				}
 			},
 			{
@@ -163,7 +163,7 @@
 					"block": "minecraft:brown_glazed_terracotta"
 				},
 				"output_state": {
-					"Name": "minecraft:air"
+					"id": "minecraft:air"
 				}
 			}
 		]
@@ -180,7 +180,7 @@
 					"block": "minecraft:tuff_bricks"
 				},
 				"output_state": {
-					"Name": "minecraft:stone"
+					"id": "minecraft:stone"
 				}
 			}
 		]
@@ -197,7 +197,7 @@
 					"block": "minecraft:polished_tuff"
 				},
 				"output_state": {
-					"Name": "minecraft:andesite"
+					"id": "minecraft:andesite"
 				}
 			}
 		]

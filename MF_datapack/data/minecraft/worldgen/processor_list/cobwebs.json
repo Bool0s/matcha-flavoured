@@ -12,7 +12,7 @@
 					"probability": 0.3
 				},
 				"output_state": {
-					"Name": "minecraft:cobweb"
+					"id": "minecraft:cobweb"
 				}
 			},
 			{
@@ -24,7 +24,7 @@
 					"block": "minecraft:magenta_glazed_terracotta"
 				},
 				"output_state": {
-					"Name": "minecraft:air"
+					"id": "minecraft:air"
 				}
 			}
 		]
