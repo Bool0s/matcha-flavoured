@@ -67,7 +67,8 @@ This symbol (🖌️) means the art was added by community artists (music is art
     * If some people do it? Its fine, fun little shortcut you can do
     * If a lot of people do it? Something's gone wrong
 - The Quran and Tanakh added to trial chamber loot (Temp fix)
-
+- Post-dragon, Abbeys can still spawn mobs
+- Ofuda trades now require Crystal hearts
 
 
 #### Cooking Changes & Additions 
@@ -103,9 +104,6 @@ This symbol (🖌️) means the art was added by community artists (music is art
 
 
 ### Bugs
-#### Multiplayer Bugs
-- 
-#### General
 - "Ophaned" villagers can only be children (💻, HapppySpud)
 - Fortune now works on: Tomatoes, Glow berry vines, Chorus Plant (I think some of this was vanilla-intended, but I added it in regardless)
 - Warding's (✟ x) effects were inconsistent at various levels, this was fixed
@@ -118,6 +116,9 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Warding stone particles updated to match new warding ones
 - Spawners no logner kill you when you place a block on them, only when you try to use a spawn egg on it (💻, HapppySpud)
 - Copper torches now consistent with soul torches (💻, MrHatsy)
+- Allays did not spawn in The Abbey, they now spawn on generation instead
+- "Bonfire Lit" Advancement works now
+- Post-dragon, abbey mobs would vanish, this is no longer true
 #### Lang
 - Warding Shield, Sword, Silver Sword now uses translate
 #### Recipe Unlocks Fixed
@@ -129,6 +130,8 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Poplar Leaves, Log & Plank textures added
 - All Vertical Slab textures added (👥, specifically barce & fwhip's video)
 - Chisleled Sandstone Texture (🖌️, MrHatsy)
+- Nether Portal is now Purple (🖌️, LambS0up) (👥, Cosmoxnautica)
+- Skeletons (for Lore)
 
 #### Removed 
 
@@ -147,35 +150,14 @@ This symbol (🖌️) means the art was added by community artists (music is art
 
 
 # DOCKET (MUST be done before next release)
-
-## Abbey Rework
-- Replace abbey boon rooms with shard instead of crystal hearts
-
-## Scoreboards to be removed (in the update function thing)
-- apotropaic
-- scoreboard players add copper_age Hearts 0
-- scoreboard players add iron_age Hearts 0
-- scoreboard players add diamond_age Hearts 0
-- scoreboard players add nether_age Hearts 0
-- scoreboard players add electrum_age Hearts 0
-- scoreboard players add netherite_age Hearts 0
-- scoreboard players add end_age Hearts 0
-- scoreboard players set 1 deaths 1
-- scoreboard players add current_minimum_hearts Hearts 0
-- scoreboard players set minimum_normal_hearts Hearts 12
-- scoreboard players set minimum_hard_hearts Hearts 6
-- scoreboard players set maximum_hearts Hearts 60
   
 ## BUGS
-- Beacon Kindling Adv needs updated item model (not triggering)
+-
 
 ## Testing Needed
 - All LTs
 - Fishing treasure LT (Does it give the buried treasure?)
 
-## Loottables Needed
-- Copper Eq
-- Chainmail Eq
 
 
 ## 26.3
@@ -197,6 +179,7 @@ This symbol (🖌️) means the art was added by community artists (music is art
 - Netherite -> Smelting
 - Shakudo -> Silk Touch/Life Steal
 - ??? -> Protection?? NOTHING...maybe, I just think it should be something only sweats get. But maybe as a replacement we can offer different protections. Ie. Undead protection, PVP protection, and just remove protection entirely
+- Unbreakable Enchant from Wither Heart
 
 ## Copper Intrinsic
 - Lightning Rod/Conductive: redirects all "aura"-based nonsense to itsself, and nullifies it

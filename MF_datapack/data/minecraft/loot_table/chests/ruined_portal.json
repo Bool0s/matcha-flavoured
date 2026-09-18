@@ -40,7 +40,7 @@
 				},
 				{
 					"type": "minecraft:loot_table",
-					"value": "minecraft:food/golden_carrot",
+					"value": "matcha:food/golden_carrot",
 					"weight": 5
 				},
 				{
