@@ -13,7 +13,7 @@
 		},
 		"has_the_recipe": {
 			"conditions": {
-				"recipes": "potions:estus_flask"
+				"recipe": "potions:estus_flask"
 			},
 			"trigger": "minecraft:recipe_unlocked"
 		}

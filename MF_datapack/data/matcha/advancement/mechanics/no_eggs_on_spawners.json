@@ -3,11 +3,11 @@
 	"criteria": {
 		"used_egg": {
 			"trigger": "minecraft:item_used_on_block",
-			"types": {
+			"conditions": {
 				"player": {},
 				"location": [
 					{
-						"type": "minecraft:match_tool",
+						"condition": "minecraft:match_tool",
 						"predicate": {
 							"items": [
 								"minecraft:allay_spawn_egg",
@@ -100,7 +100,7 @@
 						}
 					},
 					{
-						"type": "minecraft:location_check",
+						"condition": "minecraft:location_check",
 						"predicate": {
 							"block": {
 								"blocks": [

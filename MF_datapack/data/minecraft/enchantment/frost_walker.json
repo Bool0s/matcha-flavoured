@@ -8,16 +8,16 @@
       {
         "effect": {},
         "requirements": {
-          "type": "minecraft:damage_source_properties",
+          "condition": "minecraft:damage_source_properties",
           "predicate": {
             "tags": [
               {
                 "expected": true,
-                "id": "#minecraft:burn_from_stepping"
+                "id": "minecraft:burn_from_stepping"
               },
               {
                 "expected": false,
-                "id": "#minecraft:bypasses_invulnerability"
+                "id": "minecraft:bypasses_invulnerability"
               }
             ]
           }
@@ -29,10 +29,10 @@
         "effect": {
           "type": "minecraft:replace_disk",
           "block_state": {
-            "type": "minecraft:simple",
+            "type": "minecraft:simple_state_provider",
             "state": {
-              "id": "minecraft:frosted_ice",
-              "properties": {
+              "Name": "minecraft:frosted_ice",
+              "Properties": {
                 "age": "0"
               }
             }
@@ -81,10 +81,10 @@
           "trigger_game_event": "minecraft:block_place"
         },
         "requirements": {
-          "type": "minecraft:all_of",
+          "condition": "minecraft:all_of",
           "terms": [
             {
-              "type": "minecraft:entity_properties",
+              "condition": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
                 "minecraft:flags": {
@@ -93,9 +93,9 @@
               }
             },
             {
-              "type": "minecraft:inverted",
+              "condition": "minecraft:inverted",
               "term": {
-                "type": "minecraft:entity_properties",
+                "condition": "minecraft:entity_properties",
                 "entity": "this",
                 "predicate": {
                   "minecraft:vehicle": {}

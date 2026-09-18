@@ -33,7 +33,7 @@
 		},
 		"has_the_recipe": {
 			"conditions": {
-				"recipes": "matcha:crafting/alt_torch"
+				"recipe": "matcha:crafting/alt_torch"
 			},
 			"trigger": "minecraft:recipe_unlocked"
 		}

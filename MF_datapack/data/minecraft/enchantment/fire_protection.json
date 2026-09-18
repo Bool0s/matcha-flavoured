@@ -27,19 +27,19 @@
           }
         },
         "requirements": {
-          "type": "minecraft:all_of",
+          "condition": "minecraft:all_of",
           "terms": [
             {
-              "type": "minecraft:damage_source_properties",
+              "condition": "minecraft:damage_source_properties",
               "predicate": {
                 "tags": [
                   {
                     "expected": true,
-                    "id": "#minecraft:is_fire"
+                    "id": "minecraft:is_fire"
                   },
                   {
                     "expected": false,
-                    "id": "#minecraft:bypasses_invulnerability"
+                    "id": "minecraft:bypasses_invulnerability"
                   }
                 ]
               }

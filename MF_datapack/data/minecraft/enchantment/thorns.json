@@ -32,7 +32,7 @@
               "per_level_above_first": 0.15
             }
           },
-          "type": "minecraft:random_chance"
+          "condition": "minecraft:random_chance"
         }
       }
     ]

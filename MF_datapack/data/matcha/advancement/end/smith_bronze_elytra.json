@@ -4,7 +4,7 @@
 		"hepatizon_elytra": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipes": "matcha:smithing/hepatizon_elytra"
+				"recipe_id": "matcha:smithing/hepatizon_elytra"
 			}
 		}
 	},
