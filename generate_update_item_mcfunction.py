@@ -10,6 +10,7 @@ RECIPE_PATHS = [
     os.path.join(RECIPE_BASE_PATH, "food", "crafting"),
     os.path.join(RECIPE_BASE_PATH, "food", "kiln"),
     os.path.join(RECIPE_BASE_PATH, "food", "oven"),
+    os.path.join("MF_datapack", "data", "matcha", "villager_trade")
     ]
 # Update check_trigger.mcfunction
 CHECK_TRIGGER_LOCATION = os.path.join("MF_datapack", "data", "matcha", "function", "update_old_items", "check_trigger.mcfunction")
@@ -45,14 +46,24 @@ item_ids_no_name_to_path = {}
 item_ids_with_name = set()
 known_names = set()
 final_jsons = []
+# recursively search files
+def list_files_walk(path):
+    found_files = []
+    for entry in os.listdir(path):
+        full_path = os.path.join(path, entry)
+        if os.path.isdir(full_path):
+            found_files = found_files + list_files_walk(full_path)
+        else:
+            found_files.append(full_path)
+    return found_files
 # filter jsons that don't have components or no item name
 for folder in RECIPE_PATHS:
-    files = os.listdir(folder)
+    files = list_files_walk(folder)
     for file in files:
         if not file.endswith(".json"): continue
-        path = os.path.join(folder, file)
-        open_file = open(path, "r", encoding="utf-8")
-        result_data = json.load(open_file)["result"]
+        open_file = open(file, "r", encoding="utf-8")
+        json_data = json.load(open_file)
+        result_data = json_data["result"] if "result" in json_data else json_data["gives"]
         if not "components" in result_data:
             skipped_file_count += 1
             files_without_components.append(file)
@@ -62,7 +73,7 @@ for folder in RECIPE_PATHS:
         if not "minecraft:item_name" in components:
             skipped_file_count += 1
             files_without_item_name[result_data["id"]] = file
-            item_ids_no_name_to_path[result_data["id"]] = path
+            item_ids_no_name_to_path[result_data["id"]] = file
             open_file.close()
             continue
         if not "translate" in components["minecraft:item_name"]:
@@ -75,7 +86,7 @@ for folder in RECIPE_PATHS:
         else:
             open_file.close()
             continue
-        final_jsons.append(path)
+        final_jsons.append(file)
         item_ids_with_name.add(result_data["id"])
         open_file.close()
 
@@ -88,7 +99,8 @@ NAME_CHECKED_END = '"}'
 DATA_MERGE = ' run data modify storage matcha:update_item item set value '
 for file in final_jsons:
     open_file = open(file, "r", encoding="utf-8")
-    result_data = json.load(open_file)["result"]
+    json_data = json.load(open_file)
+    result_data = json_data["result"] if "result" in json_data else json_data["gives"]
     components = result_data["components"]
     item_id = result_data["id"]
 
