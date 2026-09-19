@@ -3,16 +3,14 @@
 		"use_item": {
 			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
-				"location": [
-					{
-						"type": "minecraft:match_tool",
-						"predicate": {
-							"components": {
-								"minecraft:item_model": "matcha:amnestic_wrapped"
-							}
+				"location": {
+					"type": "minecraft:match_tool",
+					"predicate": {
+						"components": {
+							"minecraft:item_model": "matcha:amnestic_wrapped"
 						}
 					}
-				]
+				}
 			}
 		}
 	},

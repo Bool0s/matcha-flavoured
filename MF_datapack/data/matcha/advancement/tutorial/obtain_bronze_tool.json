@@ -4,73 +4,73 @@
 		"hepatizon_axe": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/hepatizon_axe"
+				"recipes": "matcha:smithing/hepatizon_axe"
 			}
 		},
 		"hepatizon_pickaxe": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/hepatizon_pickaxe"
+				"recipes": "matcha:smithing/hepatizon_pickaxe"
 			}
 		},
 		"hepatizon_shovel": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/hepatizon_shovel"
+				"recipes": "matcha:smithing/hepatizon_shovel"
 			}
 		},
 		"hepatizon_hoe": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/hepatizon_hoe"
+				"recipes": "matcha:smithing/hepatizon_hoe"
 			}
 		},
 		"hepatizon_sword": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/hepatizon_sword"
+				"recipes": "matcha:smithing/hepatizon_sword"
 			}
 		},
 		"hepatizon_dolabra": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/hepatizon_dolabra"
+				"recipes": "matcha:smithing/hepatizon_dolabra"
 			}
 		},
 		"hepatizon_mattock": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/hepatizon_mattock"
+				"recipes": "matcha:smithing/hepatizon_mattock"
 			}
 		},
 		"hepatizon_helmet": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/hepatizon_helmet"
+				"recipes": "matcha:smithing/hepatizon_helmet"
 			}
 		},
 		"hepatizon_chestplate": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/hepatizon_chestplate"
+				"recipes": "matcha:smithing/hepatizon_chestplate"
 			}
 		},
 		"hepatizon_leggings": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/hepatizon_leggings"
+				"recipes": "matcha:smithing/hepatizon_leggings"
 			}
 		},
 		"hepatizon_boots": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/hepatizon_boots"
+				"recipes": "matcha:smithing/hepatizon_boots"
 			}
 		},
 		"hepatizon_spear": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/hepatizon_spear"
+				"recipes": "matcha:smithing/hepatizon_spear"
 			}
 		}
 	},

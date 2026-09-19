@@ -13,7 +13,7 @@
 		},
 		"has_the_recipe": {
 			"conditions": {
-				"recipe": "recipes_using_water_bottles:stabilised_estus"
+				"recipes": "recipes_using_water_bottles:stabilised_estus"
 			},
 			"trigger": "minecraft:recipe_unlocked"
 		}
