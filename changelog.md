@@ -54,6 +54,11 @@ This symbol (🖌️) means the art was added by community artists (music is art
     * So no more naturally-occuring free diamonds should appear on surface structures
     * This should extend the copper and iron age a bit more, and when you finally have a blast furnace, feel good to finally be able to USE the diamonds you collected
 - Trigger Update system (💻, FloofShade)
+### New Death System
+- I am moving forward with the experimental death system. There has been so much postitive feedback for it, that it is staying. If you don't like it, I have some tips:
+    * Try to slow down. Make sure you're equiped enough, with enough food, tools, and weapons at your disposal before you go trying to progress. Progressing fast will make you loose hearts faster than progressing slow.
+    * Play on Easy. In easy mode, you won't go below 10 hearts
+    * Dont play on Hard! Hard is meant to be unfair. Its only for people like me who enjoy getting one-tapped by husks. I except to die at LEAST 3 times at the final boss of any game before I beat it. Anything less than that is cheap to me
 ### Tweaks & Small Additions 
 - Enderman can only pick up melon, pumpkins, and TNT (💻, Linkershim)
 - Multiplayer support improvements! (💻, Linkershim)
