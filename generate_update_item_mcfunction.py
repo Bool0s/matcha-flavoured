@@ -1,8 +1,6 @@
 # Created using Python 3.14.7
 import json, os
 
-# This setting checks for the item ID instead if there was no item_name in the recipe and no other item with that id was found in the selected recipe folders
-USE_ID_OPTIONALLY = True
 # Recipe paths for the generation
 RECIPE_BASE_PATH = os.path.join("MF_datapack", "data", "matcha", "recipe")
 RECIPE_PATHS = [
@@ -33,10 +31,11 @@ print(f"update_held_item.mcfunction located at: {UPDATE_HELD_LOCATION}\n")
 output = open(UPDATE_HELD_LOCATION, "w", encoding="utf-8")
 
 # Save selected item identifiers to storage for more performance
-output.write('data modify storage matcha:update_item id set value ""\n')
-output.write('data modify storage matcha:update_item translate set value ""\n')
-output.write('data modify storage matcha:update_item id set from entity @s SelectedItem.id\n')
+output.write('data remove storage matcha:update_item translate\n')
 output.write('data modify storage matcha:update_item translate set from entity @s SelectedItem.components.minecraft:item_name.translate\n')
+# early return if item has no translate
+output.write('execute unless data storage matcha:update_item translate run tellraw @s {"text":"The held item cannot be updated because it is missing a translation key.","color":"red"}\n')
+output.write('execute unless data storage matcha:update_item translate run return fail\n')
 output.write('data remove storage matcha:update_item item\n')
 # Go trough recipe directories and copy data from the json files
 skipped_file_count = 0
@@ -79,20 +78,11 @@ for folder in RECIPE_PATHS:
         final_jsons.append(path)
         item_ids_with_name.add(result_data["id"])
         open_file.close()
-# filter item ids that are already used in a named item
-item_ids = item_ids_no_name_to_path.keys()
-for mc_id in item_ids:
-    if not mc_id in item_ids_with_name and USE_ID_OPTIONALLY:
-        final_jsons.append(item_ids_no_name_to_path[mc_id])
-        skipped_file_count -= 1
-        files_without_item_name.pop(mc_id)
 
 # create data commands using the final jsons and save enchantments for the next step
 enchantments = {}
 STORED_ENCH = "minecraft:stored_enchantments"
 ENCH = "minecraft:enchantments"
-ID_CHECKED_START = 'execute if data storage matcha:update_item {id:"'
-ID_CHECKED_END = '"}'
 NAME_CHECKED_START = 'execute if data storage matcha:update_item {translate:"'
 NAME_CHECKED_END = '"}'
 DATA_MERGE = ' run data modify storage matcha:update_item item set value '
@@ -102,12 +92,8 @@ for file in final_jsons:
     components = result_data["components"]
     item_id = result_data["id"]
 
-    hand_check = ""
-    if not "minecraft:item_name" in components:
-        hand_check = ID_CHECKED_START + item_id + ID_CHECKED_END
-    else:
-        item_name = components["minecraft:item_name"]["translate"]
-        hand_check = NAME_CHECKED_START + item_name + NAME_CHECKED_END
+    item_name = components["minecraft:item_name"]["translate"]
+    hand_check = NAME_CHECKED_START + item_name + NAME_CHECKED_END
     # switch stored_enchantments to enchantments
     if STORED_ENCH in components:
         components[ENCH] = components[STORED_ENCH]
@@ -179,7 +165,7 @@ print("Don't be alarmed! Most recipe files are just basic items that do not need
 print('\n')
 
 while True:
-    user_input = input(f"Type '{LIST_NO_COMP}' to view files that were skipped because they have no components.\nType '{LIST_NO_NAME}' to view files that were skipped because they have no item name and their id is conflicting with a different item with a name.\nType '{QUIT}' to exit (or just close the program).\n")
+    user_input = input(f"Type '{LIST_NO_COMP}' to view files that were skipped because they have no components.\nType '{LIST_NO_NAME}' to view files that were skipped because they have no item name translation key.\nType '{QUIT}' to exit (or just close the program).\n")
     if user_input == LIST_NO_COMP:
         for file in files_without_components:
             print(file)
