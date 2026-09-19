@@ -59,6 +59,8 @@ This symbol (🖌️) means the art was added by community artists (music is art
     * Try to slow down. Make sure you're equiped enough, with enough food, tools, and weapons at your disposal before you go trying to progress. Progressing fast will make you loose hearts faster than progressing slow.
     * Play on Easy. In easy mode, you won't go below 10 hearts
     * Dont play on Hard! Hard is meant to be unfair. Its only for people like me who enjoy getting one-tapped by husks. I except to die at LEAST 3 times at the final boss of any game before I beat it. Anything less than that is cheap to me
+### Where is 26.3??
+- 26.3 is a major data-pack-breaking update. Its taking a long time to get things sorted out with the new syntax. Especially beucase matcha is so big. It will take time to come out. But trust me we are working on it. No one is more excited about yellow leaves than me, trust.
 ### Tweaks & Small Additions 
 - Enderman can only pick up melon, pumpkins, and TNT (💻, Linkershim)
 - Multiplayer support improvements! (💻, Linkershim)
