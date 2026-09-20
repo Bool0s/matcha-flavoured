@@ -198,12 +198,11 @@ There are also plenty of changes I forgot here. Beucase this move from main was 
 # DOCKET (MUST be done before next release)
   
 ## BUGS
-- 
+- Double check that the update Floof did didn't override the matcha:steel It shouldn't have but just in case
 
 ## 26.3
 - Poplar leaves crafting needs to be added to adv
 - Poplar Leaves LTs need to be added
-- All concrete and wool needs to be in stonecutter
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
