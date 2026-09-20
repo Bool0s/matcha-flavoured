@@ -198,8 +198,7 @@ There are also plenty of changes I forgot here. Beucase this move from main was 
 # DOCKET (MUST be done before next release)
   
 ## BUGS
-- Steel was NOT added to LTs
-
+- 
 
 ## 26.3
 - Poplar leaves crafting needs to be added to adv
