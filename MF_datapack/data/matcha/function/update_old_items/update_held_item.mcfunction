@@ -252,6 +252,7 @@ scoreboard players operation #damage update_item *= #durability update_item
 scoreboard players operation #damage update_item /= #1000 update_item
 execute store result storage matcha:update_item item.components.minecraft:damage int 1 run scoreboard players get #damage update_item
 data modify storage matcha:update_item item.components.minecraft:enchantments merge from entity @s SelectedItem.components.minecraft:enchantments
+data modify storage matcha:update_item item.components.minecraft:trim merge from entity @s SelectedItem.components.minecraft:trim
 # minecraft:efficiency
 execute store result score #enchantmentLvl update_item run data get storage matcha:update_item item.components.minecraft:enchantments.minecraft:efficiency 1
 execute if data storage matcha:update_item {translate:"item.minecraft.netherite_axe"} if score #enchantmentLvl update_item matches ..2 run scoreboard players set #enchantmentLvl update_item 2
