@@ -4,7 +4,7 @@
 		"functions": [
 			{
 				"decoration": "minecraft:swamp_hut",
-				"destination": "minecraft:on_swamp_explorer_maps",
+				"destination": "minecraft:on_swamp_hut_maps",
 				"type": "minecraft:exploration_map",
 				"search_radius": 100
 			},

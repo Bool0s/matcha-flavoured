@@ -4,7 +4,7 @@
 		"functions": [
 			{
 				"decoration": "minecraft:jungle_temple",
-				"destination": "minecraft:on_jungle_explorer_maps",
+				"destination": "minecraft:on_jungle_pyramid_maps",
 				"type": "minecraft:exploration_map",
 				"search_radius": 100
 			},
