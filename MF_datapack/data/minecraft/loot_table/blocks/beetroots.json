@@ -11,15 +11,13 @@
 						{
 							"type": "minecraft:loot_table",
 							"value": "matcha:food/tomato",
-							"conditions": [
-								{
-									"block": "minecraft:beetroots",
-									"type": "minecraft:match_block",
-									"state": {
-										"age": "3"
-									}
+							"condition": {
+								"block": "minecraft:beetroots",
+								"type": "minecraft:match_block",
+								"state": {
+									"age": "3"
 								}
-							],
+							},
 							"name": "minecraft:beetroot",
 							"functions": [
 								{

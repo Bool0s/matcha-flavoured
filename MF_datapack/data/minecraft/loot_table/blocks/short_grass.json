@@ -9,35 +9,31 @@
 					"children": [
 						{
 							"type": "minecraft:item",
-							"conditions": [
-								{
-									"type": "minecraft:any_of",
-									"terms": [
-										{
-											"type": "minecraft:match_tool",
-											"predicate": {
-												"items": "minecraft:shears"
-											}
+							"condition": {
+								"type": "minecraft:any_of",
+								"terms": [
+									{
+										"type": "minecraft:match_tool",
+										"predicate": {
+											"items": "minecraft:shears"
 										}
-									]
-								}
-							],
+									}
+								]
+							},
 							"name": "minecraft:short_grass"
 						},
 						{
 							"type": "minecraft:item",
-							"conditions": [
+							"condition": [
 								{
 									"chance": 0.125,
 									"type": "minecraft:random_chance"
-								},
 								{
-									"type": "minecraft:match_tool",
-									"predicate": {
-										"items": "#minecraft:hoes"
-									}
+								"type": "minecraft:match_tool",
+								"predicate": {
+									"items": "#minecraft:hoes"
 								}
-							],
+							},
 							"functions": [
 								{
 									"enchantment": "minecraft:fortune",
@@ -56,14 +52,12 @@
 						{
 							"type": "minecraft:item",
 							"name": "minecraft:short_grass",
-							"conditions": [
-								{
-									"type": "minecraft:match_tool",
-									"predicate": {
-										"items": "#minecraft:hoes"
-									}
+							"condition": {
+								"type": "minecraft:match_tool",
+								"predicate": {
+									"items": "#minecraft:hoes"
 								}
-							]
+							}
 						}
 					]
 				}

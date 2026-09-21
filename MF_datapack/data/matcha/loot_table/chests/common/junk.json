@@ -95,7 +95,6 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:quartz",
-					"conditions": [],
 					"functions": [
 						{
 							"function": "minecraft:set_count",
@@ -114,7 +113,6 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:wheat",
-					"conditions": [],
 					"functions": [
 						{
 							"function": "minecraft:set_count",

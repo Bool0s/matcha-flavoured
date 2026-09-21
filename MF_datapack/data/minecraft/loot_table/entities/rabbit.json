@@ -39,39 +39,37 @@
 							"function": "minecraft:set_count"
 						},
 						{
-							"conditions": [
-								{
-									"type": "minecraft:any_of",
-									"terms": [
-										{
-											"type": "minecraft:entity_properties",
-											"entity": "this",
-											"predicate": {
-												"minecraft:flags": {
-													"is_on_fire": true
-												}
+							"condition": {
+								"type": "minecraft:any_of",
+								"terms": [
+									{
+										"type": "minecraft:entity_properties",
+										"entity": "this",
+										"predicate": {
+											"minecraft:flags": {
+												"is_on_fire": true
 											}
-										},
-										{
-											"type": "minecraft:entity_properties",
-											"entity": "direct_attacker",
-											"predicate": {
-												"minecraft:equipment": {
-													"mainhand": {
-														"predicates": {
-															"minecraft:enchantments": [
-																{
-																	"enchantments": "#minecraft:smelts_loot"
-																}
-															]
-														}
+										}
+									},
+									{
+										"type": "minecraft:entity_properties",
+										"entity": "direct_attacker",
+										"predicate": {
+											"minecraft:equipment": {
+												"mainhand": {
+													"predicates": {
+														"minecraft:enchantments": [
+															{
+																"enchantments": "#minecraft:smelts_loot"
+															}
+														]
 													}
 												}
 											}
 										}
-									]
-								}
-							],
+									}
+								]
+							},
 							"function": "minecraft:furnace_smelt"
 						},
 						{

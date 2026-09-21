@@ -143,7 +143,6 @@
 					"type": "minecraft:item",
 					"name": "minecraft:rabbit_hide",
 					"weight": 10,
-					"conditions": [],
 					"functions": [
 						{
 							"function": "minecraft:set_count",

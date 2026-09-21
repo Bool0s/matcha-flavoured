@@ -278,14 +278,12 @@
 				},
 				{
 					"type": "minecraft:item",
-					"conditions": [
-						{
-							"type": "minecraft:location_check",
-							"predicate": {
-								"biomes": "minecraft:sulfur_caves"
-							}
+					"condition": {
+						"type": "minecraft:location_check",
+						"predicate": {
+							"biomes": "minecraft:sulfur_caves"
 						}
-					],
+					},
 					"name": "minecraft:music_disc_bounce",
 					"weight": 10
 				}

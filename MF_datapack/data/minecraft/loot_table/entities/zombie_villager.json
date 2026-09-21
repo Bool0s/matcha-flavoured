@@ -30,11 +30,9 @@
 					]
 				}
 			],
-			"conditions": [
-				{
-					"type": "minecraft:killed_by_player"
-				}
-			]
+			"condition": {
+				"type": "minecraft:killed_by_player"
+			}
 		},
 		{
 			"rolls": 1,
@@ -69,31 +67,32 @@
 					"weight": 1
 				}
 			],
-			"conditions": [
-				{
-					"type": "minecraft:killed_by_player"
-				}
-			]
+			"condition": {
+				"type": "minecraft:killed_by_player"
+			}
 		},
 		{
 			"bonus_rolls": 0,
-			"conditions": [
-				{
-					"type": "minecraft:killed_by_player"
-				},
-				{
-					"type": "minecraft:entity_properties",
-					"entity": "this",
-					"predicate": {
-						"flags": {
-							"is_baby": true
-						},
-						"vehicle": {
-							"minecraft:entity_type": "minecraft:chicken"
+			"condition": {
+				"type": "minecraft:all_of",
+				"terms": [
+					{
+						"type": "minecraft:killed_by_player"
+					},
+					{
+						"type": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"flags": {
+								"is_baby": true
+							},
+							"vehicle": {
+								"minecraft:entity_type": "minecraft:chicken"
+							}
 						}
 					}
-				}
-			],
+				]
+			},
 			"entries": [
 				{
 					"type": "minecraft:item",

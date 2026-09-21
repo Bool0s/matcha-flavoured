@@ -24,8 +24,7 @@
 						"bonusMultiplier": 3
 					}
 				}
-			],
-			"conditions": []
+			]
 		}
 	],
 	"random_sequence": "minecraft:shearing/sheep/orange"

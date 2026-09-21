@@ -78,18 +78,16 @@
 				},
 				{
 					"type": "minecraft:item",
-					"conditions": [
-						{
-							"type": "minecraft:location_check",
-							"predicate": {
-								"biomes": [
-									"minecraft:jungle",
-									"minecraft:sparse_jungle",
-									"minecraft:bamboo_jungle"
-								]
-							}
+					"condition": {
+						"type": "minecraft:location_check",
+						"predicate": {
+							"biomes": [
+								"minecraft:jungle",
+								"minecraft:sparse_jungle",
+								"minecraft:bamboo_jungle"
+							]
 						}
-					],
+					},
 					"name": "minecraft:bamboo",
 					"weight": 10
 				},
@@ -97,17 +95,15 @@
 					"type": "minecraft:item",
 					"name": "minecraft:frog_spawn_egg",
 					"weight": 5,
-					"conditions": [
-						{
-							"type": "minecraft:location_check",
-							"predicate": {
-								"biomes": [
-									"minecraft:mangrove_swamp",
-									"minecraft:swamp"
-								]
-							}
+					"condition": {
+						"type": "minecraft:location_check",
+						"predicate": {
+							"biomes": [
+								"minecraft:mangrove_swamp",
+								"minecraft:swamp"
+							]
 						}
-					],
+					},
 					"functions": [
 						{
 							"function": "minecraft:set_components",
@@ -124,17 +120,15 @@
 					"type": "minecraft:item",
 					"name": "minecraft:tadpole_spawn_egg",
 					"weight": 10,
-					"conditions": [
-						{
-							"type": "minecraft:location_check",
-							"predicate": {
-								"biomes": [
-									"minecraft:mangrove_swamp",
-									"minecraft:swamp"
-								]
-							}
+					"condition": {
+						"type": "minecraft:location_check",
+						"predicate": {
+							"biomes": [
+								"minecraft:mangrove_swamp",
+								"minecraft:swamp"
+							]
 						}
-					],
+					},
 					"functions": [
 						{
 							"function": "minecraft:set_components",
@@ -151,17 +145,15 @@
 					"type": "minecraft:item",
 					"name": "minecraft:chicken_spawn_egg",
 					"weight": 10,
-					"conditions": [
-						{
-							"type": "minecraft:location_check",
-							"predicate": {
-								"biomes": [
-									"minecraft:dripstone_caves",
-									"minecraft:lush_caves"
-								]
-							}
+					"condition": {
+						"type": "minecraft:location_check",
+						"predicate": {
+							"biomes": [
+								"minecraft:dripstone_caves",
+								"minecraft:lush_caves"
+							]
 						}
-					],
+					},
 					"functions": [
 						{
 							"function": "minecraft:set_components",

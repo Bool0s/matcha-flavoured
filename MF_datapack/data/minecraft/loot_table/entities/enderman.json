@@ -6,7 +6,6 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"conditions": [],
 					"functions": [
 						{
 							"function": "minecraft:set_components",
@@ -37,11 +36,9 @@
 				}
 			],
 			"rolls": 1,
-			"conditions": [
-				{
-					"type": "minecraft:killed_by_player"
-				}
-			]
+			"condition": {
+				"type": "minecraft:killed_by_player"
+			}
 		}
 	],
 	"random_sequence": "minecraft:entities/enderman"

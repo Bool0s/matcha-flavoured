@@ -4,11 +4,9 @@
 		{
 			"rolls": 1,
 			"bonus_rolls": 0,
-			"conditions": [
-				{
-					"type": "minecraft:killed_by_player"
-				}
-			],
+			"condition": {
+				"type": "minecraft:killed_by_player"
+			},
 			"entries": [
 				{
 					"type": "minecraft:item",
@@ -70,11 +68,9 @@
 					]
 				}
 			],
-			"conditions": [
-				{
-					"type": "minecraft:killed_by_player"
-				}
-			]
+			"condition": {
+				"type": "minecraft:killed_by_player"
+			}
 		},
 		{
 			"rolls": 1,
@@ -99,11 +95,9 @@
 					"name": "minecraft:emerald"
 				}
 			],
-			"conditions": [
-				{
-					"type": "minecraft:killed_by_player"
-				}
-			]
+			"condition": {
+				"type": "minecraft:killed_by_player"
+			}
 		},
 		{
 			"rolls": 1,
@@ -137,11 +131,9 @@
 					]
 				}
 			],
-			"conditions": [
-				{
-					"type": "minecraft:killed_by_player"
-				}
-			]
+			"condition": {
+				"type": "minecraft:killed_by_player"
+			}
 		}
 	],
 	"random_sequence": "minecraft:entities/bogged"

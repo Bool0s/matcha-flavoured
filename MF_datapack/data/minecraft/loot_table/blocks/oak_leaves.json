@@ -9,34 +9,32 @@
 					"children": [
 						{
 							"type": "minecraft:item",
-							"conditions": [
-								{
-									"type": "minecraft:any_of",
-									"terms": [
-										{
-											"type": "minecraft:match_tool",
-											"predicate": {
-												"items": "minecraft:shears"
-											}
-										},
-										{
-											"type": "minecraft:match_tool",
-											"predicate": {
-												"predicates": {
-													"minecraft:enchantments": [
-														{
-															"enchantments": "minecraft:silk_touch",
-															"levels": {
-																"min": 1
-															}
+							"condition": {
+								"type": "minecraft:any_of",
+								"terms": [
+									{
+										"type": "minecraft:match_tool",
+										"predicate": {
+											"items": "minecraft:shears"
+										}
+									},
+									{
+										"type": "minecraft:match_tool",
+										"predicate": {
+											"predicates": {
+												"minecraft:enchantments": [
+													{
+														"enchantments": "minecraft:silk_touch",
+														"levels": {
+															"min": 1
 														}
-													]
-												}
+													}
+												]
 											}
 										}
-									]
-								}
-							],
+									}
+								]
+							},
 							"name": "minecraft:oak_leaves"
 						}
 					]
@@ -47,54 +45,50 @@
 		{
 			"bonus_rolls": 0,
 			"functions": [],
-			"conditions": [
-				{
-					"type": "minecraft:inverted",
-					"term": {
-						"type": "minecraft:any_of",
-						"terms": [
-							{
-								"type": "minecraft:match_tool",
-								"predicate": {
-									"items": "minecraft:shears"
-								}
-							},
-							{
-								"type": "minecraft:match_tool",
-								"predicate": {
-									"predicates": {
-										"minecraft:enchantments": [
-											{
-												"enchantments": "minecraft:silk_touch",
-												"levels": {
-													"min": 1
-												}
+			"condition": {
+				"type": "minecraft:inverted",
+				"term": {
+					"type": "minecraft:any_of",
+					"terms": [
+						{
+							"type": "minecraft:match_tool",
+							"predicate": {
+								"items": "minecraft:shears"
+							}
+						},
+						{
+							"type": "minecraft:match_tool",
+							"predicate": {
+								"predicates": {
+									"minecraft:enchantments": [
+										{
+											"enchantments": "minecraft:silk_touch",
+											"levels": {
+												"min": 1
 											}
-										]
-									}
+										}
+									]
 								}
 							}
-						]
-					}
+						}
+					]
 				}
-			],
+			},
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
 					"value": "matcha:food/apple",
-					"conditions": [
-						{
-							"chances": [
-								0.0075,
-								0.009,
-								0.015,
-								0.02,
-								0.04
-							],
-							"type": "minecraft:table_bonus",
-							"enchantment": "matcha:electrum_tool"
-						}
-					],
+					"condition": {
+						"chances": [
+							0.0075,
+							0.009,
+							0.015,
+							0.02,
+							0.04
+						],
+						"type": "minecraft:table_bonus",
+						"enchantment": "matcha:electrum_tool"
+					},
 					"functions": []
 				}
 			],
@@ -103,54 +97,50 @@
 		{
 			"bonus_rolls": 0,
 			"functions": [],
-			"conditions": [
-				{
-					"type": "minecraft:inverted",
-					"term": {
-						"type": "minecraft:any_of",
-						"terms": [
-							{
-								"type": "minecraft:match_tool",
-								"predicate": {
-									"items": "minecraft:shears"
-								}
-							},
-							{
-								"type": "minecraft:match_tool",
-								"predicate": {
-									"predicates": {
-										"minecraft:enchantments": [
-											{
-												"enchantments": "minecraft:silk_touch",
-												"levels": {
-													"min": 1
-												}
+			"condition": {
+				"type": "minecraft:inverted",
+				"term": {
+					"type": "minecraft:any_of",
+					"terms": [
+						{
+							"type": "minecraft:match_tool",
+							"predicate": {
+								"items": "minecraft:shears"
+							}
+						},
+						{
+							"type": "minecraft:match_tool",
+							"predicate": {
+								"predicates": {
+									"minecraft:enchantments": [
+										{
+											"enchantments": "minecraft:silk_touch",
+											"levels": {
+												"min": 1
 											}
-										]
-									}
+										}
+									]
 								}
 							}
-						]
-					}
+						}
+					]
 				}
-			],
+			},
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
 					"value": "matcha:food/apple",
-					"conditions": [
-						{
-							"chances": [
-								0.0075,
-								0.009,
-								0.015,
-								0.02,
-								0.04
-							],
-							"type": "minecraft:table_bonus",
-							"enchantment": "minecraft:fortune"
-						}
-					],
+					"condition": {
+						"chances": [
+							0.0075,
+							0.009,
+							0.015,
+							0.02,
+							0.04
+						],
+						"type": "minecraft:table_bonus",
+						"enchantment": "minecraft:fortune"
+					},
 					"functions": []
 				}
 			],

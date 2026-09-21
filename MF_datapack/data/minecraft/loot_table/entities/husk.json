@@ -30,22 +30,25 @@
 					]
 				}
 			],
-			"conditions": [
-                {
-                    "type": "minecraft:entity_properties",
-                    "entity": "this",
-                    "predicate": {
-                        "entity_tags": {
-                            "none_of": [
-                                "NoDrops"
-                            ]
-                        }
-                    }
-                },
-				{
-					"type": "minecraft:killed_by_player"
-				}
-			]
+			"condition": {
+				"type": "minecraft:all_of",
+				"terms": [
+					{
+						"type": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"entity_tags": {
+								"none_of": [
+									"NoDrops"
+								]
+							}
+						}
+					},
+					{
+						"type": "minecraft:killed_by_player"
+					}
+				]
+			}
 		},
 		{
 			"rolls": 1,
@@ -79,22 +82,25 @@
 					]
 				}
 			],
-			"conditions": [
-                {
-                    "type": "minecraft:entity_properties",
-                    "entity": "this",
-                    "predicate": {
-                        "entity_tags": {
-                            "none_of": [
-                                "NoDrops"
-                            ]
-                        }
-                    }
-                },
-				{
-					"type": "minecraft:killed_by_player"
-				}
-			]
+			"condition": {
+				"type": "minecraft:all_of",
+				"terms": [
+					{
+						"type": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"entity_tags": {
+								"none_of": [
+									"NoDrops"
+								]
+							}
+						}
+					},
+					{
+						"type": "minecraft:killed_by_player"
+					}
+				]
+			}
 		}
 	],
 	"random_sequence": "minecraft:entities/husk"

@@ -2,31 +2,27 @@
 	"type": "minecraft:block",
 	"pools": [
 		{
-			"conditions": [
-				{
-					"type": "minecraft:survives_explosion"
-				}
-			],
+			"condition": {
+				"type": "minecraft:survives_explosion"
+			},
 			"entries": [
 				{
 					"type": "minecraft:alternatives",
 					"children": [
 						{
 							"type": "minecraft:item",
-							"conditions": [
-								{
-									"type": "minecraft:match_tool",
-									"predicate": {
-										"predicates": {
-											"minecraft:enchantments": [
-												{
-													"enchantments": "matcha:adamant_tool"
-												}
-											]
-										}
+							"condition": {
+								"type": "minecraft:match_tool",
+								"predicate": {
+									"predicates": {
+										"minecraft:enchantments": [
+											{
+												"enchantments": "matcha:adamant_tool"
+											}
+										]
 									}
 								}
-							],
+							},
 							"name": "minecraft:cobblestone"
 						},
 						{

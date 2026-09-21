@@ -27,38 +27,39 @@
                     "name": "minecraft:string"
                 }
             ],
-            "conditions": [
-                {
-                    "type": "minecraft:entity_properties",
-                    "entity": "this",
-                    "predicate": {
-                        "entity_tags": {
-                            "none_of": [
-                                "NoDrops"
-                            ]
-                        }
-                    }
-                }
-            ],
-            "rolls": 1.0
+            "condition": {
+				"type": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"entity_tags": {
+						"none_of": [
+							"NoDrops"
+						]
+					}
+				}
+			},
+            "rolls": 1
         },
         {
-            "conditions": [
-				{
-					"type": "minecraft:entity_properties",
-					"entity": "this",
-					"predicate": {
-						"entity_tags": {
-							"none_of": [
-								"NoDrops"
-							]
+            "condition": {
+				"type": "minecraft:all_of",
+				"terms": [
+					{
+						"type": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"entity_tags": {
+								"none_of": [
+									"NoDrops"
+								]
+							}
 						}
-					}
-				},
-                {
-                    "type": "minecraft:killed_by_player"
-                }
-            ],
+					},
+					{
+						"type": "minecraft:killed_by_player"
+				  }
+			  ]
+		  },
             "entries": [
                 {
                     "type": "minecraft:item",
@@ -84,7 +85,7 @@
                     "name": "minecraft:spider_eye"
                 }
             ],
-            "rolls": 1.0
+            "rolls": 1
         }
     ],
     "random_sequence": "minecraft:entities/spider"

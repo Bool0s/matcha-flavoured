@@ -9,27 +9,23 @@
 					"children": [
 						{
 							"type": "minecraft:item",
-							"conditions": [
-								{
-									"type": "minecraft:match_tool",
-									"predicate": {
-										"items": "minecraft:shears"
-									}
+							"condition": {
+								"type": "minecraft:match_tool",
+								"predicate": {
+									"items": "minecraft:shears"
 								}
-							],
+							},
 							"name": "minecraft:dead_bush"
 						},
 						{
 							"type": "minecraft:item",
 							"name": "minecraft:dead_bush",
-							"conditions": [
-								{
-									"type": "minecraft:match_tool",
-									"predicate": {
-										"items": "#minecraft:hoes"
-									}
+							"condition": {
+								"type": "minecraft:match_tool",
+								"predicate": {
+									"items": "#minecraft:hoes"
 								}
-							]
+							}
 						},
 						{
 							"type": "minecraft:item",

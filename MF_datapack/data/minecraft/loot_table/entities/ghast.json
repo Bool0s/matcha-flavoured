@@ -50,25 +50,28 @@
 			"rolls": 1
 		},
 		{
-			"conditions": [
-				{
-					"type": "minecraft:damage_source_properties",
-					"predicate": {
-						"direct_entity": {
-							"minecraft:entity_type": "minecraft:fireball"
-						},
-						"tags": [
-							{
-								"expected": true,
-								"id": "minecraft:is_projectile"
-							}
-						]
+			"condition": {
+				"type": "minecraft:all_of",
+				"terms": [
+					{
+						"type": "minecraft:damage_source_properties",
+						"predicate": {
+							"direct_entity": {
+								"minecraft:entity_type": "minecraft:fireball"
+							},
+							"tags": [
+								{
+									"expected": true,
+									"id": "minecraft:is_projectile"
+								}
+							]
+						}
+					},
+					{
+						"type": "minecraft:killed_by_player"
 					}
-				},
-				{
-					"type": "minecraft:killed_by_player"
-				}
-			],
+				]
+			},
 			"entries": [
 				{
 					"type": "minecraft:item",

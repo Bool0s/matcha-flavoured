@@ -23,15 +23,13 @@
 									}
 								}
 							],
-							"conditions": [
-								{
-									"blocks": "minecraft:wheat",
-									"type": "minecraft:match_block",
-									"state": {
-										"age": "7"
-									}
+							"condition": {
+								"blocks": "minecraft:wheat",
+								"type": "minecraft:match_block",
+								"state": {
+									"age": "7"
 								}
-							],
+							},
 							"name": "minecraft:wheat"
 						},
 						{
@@ -45,15 +43,13 @@
 		},
 		{
 			"bonus_rolls": 0,
-			"conditions": [
-				{
-					"blocks": "minecraft:wheat",
-					"type": "minecraft:match_block",
-					"state": {
-						"age": "7"
-					}
+			"condition": {
+				"blocks": "minecraft:wheat",
+				"type": "minecraft:match_block",
+				"state": {
+					"age": "7"
 				}
-			],
+			},
 			"entries": [
 				{
 					"type": "minecraft:item",

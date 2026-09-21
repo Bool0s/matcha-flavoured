@@ -7,11 +7,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:gunpowder",
-					"conditions": [
-						{
-							"type": "minecraft:killed_by_player"
-						}
-					],
+					"condition": {
+						"type": "minecraft:killed_by_player"
+					},
 					"functions": [
 						{
 							"function": "minecraft:set_count",
@@ -24,7 +22,6 @@
 							"function": "minecraft:enchanted_count_increase",
 							"count": 1,
 							"enchantment": "minecraft:looting",
-							"conditions": []
 						}
 					]
 				}
@@ -36,11 +33,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:slime_ball",
-					"conditions": [
-						{
-							"type": "minecraft:killed_by_player"
-						}
-					],
+					"condition": {
+						"type": "minecraft:killed_by_player"
+					},
 					"functions": [
 						{
 							"function": "minecraft:set_components",
@@ -62,7 +57,6 @@
 							"function": "minecraft:enchanted_count_increase",
 							"count": 2,
 							"enchantment": "minecraft:looting",
-							"conditions": []
 						}
 					]
 				}

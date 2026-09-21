@@ -19,15 +19,13 @@
 		},
 		{
 			"bonus_rolls": 0,
-			"conditions": [
-				{
-					"block": "minecraft:carrots",
-					"type": "minecraft:match_block",
-					"state": {
-						"age": "7"
-					}
+			"condition": {
+				"block": "minecraft:carrots",
+				"type": "minecraft:match_block",
+				"state": {
+					"age": "7"
 				}
-			],
+			},
 			"entries": [
 				{
 					"type": "minecraft:loot_table",

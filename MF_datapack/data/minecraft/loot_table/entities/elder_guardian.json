@@ -14,11 +14,9 @@
 		},
 		{
 			"bonus_rolls": 0,
-			"conditions": [
-				{
-					"type": "minecraft:killed_by_player"
-				}
-			],
+			"condition": {
+				"type": "minecraft:killed_by_player"
+			},
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
@@ -45,11 +43,9 @@
 				}
 			],
 			"rolls": 1,
-			"conditions": [
-				{
-					"type": "minecraft:killed_by_player"
-				}
-			]
+			"condition": {
+				"type": "minecraft:killed_by_player"
+			}
 		},
 		{
 			"rolls": 1,
@@ -59,11 +55,9 @@
 					"value": "matcha:treasure/opal"
 				}
 			],
-			"conditions": [
-				{
-					"type": "minecraft:killed_by_player"
-				}
-			]
+			"condition": {
+				"type": "minecraft:killed_by_player"
+			}
 		}
 	],
 	"random_sequence": "minecraft:entities/elder_guardian"
