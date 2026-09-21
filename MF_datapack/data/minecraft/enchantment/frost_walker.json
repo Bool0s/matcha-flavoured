@@ -29,10 +29,10 @@
         "effect": {
           "type": "minecraft:replace_disk",
           "block_state": {
-            "type": "minecraft:simple_state_provider",
+            "type": "minecraft:simple",
             "state": {
-              "Name": "minecraft:frosted_ice",
-              "Properties": {
+              "id": "minecraft:frosted_ice",
+              "properties": {
                 "age": "0"
               }
             }
