@@ -4,7 +4,7 @@
 		"functions": [
 			{
 				"decoration": "minecraft:village_plains",
-				"destination": "minecraft:on_trail_explorer_maps",
+				"destination": "#minecraft:on_trail_explorer_maps",
 				"type": "minecraft:exploration_map",
 				"search_radius": 100
 			},

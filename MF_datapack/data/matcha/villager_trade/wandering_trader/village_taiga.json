@@ -4,7 +4,7 @@
 		"functions": [
 			{
 				"decoration": "minecraft:village_taiga",
-				"destination": "minecraft:on_taiga_village_maps",
+				"destination": "#minecraft:on_taiga_village_maps",
 				"type": "minecraft:exploration_map",
 				"search_radius": 100
 			},

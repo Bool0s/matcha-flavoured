@@ -4,7 +4,7 @@
 		"functions": [
 			{
 				"decoration": "minecraft:red_x",
-				"destination": "minecraft:on_shipwreck_explorer_maps",
+				"destination": "#minecraft:on_shipwreck_explorer_maps",
 				"type": "minecraft:exploration_map",
 				"search_radius": 100
 			},

@@ -4,7 +4,7 @@
 		"functions": [
 			{
 				"decoration": "minecraft:monument",
-				"destination": "minecraft:on_ocean_monument_maps",
+				"destination": "#minecraft:on_ocean_monument_maps",
 				"type": "minecraft:exploration_map",
 				"search_radius": 100
 			},

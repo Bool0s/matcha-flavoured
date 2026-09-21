@@ -4,7 +4,7 @@
 		"functions": [
 			{
 				"decoration": "minecraft:village_desert",
-				"destination": "minecraft:on_desert_explorer_maps",
+				"destination": "#minecraft:on_desert_explorer_maps",
 				"type": "minecraft:exploration_map",
 				"search_radius": 100
 			},

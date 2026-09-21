@@ -4,7 +4,7 @@
 		"functions": [
 		{
 		  "decoration": "minecraft:trial_chambers",
-		  "destination": "minecraft:on_buried_trial_chambers_maps",
+		  "destination": "#minecraft:on_buried_trial_chambers_maps",
 		  "type": "minecraft:exploration_map",
 		  "search_radius": 100
 		},

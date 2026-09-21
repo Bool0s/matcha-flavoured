@@ -32,11 +32,11 @@
             "tags": [
               {
                 "expected": true,
-                "id": "minecraft:is_explosion"
+                "id": "#minecraft:is_explosion"
               },
               {
                 "expected": false,
-                "id": "minecraft:bypasses_invulnerability"
+                "id": "#minecraft:bypasses_invulnerability"
               }
             ]
           }
