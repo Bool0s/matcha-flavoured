@@ -7,18 +7,16 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:fermented_spider_eye",
-					"modifier": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:item_model": "matcha:amber",
-								"minecraft:item_name": {
-									"translate": "item.kleispack.amber",
-									"color": "gold"
-								}
+					"modifier": {
+						"type": "minecraft:set_components",
+						"components": {
+							"minecraft:item_model": "matcha:amber",
+							"minecraft:item_name": {
+								"translate": "item.kleispack.amber",
+								"color": "gold"
 							}
 						}
-					]
+					}
 				}
 			]
 		}

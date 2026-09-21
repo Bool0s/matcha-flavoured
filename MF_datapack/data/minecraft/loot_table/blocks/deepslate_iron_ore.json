@@ -42,42 +42,48 @@
 				  }
 				}
 			  },
-              "modifier": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": 2
-                },
-                {
-                  "function": "minecraft:apply_bonus",
-                  "enchantment": "matcha:electrum_tool",
-                  "formula": "minecraft:ore_drops"
-                },
-                {
-                  "function": "minecraft:apply_bonus",
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops"
-                }
-              ]
+              "modifier": {
+				"type": "minecraft:sequence",
+				"functions": [
+				  {
+					"type": "minecraft:set_count",
+					"count": 2
+				  },
+				  {
+					"type": "minecraft:apply_bonus",
+					"enchantment": "matcha:electrum_tool",
+					"formula": "minecraft:ore_drops"
+				  },
+				  {
+					"type": "minecraft:apply_bonus",
+					"enchantment": "minecraft:fortune",
+					"formula": "minecraft:ore_drops"
+				  }
+				]
+			  }
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:raw_iron",
-              "modifier": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": 2
-                },
-                {
-                  "function": "minecraft:apply_bonus",
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops"
-                },
-                {
-                  "function": "minecraft:apply_bonus",
-                  "enchantment": "matcha:electrum_tool",
-                  "formula": "minecraft:ore_drops"
-                }
-              ]
+              "modifier": {
+				"type": "minecraft:sequence",
+				"functions": [
+				  {
+					"type": "minecraft:set_count",
+					"count": 2
+				  },
+				  {
+					"type": "minecraft:apply_bonus",
+					"enchantment": "minecraft:fortune",
+					"formula": "minecraft:ore_drops"
+				  },
+				  {
+					"type": "minecraft:apply_bonus",
+					"enchantment": "matcha:electrum_tool",
+					"formula": "minecraft:ore_drops"
+				  }
+				]
+			  }
             }
           ]
         }

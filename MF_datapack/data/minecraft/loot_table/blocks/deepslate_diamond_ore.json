@@ -28,18 +28,21 @@
 						{
 							"type": "minecraft:loot_table",
 							"value": "matcha:materials/raw_diamond",
-							"modifier": [
-								{
-									"enchantment": "minecraft:fortune",
-									"formula": "minecraft:ore_drops",
-									"function": "minecraft:apply_bonus"
-								},
-								{
-									"enchantment": "matcha:electrum_tool",
-									"formula": "minecraft:ore_drops",
-									"function": "minecraft:apply_bonus"
-								}
-							]
+							"modifier": {
+								"type": "minecraft:sequence",
+								"functions": [
+									{
+										"enchantment": "minecraft:fortune",
+										"formula": "minecraft:ore_drops",
+										"type": "minecraft:apply_bonus"
+									},
+									{
+										"enchantment": "matcha:electrum_tool",
+										"formula": "minecraft:ore_drops",
+										"type": "minecraft:apply_bonus"
+									}
+								]
+							}
 						}
 					]
 				}

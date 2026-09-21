@@ -1,10 +1,8 @@
 {
 	"type": "minecraft:block",
-	"modifier": [
-		{
-			"function": "minecraft:explosion_decay"
-		}
-	],
+	"modifier": {
+		"type": "minecraft:explosion_decay"
+	},
 	"pools": [
 		{
 			"bonus_rolls": 0,
@@ -22,33 +20,36 @@
 					"modifier": []
 				}
 			],
-			"modifier": [
-				{
-					"add": false,
-					"count": {
-						"type": "minecraft:uniform",
-						"max": 3,
-						"min": 2
+			"modifier": {
+				"type": "minecraft:sequence",
+				"functions": [
+					{
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 3,
+							"min": 2
+						},
+						"type": "minecraft:set_count"
 					},
-					"function": "minecraft:set_count"
-				},
-				{
-					"enchantment": "minecraft:fortune",
-					"formula": "minecraft:uniform_bonus_count",
-					"function": "minecraft:apply_bonus",
-					"parameters": {
-						"bonusMultiplier": 1
+					{
+						"enchantment": "minecraft:fortune",
+						"formula": "minecraft:uniform_bonus_count",
+						"type": "minecraft:apply_bonus",
+						"parameters": {
+							"bonusMultiplier": 1
+						}
+					},
+					{
+						"type": "minecraft:apply_bonus",
+						"enchantment": "matcha:electrum_tool",
+						"formula": "minecraft:uniform_bonus_count",
+						"parameters": {
+							"bonusMultiplier": 1
+						}
 					}
-				},
-				{
-					"function": "minecraft:apply_bonus",
-					"enchantment": "matcha:electrum_tool",
-					"formula": "minecraft:uniform_bonus_count",
-					"parameters": {
-						"bonusMultiplier": 1
-					}
-				}
-			],
+				]
+			},
 			"rolls": 1
 		},
 		{
@@ -67,33 +68,36 @@
 					"modifier": []
 				}
 			],
-			"modifier": [
-				{
-					"add": false,
-					"count": {
-						"type": "minecraft:uniform",
-						"max": 2,
-						"min": 1
+			"modifier": {
+				"type": "minecraft:sequence",
+				"functions": [
+					{
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 2,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
 					},
-					"function": "minecraft:set_count"
-				},
-				{
-					"enchantment": "minecraft:fortune",
-					"formula": "minecraft:uniform_bonus_count",
-					"function": "minecraft:apply_bonus",
-					"parameters": {
-						"bonusMultiplier": 1
+					{
+						"enchantment": "minecraft:fortune",
+						"formula": "minecraft:uniform_bonus_count",
+						"type": "minecraft:apply_bonus",
+						"parameters": {
+							"bonusMultiplier": 1
+						}
+					},
+					{
+						"type": "minecraft:apply_bonus",
+						"enchantment": "matcha:electrum_tool",
+						"formula": "minecraft:uniform_bonus_count",
+						"parameters": {
+							"bonusMultiplier": 1
+						}
 					}
-				},
-				{
-					"function": "minecraft:apply_bonus",
-					"enchantment": "matcha:electrum_tool",
-					"formula": "minecraft:uniform_bonus_count",
-					"parameters": {
-						"bonusMultiplier": 1
-					}
-				}
-			],
+				]
+			},
 			"rolls": 1
 		}
 	],

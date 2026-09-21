@@ -32,25 +32,28 @@
 							}
 						]
 					},
-					"modifier": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 1
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 4,
+									"min": 1
+								},
+								"type": "minecraft:set_count"
 							},
-							"function": "minecraft:set_count"
-						},
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 1,
-								"min": 0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:enchanted_count_increase"
-						}
-					],
+							{
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 1,
+									"min": 0
+								},
+								"enchantment": "minecraft:looting",
+								"type": "minecraft:enchanted_count_increase"
+							}
+						]
+					},
 					"name": "minecraft:magma_block"
 				},
 				{
@@ -66,12 +69,10 @@
 							}
 						}
 					},
-					"modifier": [
-						{
-							"count": 1,
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": 1,
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:pearlescent_froglight"
 				},
 				{
@@ -87,12 +88,10 @@
 							}
 						}
 					},
-					"modifier": [
-						{
-							"count": 1,
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": 1,
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:verdant_froglight"
 				},
 				{
@@ -108,12 +107,10 @@
 							}
 						}
 					},
-					"modifier": [
-						{
-							"count": 1,
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": 1,
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:ochre_froglight"
 				}
 			],

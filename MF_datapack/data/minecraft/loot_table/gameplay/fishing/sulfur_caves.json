@@ -9,27 +9,23 @@
 					"type": "minecraft:item",
 					"name": "minecraft:bone",
 					"weight": 10,
-					"modifier": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:item_model": "fish_bones",
-								"minecraft:item_name": {
-									"translate": "item.kleispack.fish.fish_bones"
-								}
+					"modifier": {
+						"type": "minecraft:set_components",
+						"components": {
+							"minecraft:item_model": "fish_bones",
+							"minecraft:item_name": {
+								"translate": "item.kleispack.fish.fish_bones"
 							}
 						}
-					]
+					}
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:gunpowder",
-					"modifier": [
-						{
-							"function": "minecraft:set_count",
-							"count": 3
-						}
-					]
+					"modifier": {
+						"type": "minecraft:set_count",
+						"count": 3
+					}
 				}
 			]
 		}

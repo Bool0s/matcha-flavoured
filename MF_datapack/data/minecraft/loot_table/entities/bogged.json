@@ -11,26 +11,29 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:bone",
-					"modifier": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"type": "minecraft:uniform",
-								"min": 0,
-								"max": 2
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"type": "minecraft:set_count",
+								"count": {
+									"type": "minecraft:uniform",
+									"min": 0,
+									"max": 2
+								},
+								"add": false
 							},
-							"add": false
-						},
-						{
-							"function": "minecraft:enchanted_count_increase",
-							"enchantment": "minecraft:looting",
-							"count": {
-								"type": "minecraft:uniform",
-								"min": 0,
-								"max": 1
+							{
+								"type": "minecraft:enchanted_count_increase",
+								"enchantment": "minecraft:looting",
+								"count": {
+									"type": "minecraft:uniform",
+									"min": 0,
+									"max": 1
+								}
 							}
-						}
-					]
+						]
+					}
 				}
 			]
 		},
@@ -41,31 +44,34 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:tipped_arrow",
-					"modifier": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"type": "minecraft:uniform",
-								"min": 0,
-								"max": 2
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"type": "minecraft:set_count",
+								"count": {
+									"type": "minecraft:uniform",
+									"min": 0,
+									"max": 2
+								},
+								"add": false
 							},
-							"add": false
-						},
-						{
-							"function": "minecraft:enchanted_count_increase",
-							"enchantment": "minecraft:looting",
-							"count": {
-								"type": "minecraft:uniform",
-								"min": 0,
-								"max": 1
+							{
+								"type": "minecraft:enchanted_count_increase",
+								"enchantment": "minecraft:looting",
+								"count": {
+									"type": "minecraft:uniform",
+									"min": 0,
+									"max": 1
+								},
+								"limit": 1
 							},
-							"limit": 1
-						},
-						{
-							"function": "minecraft:set_potion",
-							"id": "minecraft:poison"
-						}
-					]
+							{
+								"type": "minecraft:set_potion",
+								"id": "minecraft:poison"
+							}
+						]
+					}
 				}
 			],
 			"condition": {
@@ -79,16 +85,14 @@
 					"type": "minecraft:item",
 					"name": "minecraft:glowstone_dust",
 					"weight": 10,
-					"modifier": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"type": "minecraft:uniform",
-								"min": 0,
-								"max": 1
-							}
+					"modifier": {
+						"type": "minecraft:set_count",
+						"count": {
+							"type": "minecraft:uniform",
+							"min": 0,
+							"max": 1
 						}
-					]
+					}
 				},
 				{
 					"type": "minecraft:item",
@@ -105,30 +109,26 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:brown_mushroom",
-					"modifier": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"type": "minecraft:uniform",
-								"min": 0,
-								"max": 1
-							}
+					"modifier": {
+						"type": "minecraft:set_count",
+						"count": {
+							"type": "minecraft:uniform",
+							"min": 0,
+							"max": 1
 						}
-					]
+					}
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:red_mushroom",
-					"modifier": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"type": "minecraft:uniform",
-								"min": 0,
-								"max": 1
-							}
+					"modifier": {
+						"type": "minecraft:set_count",
+						"count": {
+							"type": "minecraft:uniform",
+							"min": 0,
+							"max": 1
 						}
-					]
+					}
 				}
 			],
 			"condition": {

@@ -7,81 +7,71 @@
 				{
 					"type": "minecraft:loot_table",
 					"value": "matcha:materials/raw_diamond",
-					"modifier": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 3,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 3,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:diamond",
 					"weight": 5
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 5,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 5,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:raw_iron",
 					"weight": 15
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 7,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 7,
+							"min": 2
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:raw_gold",
 					"weight": 15
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 3,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 3,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:emerald",
 					"weight": 15
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 5,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 5,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:leather",
 					"weight": 20
 				},
@@ -107,12 +97,10 @@
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"function": "minecraft:enchant_randomly",
-							"options": "#minecraft:on_random_loot"
-						}
-					],
+					"modifier": {
+						"type": "minecraft:enchant_randomly",
+						"options": "#minecraft:on_random_loot"
+					},
 					"name": "minecraft:book",
 					"weight": 20
 				},
@@ -142,49 +130,43 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 3,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 3,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:bone",
 					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 4,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:gunpowder",
 					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 4,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:sand",
 					"weight": 10
 				}
@@ -200,13 +182,11 @@
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": 2,
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": 2,
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:dune_armor_trim_smithing_template"
 				}
 			],

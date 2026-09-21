@@ -5,48 +5,42 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 2,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 2,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:emerald",
 					"weight": 3
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"function": "minecraft:enchant_with_levels",
-							"levels": {
-								"type": "minecraft:uniform",
-								"max": 15,
-								"min": 5
-							},
-							"options": "#minecraft:on_random_loot"
-						}
-					],
+					"modifier": {
+						"type": "minecraft:enchant_with_levels",
+						"levels": {
+							"type": "minecraft:uniform",
+							"max": 15,
+							"min": 5
+						},
+						"options": "#minecraft:on_random_loot"
+					},
 					"name": "minecraft:bow",
 					"weight": 3
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"function": "minecraft:enchant_with_levels",
-							"levels": {
-								"type": "minecraft:uniform",
-								"max": 20,
-								"min": 5
-							},
-							"options": "#minecraft:on_random_loot"
-						}
-					],
+					"modifier": {
+						"type": "minecraft:enchant_with_levels",
+						"levels": {
+							"type": "minecraft:uniform",
+							"max": 20,
+							"min": 5
+						},
+						"options": "#minecraft:on_random_loot"
+					},
 					"name": "minecraft:crossbow",
 					"weight": 2
 				},
@@ -62,36 +56,32 @@
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"function": "minecraft:enchant_randomly",
-							"options": [
-								"minecraft:sharpness",
-								"minecraft:bane_of_arthropods",
-								"minecraft:efficiency",
-								"minecraft:fortune",
-								"minecraft:silk_touch",
-								"minecraft:feather_falling"
-							]
-						}
-					],
+					"modifier": {
+						"type": "minecraft:enchant_randomly",
+						"options": [
+							"minecraft:sharpness",
+							"minecraft:bane_of_arthropods",
+							"minecraft:efficiency",
+							"minecraft:fortune",
+							"minecraft:silk_touch",
+							"minecraft:feather_falling"
+						]
+					},
 					"name": "minecraft:book",
 					"weight": 2
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"function": "minecraft:enchant_randomly",
-							"options": [
-								"minecraft:riptide",
-								"minecraft:loyalty",
-								"minecraft:channeling",
-								"minecraft:impaling",
-								"minecraft:mending"
-							]
-						}
-					],
+					"modifier": {
+						"type": "minecraft:enchant_randomly",
+						"options": [
+							"minecraft:riptide",
+							"minecraft:loyalty",
+							"minecraft:channeling",
+							"minecraft:impaling",
+							"minecraft:mending"
+						]
+					},
 					"name": "minecraft:book",
 					"weight": 2
 				},
@@ -99,23 +89,19 @@
 					"type": "minecraft:loot_table",
 					"value": "matcha:equipment/iron/equipment",
 					"weight": 3,
-					"modifier": [
-						{
-							"function": "minecraft:enchant_randomly",
-							"options": "#minecraft:on_random_loot"
-						}
-					]
+					"modifier": {
+						"type": "minecraft:enchant_randomly",
+						"options": "#minecraft:on_random_loot"
+					}
 				},
 				{
 					"type": "minecraft:loot_table",
 					"value": "matcha:equipment/diamond/equipment",
 					"weight": 1,
-					"modifier": [
-						{
-							"function": "minecraft:enchant_randomly",
-							"options": "#minecraft:on_random_loot"
-						}
-					]
+					"modifier": {
+						"type": "minecraft:enchant_randomly",
+						"options": "#minecraft:on_random_loot"
+					}
 				},
 				{
 					"type": "minecraft:item",

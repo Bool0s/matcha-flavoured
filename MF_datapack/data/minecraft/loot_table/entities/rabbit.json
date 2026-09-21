@@ -5,25 +5,28 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 2,
-								"min": 1
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 2,
+									"min": 1
+								},
+								"type": "minecraft:set_count"
 							},
-							"function": "minecraft:set_count"
-						},
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 1,
-								"min": 0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:enchanted_count_increase"
-						}
-					],
+							{
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 1,
+									"min": 0
+								},
+								"enchantment": "minecraft:looting",
+								"type": "minecraft:enchanted_count_increase"
+							}
+						]
+					},
 					"name": "minecraft:rabbit_hide"
 				}
 			],
@@ -33,55 +36,58 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"count": 1,
-							"function": "minecraft:set_count"
-						},
-						{
-							"condition": {
-								"type": "minecraft:any_of",
-								"terms": [
-									{
-										"type": "minecraft:entity_properties",
-										"entity": "this",
-										"predicate": {
-											"minecraft:flags": {
-												"is_on_fire": true
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"count": 1,
+								"type": "minecraft:set_count"
+							},
+							{
+								"condition": {
+									"type": "minecraft:any_of",
+									"terms": [
+										{
+											"type": "minecraft:entity_properties",
+											"entity": "this",
+											"predicate": {
+												"minecraft:flags": {
+													"is_on_fire": true
+												}
 											}
-										}
-									},
-									{
-										"type": "minecraft:entity_properties",
-										"entity": "direct_attacker",
-										"predicate": {
-											"minecraft:equipment": {
-												"mainhand": {
-													"predicates": {
-														"minecraft:enchantments": [
-															{
-																"enchantments": "#minecraft:smelts_loot"
-															}
-														]
+										},
+										{
+											"type": "minecraft:entity_properties",
+											"entity": "direct_attacker",
+											"predicate": {
+												"minecraft:equipment": {
+													"mainhand": {
+														"predicates": {
+															"minecraft:enchantments": [
+																{
+																	"enchantments": "#minecraft:smelts_loot"
+																}
+															]
+														}
 													}
 												}
 											}
 										}
-									}
-								]
+									]
+								},
+								"type": "minecraft:furnace_smelt"
 							},
-							"function": "minecraft:furnace_smelt"
-						},
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 1,
-								"min": 0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:enchanted_count_increase"
-						}
-					],
+							{
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 1,
+									"min": 0
+								},
+								"enchantment": "minecraft:looting",
+								"type": "minecraft:enchanted_count_increase"
+							}
+						]
+					},
 					"name": "minecraft:rabbit"
 				}
 			],

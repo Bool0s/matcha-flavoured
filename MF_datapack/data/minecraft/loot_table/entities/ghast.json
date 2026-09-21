@@ -5,17 +5,15 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 1,
-								"min": 0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:enchanted_count_increase"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 1,
+							"min": 0
+						},
+						"enchantment": "minecraft:looting",
+						"type": "minecraft:enchanted_count_increase"
+					},
 					"name": "minecraft:ghast_tear"
 				}
 			],
@@ -25,25 +23,28 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 2,
-								"min": 0
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 2,
+									"min": 0
+								},
+								"type": "minecraft:set_count"
 							},
-							"function": "minecraft:set_count"
-						},
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 1,
-								"min": 0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:enchanted_count_increase"
-						}
-					],
+							{
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 1,
+									"min": 0
+								},
+								"enchantment": "minecraft:looting",
+								"type": "minecraft:enchanted_count_increase"
+							}
+						]
+					},
 					"name": "minecraft:gunpowder"
 				}
 			],
@@ -78,12 +79,10 @@
 					"name": "minecraft:music_disc_tears"
 				}
 			],
-			"modifier": [
-				{
-					"count": 1,
-					"function": "minecraft:set_count"
-				}
-			],
+			"modifier": {
+				"count": 1,
+				"type": "minecraft:set_count"
+			},
 			"rolls": 1
 		}
 	],

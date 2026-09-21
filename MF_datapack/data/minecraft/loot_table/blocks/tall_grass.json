@@ -39,13 +39,11 @@
 									"items": "minecraft:shears"
 								}
 							},
-							"modifier": [
-								{
-									"add": false,
-									"count": 2,
-									"function": "minecraft:set_count"
-								}
-							],
+							"modifier": {
+								"add": false,
+								"count": 2,
+								"type": "minecraft:set_count"
+							},
 							"name": "minecraft:short_grass"
 						},
 						{
@@ -76,12 +74,10 @@
 								{
 									"type": "minecraft:item",
 									"name": "minecraft:short_grass",
-									"modifier": [
-										{
-											"function": "minecraft:set_count",
-											"count": 2
-										}
-									],
+									"modifier": {
+										"type": "minecraft:set_count",
+										"count": 2
+									},
 									"condition": {
 										"type": "minecraft:match_tool",
 										"predicate": {
@@ -134,13 +130,11 @@
 									"items": "minecraft:shears"
 								}
 							},
-							"modifier": [
-								{
-									"add": false,
-									"count": 2,
-									"function": "minecraft:set_count"
-								}
-							],
+							"modifier": {
+								"add": false,
+								"count": 2,
+								"type": "minecraft:set_count"
+							},
 							"name": "minecraft:short_grass"
 						},
 						{
@@ -171,12 +165,10 @@
 								{
 									"type": "minecraft:item",
 									"name": "minecraft:short_grass",
-									"modifier": [
-										{
-											"function": "minecraft:set_count",
-											"count": 2
-										}
-									],
+									"modifier": {
+										"type": "minecraft:set_count",
+										"count": 2
+									},
 									"condition": {
 										"type": "minecraft:match_tool",
 										"predicate": {

@@ -16,60 +16,54 @@
 				{
 					"type": "minecraft:item",
 					"quality": 1,
-					"modifier": [
-						{
-							"add": false,
-							"count": {
-								"min": 1,
-								"max": 3
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"min": 1,
+							"max": 3
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:ancient_debris",
 					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
 					"quality": 2,
-					"modifier": [
-						{
-							"add": false,
-							"count": {
-								"min": 1,
-								"max": 3
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"min": 1,
+							"max": 3
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:netherite_scrap",
 					"weight": 8
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": 2,
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": 2,
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:ancient_debris",
 					"weight": 4
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 12,
-								"min": 6
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 12,
+							"min": 6
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:diamond",
 					"weight": 5
 				},
@@ -86,122 +80,106 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 5,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 5,
+							"min": 2
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:gold_block"
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 5,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 5,
+							"min": 2
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:iron_block"
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 9,
-								"min": 3
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 9,
+							"min": 3
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:gold_ingot"
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 9,
-								"min": 3
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 9,
+							"min": 3
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:iron_ingot"
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 5,
-								"min": 3
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 5,
+							"min": 3
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:crying_obsidian"
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 23,
-								"min": 8
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 23,
+							"min": 8
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:quartz"
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 15,
-								"min": 5
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 15,
+							"min": 5
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:gilded_blackstone"
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 3
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 8,
+							"min": 3
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:glowstone_dust"
 				}
 			],

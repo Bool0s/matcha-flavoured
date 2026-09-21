@@ -5,22 +5,25 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "modifier": [
-            {
-                "function": "minecraft:set_components",
-                "components": {
-                    "minecraft:max_stack_size": 64
-                }
-            },
-            {
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 15.0,
-                "min": 0.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
+          "modifier": {
+			"type": "minecraft:sequence",
+			"functions": [
+			  {
+				  "type": "minecraft:set_components",
+				  "components": {
+					  "minecraft:max_stack_size": 64
+				  }
+			  },
+			  {
+				"count": {
+				  "type": "minecraft:uniform",
+				  "max": 15.0,
+				  "min": 0.0
+				},
+				"type": "minecraft:set_count"
+			  }
+			]
+		  },
           "name": "minecraft:snowball"
         }
       ],

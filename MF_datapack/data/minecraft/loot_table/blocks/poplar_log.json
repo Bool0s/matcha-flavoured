@@ -3,7 +3,7 @@
 	"pools": [
 		{
 			"condition": {
-				"condition": "minecraft:survives_explosion"
+				"type": "minecraft:survives_explosion"
 			},
 			"entries": [
 				{
@@ -12,7 +12,7 @@
 						{
 							"type": "minecraft:item",
 							"condition": {
-								"condition": "minecraft:match_tool",
+								"type": "minecraft:match_tool",
 								"predicate": {
 									"predicates": {
 										"minecraft:enchantments": [
@@ -23,18 +23,21 @@
 									}
 								}
 							},
-							"modifier": [
-								{
-									"enchantment": "minecraft:fortune",
-									"formula": "minecraft:ore_drops",
-									"function": "minecraft:apply_bonus"
-								},
-								{
-									"function": "minecraft:apply_bonus",
-									"enchantment": "matcha:electrum_tool",
-									"formula": "minecraft:ore_drops"
-								}
-							],
+							"modifier": {
+								"type": "minecraft:sequence",
+								"functions": [
+									{
+										"enchantment": "minecraft:fortune",
+										"formula": "minecraft:ore_drops",
+										"type": "minecraft:apply_bonus"
+									},
+									{
+										"type": "minecraft:apply_bonus",
+										"enchantment": "matcha:electrum_tool",
+										"formula": "minecraft:ore_drops"
+									}
+								]
+							},
 							"name": "minecraft:charcoal"
 						},
 						{

@@ -1,18 +1,15 @@
 {
 	"type": "minecraft:block",
-	"modifier": [
-		{
-			"function": "minecraft:explosion_decay"
-		}
-	],
+	"modifier": {
+		"type": "minecraft:explosion_decay"
+	},
 	"pools": [
 		{
 			"bonus_rolls": 0,
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
-					"value": "matcha:food/carrot",
-					"modifier": []
+					"value": "matcha:food/carrot"
 				}
 			],
 			"rolls": 1
@@ -30,26 +27,29 @@
 				{
 					"type": "minecraft:loot_table",
 					"value": "matcha:food/carrot",
-					"modifier": [
-						{
-							"enchantment": "minecraft:fortune",
-							"formula": "minecraft:binomial_with_bonus_count",
-							"function": "minecraft:apply_bonus",
-							"parameters": {
-								"extra": 3,
-								"probability": 0.5714286
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"enchantment": "minecraft:fortune",
+								"formula": "minecraft:binomial_with_bonus_count",
+								"type": "minecraft:apply_bonus",
+								"parameters": {
+									"extra": 3,
+									"probability": 0.5714286
+								}
+							},
+							{
+								"enchantment": "matcha:electrum_tool",
+								"formula": "minecraft:binomial_with_bonus_count",
+								"type": "minecraft:apply_bonus",
+								"parameters": {
+									"extra": 3,
+									"probability": 0.5714286
+								}
 							}
-						},
-						{
-							"enchantment": "matcha:electrum_tool",
-							"formula": "minecraft:binomial_with_bonus_count",
-							"function": "minecraft:apply_bonus",
-							"parameters": {
-								"extra": 3,
-								"probability": 0.5714286
-							}
-						}
-					]
+						]
+					}
 				}
 			],
 			"rolls": 1

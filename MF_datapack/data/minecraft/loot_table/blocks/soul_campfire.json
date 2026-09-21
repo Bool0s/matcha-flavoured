@@ -9,16 +9,14 @@
           "children": [
             {
               "type": "minecraft:item",
-              "modifier": [
-                {
-                  "function": "minecraft:set_components",
-                  "components": {
-                    "minecraft:block_state": {
-                      "lit": "false"
-                    }
-                  }
-                }
-              ],
+              "modifier": {
+				"type": "minecraft:set_components",
+				"components": {
+				  "minecraft:block_state": {
+					"lit": "false"
+				  }
+				}
+			  },
               "name": "minecraft:soul_campfire"
             }
           ]

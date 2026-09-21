@@ -5,89 +5,82 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"function": "minecraft:enchant_randomly",
-							"options": "minecraft:soul_speed"
-						}
-					],
+					"modifier": {
+						"type": "minecraft:enchant_randomly",
+						"options": "minecraft:soul_speed"
+					},
 					"name": "minecraft:book",
 					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 36,
-								"min": 10
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 36,
+							"min": 10
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:iron_nugget",
 					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:max_stack_size": 64
-							}
-						},
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"type": "minecraft:set_components",
+								"components": {
+									"minecraft:max_stack_size": 64
+								}
 							},
-							"function": "minecraft:set_count"
-						}
-					],
+							{
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 4,
+									"min": 2
+								},
+								"type": "minecraft:set_count"
+							}
+						]
+					},
 					"name": "minecraft:ender_pearl",
 					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"count": 1,
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": 1,
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:dried_ghast",
 					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 9,
-								"min": 3
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 9,
+							"min": 3
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:string",
 					"weight": 20
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 12,
-								"min": 5
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 12,
+							"min": 5
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:quartz",
 					"weight": 20
 				},
@@ -98,16 +91,14 @@
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 3,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 3,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:crying_obsidian",
 					"weight": 40
 				},
@@ -118,91 +109,79 @@
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 4,
+							"min": 2
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:leather",
 					"weight": 40
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 8,
+							"min": 2
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:soul_sand",
 					"weight": 40
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 8,
+							"min": 2
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:nether_brick",
 					"weight": 40
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 12,
-								"min": 6
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 12,
+							"min": 6
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:spectral_arrow",
 					"weight": 40
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 16,
-								"min": 8
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 16,
+							"min": 8
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:gravel",
 					"weight": 40
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 16,
-								"min": 8
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 16,
+							"min": 8
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:blackstone",
 					"weight": 40
 				}

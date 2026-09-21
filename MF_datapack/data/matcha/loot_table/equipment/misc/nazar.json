@@ -7,17 +7,15 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:blaze_spawn_egg",
-					"modifier": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:enchantments": {
-									"matcha:warding_2": 1
-								},
-								"!minecraft:entity_data": {}
-							}
+					"modifier": {
+						"type": "minecraft:set_components",
+						"components": {
+							"minecraft:enchantments": {
+								"matcha:warding_2": 1
+							},
+							"!minecraft:entity_data": {}
 						}
-					]
+					}
 				}
 			]
 		}

@@ -6,26 +6,29 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 1,
-								"min": 0
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"add": false,
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 1,
+									"min": 0
+								},
+								"type": "minecraft:set_count"
 							},
-							"function": "minecraft:set_count"
-						},
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 1,
-								"min": 0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:enchanted_count_increase"
-						}
-					],
+							{
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 1,
+									"min": 0
+								},
+								"enchantment": "minecraft:looting",
+								"type": "minecraft:enchanted_count_increase"
+							}
+						]
+					},
 					"name": "minecraft:wet_sponge"
 				}
 			],
@@ -39,51 +42,54 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 1,
-								"min": 0
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 1,
+									"min": 0
+								},
+								"enchantment": "minecraft:looting",
+								"type": "minecraft:enchanted_count_increase"
 							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:enchanted_count_increase"
-						},
-						{
-							"condition": {
-								"type": "minecraft:any_of",
-								"terms": [
-									{
-										"type": "minecraft:entity_properties",
-										"entity": "this",
-										"predicate": {
-											"flags": {
-												"is_on_fire": true
+							{
+								"condition": {
+									"type": "minecraft:any_of",
+									"terms": [
+										{
+											"type": "minecraft:entity_properties",
+											"entity": "this",
+											"predicate": {
+												"flags": {
+													"is_on_fire": true
+												}
 											}
-										}
-									},
-									{
-										"type": "minecraft:entity_properties",
-										"entity": "direct_attacker",
-										"predicate": {
-											"equipment": {
-												"mainhand": {
-													"predicates": {
-														"minecraft:enchantments": [
-															{
-																"enchantments": "#minecraft:smelts_loot"
-															}
-														]
+										},
+										{
+											"type": "minecraft:entity_properties",
+											"entity": "direct_attacker",
+											"predicate": {
+												"equipment": {
+													"mainhand": {
+														"predicates": {
+															"minecraft:enchantments": [
+																{
+																	"enchantments": "#minecraft:smelts_loot"
+																}
+															]
+														}
 													}
 												}
 											}
 										}
-									}
-								]
-							},
-							"function": "minecraft:furnace_smelt"
-						}
-					],
+									]
+								},
+								"type": "minecraft:furnace_smelt"
+							}
+						]
+					},
 					"name": "minecraft:cod",
 					"weight": 2
 				},

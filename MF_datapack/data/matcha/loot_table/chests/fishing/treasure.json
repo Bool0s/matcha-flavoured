@@ -8,15 +8,14 @@
 				{
 					"type": "minecraft:loot_table",
 					"value": "matcha:materials/raw_diamond",
-					"modifier": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 2,
-								"max": 4
-							}
+					"modifier": {
+						"type": "minecraft:set_count",
+						"count": {
+							"type": "minecraft:uniform",
+							"min": 2,
+							"max": 4
 						}
-					]
+					}
 				}
 			]
 		},
@@ -24,8 +23,7 @@
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
-					"value": "matcha:chests/common/treasure_ores",
-					"modifier": []
+					"value": "matcha:chests/common/treasure_ores"
 				}
 			],
 			"rolls": {
@@ -42,13 +40,11 @@
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": 2,
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": 2,
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:coast_armor_trim_smithing_template"
 				}
 			],
@@ -63,49 +59,41 @@
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": 1,
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": 1,
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:copper_nautilus_armor",
 					"weight": 20
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": 1,
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": 1,
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:iron_nautilus_armor",
 					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": 1,
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": 1,
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:golden_nautilus_armor",
 					"weight": 5
 				},
 				{
 					"type": "minecraft:item",
-					"modifier": [
-						{
-							"add": false,
-							"count": 1,
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": 1,
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:diamond_nautilus_armor",
 					"weight": 2
 				}

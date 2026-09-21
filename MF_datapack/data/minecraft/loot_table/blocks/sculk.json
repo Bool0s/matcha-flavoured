@@ -28,12 +28,10 @@
 						},
 						{
 							"type": "minecraft:item",
-							"modifier": [
-								{
-									"function": "minecraft:set_count",
-									"count": 4
-								}
-							],
+							"modifier": {
+								"type": "minecraft:set_count",
+								"count": 4
+							},
 							"name": "minecraft:sculk_vein"
 						}
 					]

@@ -39,50 +39,56 @@
 									}
 								}
 							},
-							"modifier": [
-								{
-									"count": {
-										"type": "minecraft:uniform",
-										"max": 5,
-										"min": 2
+							"modifier": {
+								"type": "minecraft:sequence",
+								"functions": [
+									{
+										"count": {
+											"type": "minecraft:uniform",
+											"max": 5,
+											"min": 2
+										},
+										"type": "minecraft:set_count"
 									},
-									"function": "minecraft:set_count"
-								},
-                                {
-									"enchantment": "minecraft:fortune",
-									"formula": "minecraft:ore_drops",
-									"function": "minecraft:apply_bonus"
-								},
-								{
-									"function": "minecraft:apply_bonus",
-									"enchantment": "matcha:electrum_tool",
-									"formula": "minecraft:ore_drops"
-								}
-							],
+									{
+										"enchantment": "minecraft:fortune",
+										"formula": "minecraft:ore_drops",
+										"type": "minecraft:apply_bonus"
+									},
+									{
+										"type": "minecraft:apply_bonus",
+										"enchantment": "matcha:electrum_tool",
+										"formula": "minecraft:ore_drops"
+									}
+								]
+							},
 							"name": "minecraft:copper_ingot"
 						},
 						{
 							"type": "minecraft:item",
-							"modifier": [
-								{
-									"count": {
-										"type": "minecraft:uniform",
-										"max": 5,
-										"min": 2
+							"modifier": {
+								"type": "minecraft:sequence",
+								"functions": [
+									{
+										"count": {
+											"type": "minecraft:uniform",
+											"max": 5,
+											"min": 2
+										},
+										"type": "minecraft:set_count"
 									},
-									"function": "minecraft:set_count"
-								},
-								{
-									"enchantment": "minecraft:fortune",
-									"formula": "minecraft:ore_drops",
-									"function": "minecraft:apply_bonus"
-								},
-								{
-									"function": "minecraft:apply_bonus",
-									"enchantment": "matcha:electrum_tool",
-									"formula": "minecraft:ore_drops"
-								}
-							],
+									{
+										"enchantment": "minecraft:fortune",
+										"formula": "minecraft:ore_drops",
+										"type": "minecraft:apply_bonus"
+									},
+									{
+										"type": "minecraft:apply_bonus",
+										"enchantment": "matcha:electrum_tool",
+										"formula": "minecraft:ore_drops"
+									}
+								]
+							},
 							"name": "minecraft:raw_copper"
 						}
 					]

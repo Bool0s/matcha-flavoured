@@ -8,23 +8,21 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:salmon",
-					"modifier": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:item_name": {
-									"translate": "item.kleispack.fish.siberian_sturgeon"
-								},
-								"minecraft:item_model": "matcha:siberian_sturgeon",
-								"minecraft:lore": [
-									{
-										"translate": "adv.kleispack.fishing.rarity.4",
-										"italic": false
-									}
-								]
-							}
+					"modifier": {
+						"type": "minecraft:set_components",
+						"components": {
+							"minecraft:item_name": {
+								"translate": "item.kleispack.fish.siberian_sturgeon"
+							},
+							"minecraft:item_model": "matcha:siberian_sturgeon",
+							"minecraft:lore": [
+								{
+									"translate": "adv.kleispack.fishing.rarity.4",
+									"italic": false
+								}
+							]
 						}
-					]
+					}
 				}
 			]
 		}

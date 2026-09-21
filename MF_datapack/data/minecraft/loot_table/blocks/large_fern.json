@@ -39,13 +39,11 @@
 									"items": "minecraft:shears"
 								}
 							},
-							"modifier": [
-								{
-									"add": false,
-									"count": 2,
-									"function": "minecraft:set_count"
-								}
-							],
+							"modifier": {
+								"add": false,
+								"count": 2,
+								"type": "minecraft:set_count"
+							},
 							"name": "minecraft:fern"
 						},
 						{
@@ -56,13 +54,16 @@
 									"items": "#minecraft:hoes"
 								}
 							},
-							"modifier": [
-								{
-									"add": false,
-									"count": 2,
-									"function": "minecraft:set_count"
-								}
-							],
+							"modifier": {
+								"type": "minecraft:sequence",
+								"functions": [
+									{
+										"add": false,
+										"count": 2,
+										"type": "minecraft:set_count"
+									}
+								]
+							},
 							"name": "minecraft:fern"
 						}
 					]
@@ -108,13 +109,16 @@
 									"items": "minecraft:shears"
 								}
 							},
-							"modifier": [
-								{
-									"add": false,
-									"count": 2,
-									"function": "minecraft:set_count"
-								}
-							],
+							"modifier": {
+								"type": "minecraft:sequence",
+								"functions": [
+									{
+										"add": false,
+										"count": 2,
+										"type": "minecraft:set_count"
+									}
+								]
+							},
 							"name": "minecraft:fern"
 						},
 						{
@@ -125,13 +129,16 @@
 									"items": "#minecraft:hoes"
 								}
 							},
-							"modifier": [
-								{
-									"add": false,
-									"count": 2,
-									"function": "minecraft:set_count"
-								}
-							],
+							"modifier": {
+								"type": "minecraft:sequence",
+								"functions": [
+									{
+										"add": false,
+										"count": 2,
+										"type": "minecraft:set_count"
+									}
+								]
+							},
 							"name": "minecraft:fern"
 						}
 					]

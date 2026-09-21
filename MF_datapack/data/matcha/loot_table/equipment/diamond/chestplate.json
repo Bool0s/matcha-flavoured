@@ -7,33 +7,31 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_chestplate",
-					"modifier": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-                                "minecraft:lore": [
-                                    {
-                                        "translate": "desc.kleispack.armour",
-                                        "with": ["8"],
-                                        "color": "dark_green",
-                                        "italic": false
-                                    },
-                                    {
-                                        "translate": "desc.kleispack.armour_toughness",
-                                        "with": ["2"],
-                                        "color": "dark_green",
-                                        "italic": false
-                                    }
-                                ],
-                                "minecraft:tooltip_display": {
-                                    "hidden_components": [
-                                        "minecraft:attribute_modifiers"
-                                    ]
-                                },
-                                "minecraft:max_damage": 800
-                            }
+					"modifier": {
+						"type": "minecraft:set_components",
+						"components": {
+							"minecraft:lore": [
+								{
+									"translate": "desc.kleispack.armour",
+									"with": ["8"],
+									"color": "dark_green",
+									"italic": false
+								},
+								{
+									"translate": "desc.kleispack.armour_toughness",
+									"with": ["2"],
+									"color": "dark_green",
+									"italic": false
+								}
+							],
+							"minecraft:tooltip_display": {
+								"hidden_components": [
+									"minecraft:attribute_modifiers"
+								]
+							},
+							"minecraft:max_damage": 800
 						}
-					]
+					}
 				}
 			]
 		}

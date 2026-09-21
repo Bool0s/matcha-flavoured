@@ -26,48 +26,54 @@
 			  },
               "name": "minecraft:deepslate_emerald_ore"
             },
-						{
-							"type": "minecraft:item",
-							"condition": {
-								"type": "minecraft:match_tool",
-								"predicate": {
-									"predicates": {
-										"minecraft:enchantments": [
-											{
-												"enchantments": "matcha:adamant_tool"
-											}
-										]
-									}
-								}
-							},
-							"modifier": [
-								{
-									"enchantment": "minecraft:fortune",
-									"formula": "minecraft:ore_drops",
-									"function": "minecraft:apply_bonus"
-								},
-								{
-									"function": "minecraft:apply_bonus",
-									"enchantment": "matcha:electrum_tool",
-									"formula": "minecraft:ore_drops"
-								}
-							],
-							"name": "minecraft:prismarine_crystals"
-						},
-            {
-              "type": "minecraft:item",
-              "modifier": [
-                {
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops",
-                  "function": "minecraft:apply_bonus"
-                },
-								{
-									"function": "minecraft:apply_bonus",
-									"enchantment": "matcha:electrum_tool",
-									"formula": "minecraft:ore_drops"
-								}
-              ],
+			{
+			  "type": "minecraft:item",
+			  "condition": {
+				"type": "minecraft:match_tool",
+				"predicate": {
+				  "predicates": {
+					"minecraft:enchantments": [
+					  {
+						"enchantments": "matcha:adamant_tool"
+					  }
+					]
+				  }
+				}
+			  },
+			  "modifier": {
+				"type": "minecraft:sequence",
+				"functions": [
+				  {
+					"enchantment": "minecraft:fortune",
+					"formula": "minecraft:ore_drops",
+					"type": "minecraft:apply_bonus"
+				  },
+				  {
+					"type": "minecraft:apply_bonus",
+					"enchantment": "matcha:electrum_tool",
+					"formula": "minecraft:ore_drops"
+				  }
+				]
+			  },
+			  "name": "minecraft:prismarine_crystals"
+			},
+			{
+			  "type": "minecraft:item",
+			  "modifier": {
+				  "type": "minecraft:sequence",
+				  "functions": [
+					{
+					  "enchantment": "minecraft:fortune",
+					  "formula": "minecraft:ore_drops",
+					  "type": "minecraft:apply_bonus"
+					},
+					{
+					  "type": "minecraft:apply_bonus",
+					  "enchantment": "matcha:electrum_tool",
+					  "formula": "minecraft:ore_drops"
+					}
+				]
+			  },
               "name": "minecraft:prismarine_shard"
             }
           ]

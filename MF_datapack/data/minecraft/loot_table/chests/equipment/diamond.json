@@ -6,400 +6,430 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_helmet",
-					"modifier": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:lore": [
-									{
-										"text": "🛡 3",
-										"color": "dark_green",
-										"italic": false
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"type": "minecraft:set_components",
+								"components": {
+									"minecraft:lore": [
+										{
+											"text": "🛡 3",
+											"color": "dark_green",
+											"italic": false
+										},
+										{
+											"text": "\uE008 2",
+											"color": "dark_green",
+											"italic": false
+										}
+									],
+									"minecraft:tooltip_display": {
+										"hidden_components": [
+											"minecraft:attribute_modifiers"
+										]
 									},
-									{
-										"text": "\uE008 2",
-										"color": "dark_green",
-										"italic": false
-									}
-								],
-								"minecraft:tooltip_display": {
-									"hidden_components": [
-										"minecraft:attribute_modifiers"
-									]
-								},
-								"minecraft:max_damage": 800
+									"minecraft:max_damage": 800
+								}
+							},
+							{
+								"type": "minecraft:enchant_randomly",
+								"options": "#minecraft:on_random_loot"
 							}
-						},
-						{
-							"function": "minecraft:enchant_randomly",
-							"options": "#minecraft:on_random_loot"
-						}
-					]
+						]
+					}
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_chestplate",
-					"modifier": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:lore": [
-									{
-										"text": "🛡 8",
-										"color": "dark_green",
-										"italic": false
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"type": "minecraft:set_components",
+								"components": {
+									"minecraft:lore": [
+										{
+											"text": "🛡 8",
+											"color": "dark_green",
+											"italic": false
+										},
+										{
+											"text": "\uE008 2",
+											"color": "dark_green",
+											"italic": false
+										}
+									],
+									"minecraft:tooltip_display": {
+										"hidden_components": [
+											"minecraft:attribute_modifiers"
+										]
 									},
-									{
-										"text": "\uE008 2",
-										"color": "dark_green",
-										"italic": false
-									}
-								],
-								"minecraft:tooltip_display": {
-									"hidden_components": [
-										"minecraft:attribute_modifiers"
-									]
-								},
-								"minecraft:max_damage": 800
+									"minecraft:max_damage": 800
+								}
+							},
+							{
+								"type": "minecraft:enchant_randomly",
+								"options": "#minecraft:on_random_loot"
 							}
-						},
-						{
-							"function": "minecraft:enchant_randomly",
-							"options": "#minecraft:on_random_loot"
-						}
-					]
+						]
+					}
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_leggings",
-					"modifier": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:lore": [
-									{
-										"text": "🛡 6",
-										"color": "dark_green",
-										"italic": false
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"type": "minecraft:set_components",
+								"components": {
+									"minecraft:lore": [
+										{
+											"text": "🛡 6",
+											"color": "dark_green",
+											"italic": false
+										},
+										{
+											"text": "\uE008 2",
+											"color": "dark_green",
+											"italic": false
+										}
+									],
+									"minecraft:tooltip_display": {
+										"hidden_components": [
+											"minecraft:attribute_modifiers"
+										]
 									},
-									{
-										"text": "\uE008 2",
-										"color": "dark_green",
-										"italic": false
-									}
-								],
-								"minecraft:tooltip_display": {
-									"hidden_components": [
-										"minecraft:attribute_modifiers"
-									]
-								},
-								"minecraft:max_damage": 800
+									"minecraft:max_damage": 800
+								}
+							},
+							{
+								"type": "minecraft:enchant_randomly",
+								"options": "#minecraft:on_random_loot"
 							}
-						},
-						{
-							"function": "minecraft:enchant_randomly",
-							"options": "#minecraft:on_random_loot"
-						}
-					]
+						]
+					}
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_boots",
-					"modifier": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:lore": [
-									{
-										"text": "🛡 3",
-										"color": "dark_green",
-										"italic": false
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"type": "minecraft:set_components",
+								"components": {
+									"minecraft:lore": [
+										{
+											"text": "🛡 3",
+											"color": "dark_green",
+											"italic": false
+										},
+										{
+											"text": "\uE008 2",
+											"color": "dark_green",
+											"italic": false
+										}
+									],
+									"minecraft:tooltip_display": {
+										"hidden_components": [
+											"minecraft:attribute_modifiers"
+										]
 									},
-									{
-										"text": "\uE008 2",
-										"color": "dark_green",
-										"italic": false
-									}
-								],
-								"minecraft:tooltip_display": {
-									"hidden_components": [
-										"minecraft:attribute_modifiers"
-									]
-								},
-								"minecraft:max_damage": 800
+									"minecraft:max_damage": 800
+								}
+							},
+							{
+								"type": "minecraft:enchant_randomly",
+								"options": "#minecraft:on_random_loot"
 							}
-						},
-						{
-							"function": "minecraft:enchant_randomly",
-							"options": "#minecraft:on_random_loot"
-						}
-					]
+						]
+					}
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_sword",
-					"modifier": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:lore": [
-									{
-										"text": "🗡 7",
-										"color": "dark_green",
-										"italic": false
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"type": "minecraft:set_components",
+								"components": {
+									"minecraft:lore": [
+										{
+											"text": "🗡 7",
+											"color": "dark_green",
+											"italic": false
+										},
+										{
+											"text": "🕒 1.6",
+											"color": "dark_green",
+											"italic": false
+										}
+									],
+									"minecraft:tooltip_display": {
+										"hidden_components": [
+											"minecraft:attribute_modifiers"
+										]
 									},
-									{
-										"text": "🕒 1.6",
-										"color": "dark_green",
-										"italic": false
-									}
-								],
-								"minecraft:tooltip_display": {
-									"hidden_components": [
-										"minecraft:attribute_modifiers"
-									]
-								},
-								"minecraft:max_damage": 2500
+									"minecraft:max_damage": 2500
+								}
+							},
+							{
+								"type": "minecraft:enchant_randomly",
+								"options": "#minecraft:on_random_loot"
 							}
-						},
-						{
-							"function": "minecraft:enchant_randomly",
-							"options": "#minecraft:on_random_loot"
-						}
-					]
+						]
+					}
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_spear",
-					"modifier": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:lore": [
-									{
-										"text": "🗡 4",
-										"color": "dark_green",
-										"italic": false
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"type": "minecraft:set_components",
+								"components": {
+									"minecraft:lore": [
+										{
+											"text": "🗡 4",
+											"color": "dark_green",
+											"italic": false
+										},
+										{
+											"text": "🕒 0.95",
+											"color": "dark_green",
+											"italic": false
+										}
+									],
+									"minecraft:tooltip_display": {
+										"hidden_components": [
+											"minecraft:attribute_modifiers"
+										]
 									},
-									{
-										"text": "🕒 0.95",
-										"color": "dark_green",
-										"italic": false
-									}
-								],
-								"minecraft:tooltip_display": {
-									"hidden_components": [
-										"minecraft:attribute_modifiers"
-									]
-								},
-								"minecraft:max_damage": 2500
+									"minecraft:max_damage": 2500
+								}
+							},
+							{
+								"type": "minecraft:enchant_randomly",
+								"options": "#minecraft:on_random_loot"
 							}
-						},
-						{
-							"function": "minecraft:enchant_randomly",
-							"options": "#minecraft:on_random_loot"
-						}
-					]
+						]
+					}
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_pickaxe",
-					"modifier": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:max_damage": 2500,
-								"minecraft:tool": {
-									"rules": [
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"type": "minecraft:set_components",
+								"components": {
+									"minecraft:max_damage": 2500,
+									"minecraft:tool": {
+										"rules": [
+											{
+												"blocks": "#matcha:obsidian_based",
+												"speed": 35,
+												"correct_for_drops": true
+											},{
+												"blocks": "#minecraft:mineable/pickaxe",
+												"speed": 9,
+												"correct_for_drops": true
+											}
+										],
+										"default_mining_speed": 1,
+										"damage_per_block": 1
+									},
+									"minecraft:lore": [
 										{
-											"blocks": "#matcha:obsidian_based",
-											"speed": 35,
-											"correct_for_drops": true
-										},{
-											"blocks": "#minecraft:mineable/pickaxe",
-											"speed": 9,
-											"correct_for_drops": true
+											"text": "⛏ 9",
+											"color": "blue",
+											"italic": false
+										},
+										{
+											"text": "🗡 5",
+											"color": "dark_green",
+											"italic": false
+										},
+										{
+											"text": "🕒 1.2",
+											"color": "dark_green",
+											"italic": false
 										}
 									],
-									"default_mining_speed": 1,
-									"damage_per_block": 1
-								},
-								"minecraft:lore": [
-									{
-										"text": "⛏ 9",
-										"color": "blue",
-										"italic": false
-									},
-									{
-										"text": "🗡 5",
-										"color": "dark_green",
-										"italic": false
-									},
-									{
-										"text": "🕒 1.2",
-										"color": "dark_green",
-										"italic": false
+									"minecraft:tooltip_display": {
+										"hidden_components": [
+											"minecraft:attribute_modifiers"
+										]
 									}
-								],
-								"minecraft:tooltip_display": {
-									"hidden_components": [
-										"minecraft:attribute_modifiers"
-									]
 								}
+							},
+							{
+								"type": "minecraft:enchant_randomly",
+								"options": "#minecraft:on_random_loot"
 							}
-						},
-						{
-							"function": "minecraft:enchant_randomly",
-							"options": "#minecraft:on_random_loot"
-						}
-					]
+						]
+					}
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_axe",
-					"modifier": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:max_damage": 2500,
-								"minecraft:tool": {
-									"rules": [
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"type": "minecraft:set_components",
+								"components": {
+									"minecraft:max_damage": 2500,
+									"minecraft:tool": {
+										"rules": [
+											{
+												"blocks": "#minecraft:mineable/axe",
+												"speed": 9,
+												"correct_for_drops": true
+											}
+										],
+										"default_mining_speed": 1,
+										"damage_per_block": 1
+									},
+									"minecraft:lore": [
 										{
-											"blocks": "#minecraft:mineable/axe",
-											"speed": 9,
-											"correct_for_drops": true
+											"text": "⛏ 9",
+											"color": "blue",
+											"italic": false
+										},
+										{
+											"text": "🗡 9",
+											"color": "dark_green",
+											"italic": false
+										},
+										{
+											"text": "🕒 1",
+											"color": "dark_green",
+											"italic": false
 										}
 									],
-									"default_mining_speed": 1,
-									"damage_per_block": 1
-								},
-								"minecraft:lore": [
-									{
-										"text": "⛏ 9",
-										"color": "blue",
-										"italic": false
-									},
-									{
-										"text": "🗡 9",
-										"color": "dark_green",
-										"italic": false
-									},
-									{
-										"text": "🕒 1",
-										"color": "dark_green",
-										"italic": false
+									"minecraft:tooltip_display": {
+										"hidden_components": [
+											"minecraft:attribute_modifiers"
+										]
 									}
-								],
-								"minecraft:tooltip_display": {
-									"hidden_components": [
-										"minecraft:attribute_modifiers"
-									]
 								}
+							},
+							{
+								"type": "minecraft:enchant_randomly",
+								"options": "#minecraft:on_random_loot"
 							}
-						},
-						{
-							"function": "minecraft:enchant_randomly",
-							"options": "#minecraft:on_random_loot"
-						}
-					]
+						]
+					}
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_shovel",
-					"modifier": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:max_damage": 2500,
-								"minecraft:tool": {
-									"rules": [
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"type": "minecraft:set_components",
+								"components": {
+									"minecraft:max_damage": 2500,
+									"minecraft:tool": {
+										"rules": [
+											{
+												"blocks": "#minecraft:mineable/shovel",
+												"speed": 9,
+												"correct_for_drops": true
+											}
+										],
+										"default_mining_speed": 1,
+										"damage_per_block": 1
+									},
+									"minecraft:lore": [
 										{
-											"blocks": "#minecraft:mineable/shovel",
-											"speed": 9,
-											"correct_for_drops": true
+											"text": "⛏ 9",
+											"color": "blue",
+											"italic": false
+										},
+										{
+											"text": "🗡 5.5",
+											"color": "dark_green",
+											"italic": false
+										},
+										{
+											"text": "🕒 1",
+											"color": "dark_green",
+											"italic": false
 										}
 									],
-									"default_mining_speed": 1,
-									"damage_per_block": 1
-								},
-								"minecraft:lore": [
-									{
-										"text": "⛏ 9",
-										"color": "blue",
-										"italic": false
-									},
-									{
-										"text": "🗡 5.5",
-										"color": "dark_green",
-										"italic": false
-									},
-									{
-										"text": "🕒 1",
-										"color": "dark_green",
-										"italic": false
+									"minecraft:tooltip_display": {
+										"hidden_components": [
+											"minecraft:attribute_modifiers"
+										]
 									}
-								],
-								"minecraft:tooltip_display": {
-									"hidden_components": [
-										"minecraft:attribute_modifiers"
-									]
 								}
+							},
+							{
+								"type": "minecraft:enchant_randomly",
+								"options": "#minecraft:on_random_loot"
 							}
-						},
-						{
-							"function": "minecraft:enchant_randomly",
-							"options": "#minecraft:on_random_loot"
-						}
-					]
+						]
+					}
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_hoe",
-					"modifier": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:max_damage": 2500,
-								"minecraft:tool": {
-									"rules": [
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"type": "minecraft:set_components",
+								"components": {
+									"minecraft:max_damage": 2500,
+									"minecraft:tool": {
+										"rules": [
+											{
+												"blocks": "#minecraft:mineable/hoe",
+												"speed": 9,
+												"correct_for_drops": true
+											}
+										],
+										"default_mining_speed": 1,
+										"damage_per_block": 1
+									},
+									"minecraft:lore": [
 										{
-											"blocks": "#minecraft:mineable/hoe",
-											"speed": 9,
-											"correct_for_drops": true
+											"text": "⛏ 9",
+											"color": "blue",
+											"italic": false
+										},
+										{
+											"text": "🗡 1",
+											"color": "dark_green",
+											"italic": false
+										},
+										{
+											"text": "🕒 4",
+											"color": "dark_green",
+											"italic": false
 										}
 									],
-									"default_mining_speed": 1,
-									"damage_per_block": 1
-								},
-								"minecraft:lore": [
-									{
-										"text": "⛏ 9",
-										"color": "blue",
-										"italic": false
-									},
-									{
-										"text": "🗡 1",
-										"color": "dark_green",
-										"italic": false
-									},
-									{
-										"text": "🕒 4",
-										"color": "dark_green",
-										"italic": false
+									"minecraft:tooltip_display": {
+										"hidden_components": [
+											"minecraft:attribute_modifiers"
+										]
 									}
-								],
-								"minecraft:tooltip_display": {
-									"hidden_components": [
-										"minecraft:attribute_modifiers"
-									]
 								}
+							},
+							{
+								"type": "minecraft:enchant_randomly",
+								"options": "#minecraft:on_random_loot"
 							}
-						},
-						{
-							"function": "minecraft:enchant_randomly",
-							"options": "#minecraft:on_random_loot"
-						}
-					]
+						]
+					}
 				}
 			],
 			"rolls": {

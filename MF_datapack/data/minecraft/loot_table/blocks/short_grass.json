@@ -24,29 +24,37 @@
 						},
 						{
 							"type": "minecraft:item",
-							"condition": [
-								{
-									"chance": 0.125,
-									"type": "minecraft:random_chance"
-								{
-								"type": "minecraft:match_tool",
-								"predicate": {
-									"items": "#minecraft:hoes"
-								}
-							},
-							"modifier": [
-								{
-									"enchantment": "minecraft:fortune",
-									"formula": "minecraft:uniform_bonus_count",
-									"function": "minecraft:apply_bonus",
-									"parameters": {
-										"bonusMultiplier": 2
+							"condition": {
+								"type": "minecraft:all_of",
+								"terms": [
+									{
+										"chance": 0.125,
+										"type": "minecraft:random_chance"
+									},
+									{
+										"type": "minecraft:match_tool",
+										"predicate": {
+											"items": "#minecraft:hoes"
+										}
 									}
-								},
-								{
-									"function": "minecraft:explosion_decay"
-								}
-							],
+								]
+							},
+							"modifier": {
+								"type": "minecraft:sequence",
+								"functions": [
+									{
+										"enchantment": "minecraft:fortune",
+										"formula": "minecraft:uniform_bonus_count",
+										"type": "minecraft:apply_bonus",
+										"parameters": {
+											"bonusMultiplier": 2
+										}
+									},
+									{
+										"type": "minecraft:explosion_decay"
+									}
+								]
+							},
 							"name": "minecraft:wheat_seeds"
 						},
 						{

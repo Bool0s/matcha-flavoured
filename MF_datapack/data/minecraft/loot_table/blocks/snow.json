@@ -23,18 +23,21 @@
 											"layers": "1"
 										}
 									},
-									"modifier": [
-										{
-											"function": "minecraft:set_components",
-											"components": {
-												"minecraft:max_stack_size": 64
+									"modifier": {
+										"type": "minecraft:sequence",
+										"functions": [
+											{
+												"type": "minecraft:set_components",
+												"components": {
+													"minecraft:max_stack_size": 64
+												}
+											},
+											{
+												"count": 1,
+												"type": "minecraft:set_count"
 											}
-										},
-										{
-											"count": 1,
-											"function": "minecraft:set_count"
-										}
-									],
+										]
+									},
 									"name": "minecraft:snowball"
 								},
 								{
@@ -46,18 +49,21 @@
 											"layers": "2"
 										}
 									},
-									"modifier": [
-										{
-											"function": "minecraft:set_components",
-											"components": {
-												"minecraft:max_stack_size": 64
+									"modifier": {
+										"type": "minecraft:sequence",
+										"functions": [
+											{
+												"type": "minecraft:set_components",
+												"components": {
+													"minecraft:max_stack_size": 64
+												}
+											},
+											{
+												"count": 2,
+												"type": "minecraft:set_count"
 											}
-										},
-										{
-											"count": 2,
-											"function": "minecraft:set_count"
-										}
-									],
+										]
+									},
 									"name": "minecraft:snowball"
 								},
 								{
@@ -69,18 +75,21 @@
 											"layers": "3"
 										}
 									},
-									"modifier": [
-										{
-											"function": "minecraft:set_components",
-											"components": {
-												"minecraft:max_stack_size": 64
+									"modifier": {
+										"type": "minecraft:sequence",
+										"functions": [
+											{
+												"type": "minecraft:set_components",
+												"components": {
+													"minecraft:max_stack_size": 64
+												}
+											},
+											{
+												"count": 3,
+												"type": "minecraft:set_count"
 											}
-										},
-										{
-											"count": 3,
-											"function": "minecraft:set_count"
-										}
-									],
+										]
+									},
 									"name": "minecraft:snowball"
 								},
 								{
@@ -92,18 +101,21 @@
 											"layers": "4"
 										}
 									},
-									"modifier": [
-										{
-											"function": "minecraft:set_components",
-											"components": {
-												"minecraft:max_stack_size": 64
+									"modifier": {
+										"type": "minecraft:sequence",
+										"functions": [
+											{
+												"type": "minecraft:set_components",
+												"components": {
+													"minecraft:max_stack_size": 64
+												}
+											},
+											{
+												"count": 4,
+												"type": "minecraft:set_count"
 											}
-										},
-										{
-											"count": 4,
-											"function": "minecraft:set_count"
-										}
-									],
+										]
+									},
 									"name": "minecraft:snowball"
 								},
 								{
@@ -115,18 +127,21 @@
 											"layers": "5"
 										}
 									},
-									"modifier": [
-										{
-											"function": "minecraft:set_components",
-											"components": {
-												"minecraft:max_stack_size": 64
+									"modifier": {
+										"type": "minecraft:sequence",
+										"functions": [
+											{
+												"type": "minecraft:set_components",
+												"components": {
+													"minecraft:max_stack_size": 64
+												}
+											},
+											{
+												"count": 5,
+												"type": "minecraft:set_count"
 											}
-										},
-										{
-											"count": 5,
-											"function": "minecraft:set_count"
-										}
-									],
+										]
+									},
 									"name": "minecraft:snowball"
 								},
 								{
@@ -138,18 +153,21 @@
 											"layers": "6"
 										}
 									},
-									"modifier": [
-										{
-											"function": "minecraft:set_components",
-											"components": {
-												"minecraft:max_stack_size": 64
+									"modifier": {
+										"type": "minecraft:sequence",
+										"functions": [
+											{
+												"type": "minecraft:set_components",
+												"components": {
+													"minecraft:max_stack_size": 64
+												}
+											},
+											{
+												"count": 6,
+												"type": "minecraft:set_count"
 											}
-										},
-										{
-											"count": 6,
-											"function": "minecraft:set_count"
-										}
-									],
+										]
+									},
 									"name": "minecraft:snowball"
 								},
 								{
@@ -161,18 +179,21 @@
 											"layers": "7"
 										}
 									},
-									"modifier": [
-										{
-											"function": "minecraft:set_components",
-											"components": {
-												"minecraft:max_stack_size": 64
+									"modifier": {
+										"type": "minecraft:sequence",
+										"functions": [
+											{
+												"type": "minecraft:set_components",
+												"components": {
+													"minecraft:max_stack_size": 64
+												}
+											},
+											{
+												"count": 7,
+												"type": "minecraft:set_count"
 											}
-										},
-										{
-											"count": 7,
-											"function": "minecraft:set_count"
-										}
-									],
+										]
+									},
 									"name": "minecraft:snowball"
 								},
 								{
@@ -184,18 +205,21 @@
 											"layers": "8"
 										}
 									},
-									"modifier": [
-										{
-											"function": "minecraft:set_components",
-											"components": {
-												"minecraft:max_stack_size": 64
+									"modifier": {
+										"type": "minecraft:sequence",
+										"functions": [
+											{
+												"type": "minecraft:set_components",
+												"components": {
+													"minecraft:max_stack_size": 64
+												}
+											},
+											{
+												"count": 8,
+												"type": "minecraft:set_count"
 											}
-										},
-										{
-											"count": 8,
-											"function": "minecraft:set_count",
-										}
-									],
+										]
+									},
 									"name": "minecraft:snowball"
 								}
 							],
@@ -230,12 +254,10 @@
 											"layers": "1"
 										}
 									},
-									"modifier": [
-										{
-											"count": 1,
-											"function": "minecraft:set_count"
-										}
-									],
+									"modifier": {
+										"count": 1,
+										"type": "minecraft:set_count"
+									},
 									"name": "minecraft:snow"
 								},
 								{
@@ -247,12 +269,10 @@
 											"layers": "2"
 										}
 									},
-									"modifier": [
-										{
-											"count": 2,
-											"function": "minecraft:set_count"
-										}
-									],
+									"modifier": {
+										"count": 2,
+										"type": "minecraft:set_count"
+									},
 									"name": "minecraft:snow"
 								},
 								{
@@ -264,12 +284,10 @@
 											"layers": "3"
 										}
 									},
-									"modifier": [
-										{
-											"count": 3,
-											"function": "minecraft:set_count"
-										}
-									],
+									"modifier": {
+										"count": 3,
+										"type": "minecraft:set_count"
+									},
 									"name": "minecraft:snow"
 								},
 								{
@@ -281,12 +299,10 @@
 											"layers": "4"
 										}
 									},
-									"modifier": [
-										{
-											"count": 4,
-											"function": "minecraft:set_count"
-										}
-									],
+									"modifier": {
+										"count": 4,
+										"type": "minecraft:set_count"
+									},
 									"name": "minecraft:snow"
 								},
 								{
@@ -298,12 +314,10 @@
 											"layers": "5"
 										}
 									},
-									"modifier": [
-										{
-											"count": 5,
-											"function": "minecraft:set_count"
-										}
-									],
+									"modifier": {
+										"count": 5,
+										"type": "minecraft:set_count"
+									},
 									"name": "minecraft:snow"
 								},
 								{
@@ -315,12 +329,10 @@
 											"layers": "6"
 										}
 									},
-									"modifier": [
-										{
-											"count": 6,
-											"function": "minecraft:set_count"
-										}
-									],
+									"modifier": {
+										"count": 6,
+										"type": "minecraft:set_count"
+									},
 									"name": "minecraft:snow"
 								},
 								{
@@ -332,12 +344,10 @@
 											"layers": "7"
 										}
 									},
-									"modifier": [
-										{
-											"count": 7,
-											"function": "minecraft:set_count"
-										}
-									],
+									"modifier": {
+										"count": 7,
+										"type": "minecraft:set_count"
+									},
 									"name": "minecraft:snow"
 								},
 								{
