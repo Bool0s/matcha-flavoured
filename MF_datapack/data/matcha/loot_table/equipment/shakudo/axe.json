@@ -7,7 +7,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:stone_axe",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {

@@ -7,7 +7,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:wooden_hoe",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {

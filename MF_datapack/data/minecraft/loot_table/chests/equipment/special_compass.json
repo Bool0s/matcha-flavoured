@@ -9,7 +9,7 @@
 					"type": "minecraft:item",
 					"name": "minecraft:compass",
 					"quality": 2,
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -25,7 +25,7 @@
 					"type": "minecraft:item",
 					"name": "minecraft:compass",
 					"quality": 1,
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -40,7 +40,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:compass",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {

@@ -42,7 +42,7 @@
 				  }
 				}
 			  },
-              "functions": [
+              "modifier": [
                 {
                   "function": "minecraft:set_count",
                   "count": 2
@@ -62,7 +62,7 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:raw_iron",
-              "functions": [
+              "modifier": [
                 {
                   "function": "minecraft:set_count",
                   "count": 2

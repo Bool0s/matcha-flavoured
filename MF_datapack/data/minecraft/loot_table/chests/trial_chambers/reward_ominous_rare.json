@@ -12,7 +12,7 @@
 					"type": "minecraft:item",
 					"name": "minecraft:iron_block",
 					"weight": 4,
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
@@ -24,7 +24,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:enchant_with_levels",
 							"levels": {
@@ -45,7 +45,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:enchant_randomly",
 							"options": "#minecraft:in_enchanting_table"
@@ -62,7 +62,7 @@
 					"type": "minecraft:loot_table",
 					"value": "matcha:equipment/diamond/equipment",
 					"weight": 6,
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:enchant_randomly",
 							"options": "#minecraft:on_random_loot"

@@ -40,7 +40,7 @@
 									}
 								}
 							},
-							"functions": [
+							"modifier": [
 								{
 									"enchantment": "minecraft:fortune",
 									"formula": "minecraft:ore_drops",
@@ -56,7 +56,7 @@
 						},
             {
               "type": "minecraft:item",
-              "functions": [
+              "modifier": [
                 {
                   "enchantment": "minecraft:fortune",
                   "formula": "minecraft:ore_drops",

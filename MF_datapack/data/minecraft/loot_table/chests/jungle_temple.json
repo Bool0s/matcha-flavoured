@@ -7,7 +7,7 @@
 				{
 					"type": "minecraft:loot_table",
 					"value": "matcha:chests/uncommon/treasure_ores",
-					"functions": [],
+					"modifier": [],
 					"weight": 6
 				}
 			]
@@ -16,7 +16,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -31,7 +31,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -46,7 +46,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -61,7 +61,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -92,7 +92,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:enchant_with_levels",
 							"levels": 30,

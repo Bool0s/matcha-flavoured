@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"damage": {
 								"type": "minecraft:uniform",
@@ -24,7 +24,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"min": 1,
@@ -39,7 +39,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"min": 1,
@@ -54,7 +54,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -69,7 +69,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": 1,
 							"function": "minecraft:set_count"
@@ -80,7 +80,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": 1,
 							"function": "minecraft:set_count"
@@ -102,7 +102,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:enchant_randomly",
 							"options": "minecraft:soul_speed"
@@ -116,7 +116,7 @@
 					"value": "matcha:equipment/diamond/equipment",
 					"weight": 20,
 					"quality": -1,
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:enchant_randomly",
 							"options": "#minecraft:on_random_loot"
@@ -133,7 +133,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"min": 4,
@@ -147,7 +147,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": 1,
 							"function": "minecraft:set_count"
@@ -158,7 +158,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": 1,
 							"function": "minecraft:set_count"
@@ -168,7 +168,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -183,7 +183,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -198,7 +198,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -218,7 +218,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -233,7 +233,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -247,7 +247,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -268,7 +268,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -282,7 +282,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -296,7 +296,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -310,7 +310,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -324,7 +324,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -338,7 +338,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -353,7 +353,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": 1,
 							"function": "minecraft:set_count"

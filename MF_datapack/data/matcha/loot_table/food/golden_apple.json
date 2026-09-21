@@ -8,7 +8,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:golden_apple",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {

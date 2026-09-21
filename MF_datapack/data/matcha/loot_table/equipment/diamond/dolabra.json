@@ -7,7 +7,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_axe",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {

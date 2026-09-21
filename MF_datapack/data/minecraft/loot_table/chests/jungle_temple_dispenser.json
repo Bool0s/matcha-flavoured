@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -21,7 +21,7 @@
 					"type": "minecraft:item",
 					"name": "minecraft:tipped_arrow",
 					"weight": 3,
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_potion",
 							"id": "minecraft:poison"

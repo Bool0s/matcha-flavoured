@@ -16,7 +16,7 @@
 				{
 					"type": "minecraft:loot_table",
 					"value": "matcha:food/apple",
-					"functions": [],
+					"modifier": [],
 					"weight": 5
 				}
 			],
@@ -26,7 +26,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -41,7 +41,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -56,7 +56,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -71,7 +71,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -86,7 +86,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -101,7 +101,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -116,7 +116,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -131,7 +131,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -146,7 +146,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",

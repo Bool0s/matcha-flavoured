@@ -29,7 +29,7 @@
 						{
 							"type": "minecraft:loot_table",
 							"value": "matcha:food/melon_slice",
-							"functions": [
+							"modifier": [
 								{
 									"add": false,
 									"count": {

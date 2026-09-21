@@ -7,7 +7,7 @@
 				{
 					"type": "minecraft:loot_table",
 					"value": "matcha:food/sweet_berries",
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": 1,
@@ -24,7 +24,7 @@
 				{
 					"type": "minecraft:loot_table",
 					"value": "matcha:food/sweet_berries",
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": {

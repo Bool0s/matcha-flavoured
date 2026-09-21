@@ -1,6 +1,6 @@
 {
 	"type": "minecraft:block",
-	"functions": [
+	"modifier": [
 		{
 			"function": "minecraft:explosion_decay"
 		}
@@ -19,10 +19,10 @@
 				{
 					"type": "minecraft:loot_table",
 					"value": "matcha:food/sweet_berries",
-					"functions": []
+					"modifier": []
 				}
 			],
-			"functions": [
+			"modifier": [
 				{
 					"add": false,
 					"count": {
@@ -64,10 +64,10 @@
 				{
 					"type": "minecraft:loot_table",
 					"value": "matcha:food/sweet_berries",
-					"functions": []
+					"modifier": []
 				}
 			],
-			"functions": [
+			"modifier": [
 				{
 					"add": false,
 					"count": {

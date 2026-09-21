@@ -7,7 +7,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:elytra",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {

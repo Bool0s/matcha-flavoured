@@ -44,7 +44,7 @@
 		},
 		{
 			"bonus_rolls": 0,
-			"functions": [],
+			"modifier": [],
 			"condition": {
 				"type": "minecraft:inverted",
 				"term": {
@@ -89,14 +89,14 @@
 						"type": "minecraft:table_bonus",
 						"enchantment": "matcha:electrum_tool"
 					},
-					"functions": []
+					"modifier": []
 				}
 			],
 			"rolls": 1
 		},
 		{
 			"bonus_rolls": 0,
-			"functions": [],
+			"modifier": [],
 			"condition": {
 				"type": "minecraft:inverted",
 				"term": {
@@ -141,7 +141,7 @@
 						"type": "minecraft:table_bonus",
 						"enchantment": "minecraft:fortune"
 					},
-					"functions": []
+					"modifier": []
 				}
 			],
 			"rolls": 1

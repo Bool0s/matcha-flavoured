@@ -8,7 +8,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:armadillo_scute",
-          "functions": [
+          "modifier": [
             {
               "function": "minecraft:set_count",
               "count": {
@@ -38,7 +38,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:rabbit",
-          "functions": [
+          "modifier": [
             {
               "function": "minecraft:set_count",
               "count": 1,

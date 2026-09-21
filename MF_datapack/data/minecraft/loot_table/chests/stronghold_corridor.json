@@ -7,7 +7,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:ender_pearl",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -19,7 +19,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": {
@@ -35,7 +35,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": {
@@ -51,7 +51,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": {
@@ -67,7 +67,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": {
@@ -88,7 +88,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": {
@@ -104,7 +104,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:endermite_spawn_egg",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -125,7 +125,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:enchant_with_levels",
 							"levels": 30,

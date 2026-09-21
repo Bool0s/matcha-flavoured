@@ -8,7 +8,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:sweet_berries",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {

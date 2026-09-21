@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -20,7 +20,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -35,7 +35,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -50,7 +50,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -77,7 +77,7 @@
 					"type": "minecraft:loot_table",
 					"value": "matcha:equipment/diamond/equipment",
 					"weight": 5,
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:enchant_randomly",
 							"options": "#minecraft:on_random_loot"
@@ -86,7 +86,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:enchant_with_levels",
 							"levels": 30,

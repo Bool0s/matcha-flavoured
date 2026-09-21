@@ -8,7 +8,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:string",
-          "functions": [
+          "modifier": [
             {
               "function": "minecraft:set_count",
               "count": {
@@ -29,7 +29,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:rabbit",
-          "functions": [
+          "modifier": [
             {
               "function": "minecraft:set_count",
               "count": 1,

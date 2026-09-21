@@ -33,7 +33,7 @@
 									"type": "minecraft:item",
 									"": "minecraft:item",
 									"name": "minecraft:gunpowder",
-									"functions": [
+									"modifier": [
 										{
 											"function": "minecraft:apply_bonus",
 											"enchantment": "minecraft:fortune",
@@ -48,7 +48,7 @@
 								},
 								{
 									"type": "minecraft:item",
-									"functions": [
+									"modifier": [
 										{
 											"function": "minecraft:set_count",
 											"count": {

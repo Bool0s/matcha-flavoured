@@ -10,7 +10,7 @@
 				}
 			],
 			"rolls": 5,
-			"functions": [
+			"modifier": [
 				{
 					"function": "minecraft:apply_bonus",
 					"enchantment": "minecraft:looting",

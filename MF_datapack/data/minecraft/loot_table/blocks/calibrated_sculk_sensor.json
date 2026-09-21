@@ -28,7 +28,7 @@
 						},
 						{
 							"type": "minecraft:item",
-							"functions": [],
+							"modifier": [],
 							"name": "minecraft:echo_shard"
 						}
 					]

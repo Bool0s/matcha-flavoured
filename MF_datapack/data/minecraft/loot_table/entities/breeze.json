@@ -8,7 +8,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:wind_charge",
-          "functions": [
+          "modifier": [
             {
               "function": "minecraft:set_count",
               "count": {

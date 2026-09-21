@@ -7,7 +7,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:raw_copper",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
@@ -25,7 +25,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:raw_iron",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
@@ -38,7 +38,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:raw_gold",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {

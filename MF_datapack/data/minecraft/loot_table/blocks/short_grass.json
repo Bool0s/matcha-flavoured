@@ -34,7 +34,7 @@
 									"items": "#minecraft:hoes"
 								}
 							},
-							"functions": [
+							"modifier": [
 								{
 									"enchantment": "minecraft:fortune",
 									"formula": "minecraft:uniform_bonus_count",

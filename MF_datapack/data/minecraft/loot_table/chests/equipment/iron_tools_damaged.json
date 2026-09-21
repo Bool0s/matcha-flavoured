@@ -6,7 +6,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:iron_pickaxe",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -63,7 +63,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:iron_axe",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -119,7 +119,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:iron_shovel",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -175,7 +175,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:iron_hoe",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {

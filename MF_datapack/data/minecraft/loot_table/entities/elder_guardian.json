@@ -7,7 +7,7 @@
 				{
 					"type": "minecraft:loot_table",
 					"value": "minecraft:gameplay/fishing",
-					"functions": []
+					"modifier": []
 				}
 			],
 			"rolls": 3
@@ -21,7 +21,7 @@
 				{
 					"type": "minecraft:loot_table",
 					"value": "matcha:treasure/divine_fragment",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {

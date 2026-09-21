@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -25,7 +25,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
@@ -78,7 +78,7 @@
 					"name": "minecraft:music_disc_tears"
 				}
 			],
-			"functions": [
+			"modifier": [
 				{
 					"count": 1,
 					"function": "minecraft:set_count"

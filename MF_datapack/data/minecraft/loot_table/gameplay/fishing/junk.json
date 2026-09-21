@@ -17,7 +17,7 @@
 					"type": "minecraft:item",
 					"name": "minecraft:bone",
 					"weight": 10,
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -31,7 +31,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_potion",
 							"id": "minecraft:water"
@@ -48,7 +48,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:glowstone_dust",
-					"functions": [
+					"modifier": [
 						{
 							"count": 5,
 							"function": "minecraft:set_count"
@@ -63,7 +63,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": 10,
 							"function": "minecraft:set_count"
@@ -104,7 +104,7 @@
 							]
 						}
 					},
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -129,7 +129,7 @@
 							]
 						}
 					},
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -154,7 +154,7 @@
 							]
 						}
 					},
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {

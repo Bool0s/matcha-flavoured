@@ -7,7 +7,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:leather",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
@@ -20,7 +20,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:rabbit_hide",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
@@ -38,7 +38,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:glowstone_dust",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
@@ -51,7 +51,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:bone",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
@@ -64,7 +64,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:arrow",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
@@ -82,7 +82,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:flint",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
@@ -95,7 +95,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:quartz",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
@@ -113,7 +113,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:wheat",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
@@ -126,7 +126,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:wheat_seeds",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {

@@ -1,6 +1,6 @@
 {
 	"type": "minecraft:block",
-	"functions": [
+	"modifier": [
 		{
 			"function": "minecraft:explosion_decay"
 		}
@@ -12,7 +12,7 @@
 				{
 					"type": "minecraft:loot_table",
 					"value": "matcha:food/carrot",
-					"functions": []
+					"modifier": []
 				}
 			],
 			"rolls": 1
@@ -30,7 +30,7 @@
 				{
 					"type": "minecraft:loot_table",
 					"value": "matcha:food/carrot",
-					"functions": [
+					"modifier": [
 						{
 							"enchantment": "minecraft:fortune",
 							"formula": "minecraft:binomial_with_bonus_count",

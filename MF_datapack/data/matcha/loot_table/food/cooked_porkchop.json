@@ -8,7 +8,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:cooked_porkchop",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {

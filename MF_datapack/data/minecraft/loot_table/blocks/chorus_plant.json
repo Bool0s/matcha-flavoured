@@ -7,7 +7,7 @@
 				{
 					"type": "minecraft:loot_table",
 					"value": "matcha:food/chorus_fruit",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:apply_bonus",
 							"enchantment": "minecraft:fortune",

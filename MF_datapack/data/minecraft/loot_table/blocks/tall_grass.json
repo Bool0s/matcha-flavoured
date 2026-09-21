@@ -39,7 +39,7 @@
 									"items": "minecraft:shears"
 								}
 							},
-							"functions": [
+							"modifier": [
 								{
 									"add": false,
 									"count": 2,
@@ -76,7 +76,7 @@
 								{
 									"type": "minecraft:item",
 									"name": "minecraft:short_grass",
-									"functions": [
+									"modifier": [
 										{
 											"function": "minecraft:set_count",
 											"count": 2
@@ -134,7 +134,7 @@
 									"items": "minecraft:shears"
 								}
 							},
-							"functions": [
+							"modifier": [
 								{
 									"add": false,
 									"count": 2,
@@ -171,7 +171,7 @@
 								{
 									"type": "minecraft:item",
 									"name": "minecraft:short_grass",
-									"functions": [
+									"modifier": [
 										{
 											"function": "minecraft:set_count",
 											"count": 2

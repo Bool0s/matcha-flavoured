@@ -12,7 +12,7 @@
 							"items": "#matcha:vegetation_mineable"
 						}
 					},
-					"functions": [
+					"modifier": [
 						{
 							"add": true,
 							"condition": {

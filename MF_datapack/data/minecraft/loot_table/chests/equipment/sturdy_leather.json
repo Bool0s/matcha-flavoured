@@ -6,7 +6,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:leather_helmet",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -68,7 +68,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:leather_chestplate",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -130,7 +130,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:leather_leggings",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -192,7 +192,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:leather_boots",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {

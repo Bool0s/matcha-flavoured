@@ -23,7 +23,7 @@
 											"layers": "1"
 										}
 									},
-									"functions": [
+									"modifier": [
 										{
 											"function": "minecraft:set_components",
 											"components": {
@@ -46,7 +46,7 @@
 											"layers": "2"
 										}
 									},
-									"functions": [
+									"modifier": [
 										{
 											"function": "minecraft:set_components",
 											"components": {
@@ -69,7 +69,7 @@
 											"layers": "3"
 										}
 									},
-									"functions": [
+									"modifier": [
 										{
 											"function": "minecraft:set_components",
 											"components": {
@@ -92,7 +92,7 @@
 											"layers": "4"
 										}
 									},
-									"functions": [
+									"modifier": [
 										{
 											"function": "minecraft:set_components",
 											"components": {
@@ -115,7 +115,7 @@
 											"layers": "5"
 										}
 									},
-									"functions": [
+									"modifier": [
 										{
 											"function": "minecraft:set_components",
 											"components": {
@@ -138,7 +138,7 @@
 											"layers": "6"
 										}
 									},
-									"functions": [
+									"modifier": [
 										{
 											"function": "minecraft:set_components",
 											"components": {
@@ -161,7 +161,7 @@
 											"layers": "7"
 										}
 									},
-									"functions": [
+									"modifier": [
 										{
 											"function": "minecraft:set_components",
 											"components": {
@@ -184,7 +184,7 @@
 											"layers": "8"
 										}
 									},
-									"functions": [
+									"modifier": [
 										{
 											"function": "minecraft:set_components",
 											"components": {
@@ -230,7 +230,7 @@
 											"layers": "1"
 										}
 									},
-									"functions": [
+									"modifier": [
 										{
 											"count": 1,
 											"function": "minecraft:set_count"
@@ -247,7 +247,7 @@
 											"layers": "2"
 										}
 									},
-									"functions": [
+									"modifier": [
 										{
 											"count": 2,
 											"function": "minecraft:set_count"
@@ -264,7 +264,7 @@
 											"layers": "3"
 										}
 									},
-									"functions": [
+									"modifier": [
 										{
 											"count": 3,
 											"function": "minecraft:set_count"
@@ -281,7 +281,7 @@
 											"layers": "4"
 										}
 									},
-									"functions": [
+									"modifier": [
 										{
 											"count": 4,
 											"function": "minecraft:set_count"
@@ -298,7 +298,7 @@
 											"layers": "5"
 										}
 									},
-									"functions": [
+									"modifier": [
 										{
 											"count": 5,
 											"function": "minecraft:set_count"
@@ -315,7 +315,7 @@
 											"layers": "6"
 										}
 									},
-									"functions": [
+									"modifier": [
 										{
 											"count": 6,
 											"function": "minecraft:set_count"
@@ -332,7 +332,7 @@
 											"layers": "7"
 										}
 									},
-									"functions": [
+									"modifier": [
 										{
 											"count": 7,
 											"function": "minecraft:set_count"

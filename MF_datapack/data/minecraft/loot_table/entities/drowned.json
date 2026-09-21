@@ -8,7 +8,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:rabbit_hide",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
@@ -45,7 +45,7 @@
 					"type": "minecraft:item",
 					"name": "minecraft:blaze_powder",
 					"weight": 10,
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {

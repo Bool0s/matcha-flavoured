@@ -23,7 +23,7 @@
 									}
 								}
 							},
-							"functions": [
+							"modifier": [
 								{
 									"enchantment": "minecraft:fortune",
 									"formula": "minecraft:ore_drops",

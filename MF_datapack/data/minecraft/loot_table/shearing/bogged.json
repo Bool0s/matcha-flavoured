@@ -6,7 +6,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": 1,
@@ -17,7 +17,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": 1,
@@ -28,7 +28,7 @@
 				}
 			],
 			"rolls": 2,
-			"functions": [
+			"modifier": [
 				{
 					"function": "minecraft:apply_bonus",
 					"enchantment": "minecraft:looting",

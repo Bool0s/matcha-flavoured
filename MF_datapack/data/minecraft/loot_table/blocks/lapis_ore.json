@@ -40,7 +40,7 @@
 									}
 								}
 							},
-							"functions": [
+							"modifier": [
 								{
 									"function": "minecraft:set_count",
 									"count": {
@@ -64,7 +64,7 @@
 						},
 						{
 							"type": "minecraft:item",
-							"functions": [
+							"modifier": [
 								{
 									"function": "minecraft:set_count",
 									"count": {

@@ -7,7 +7,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:magenta_wool",
-					"functions": []
+					"modifier": []
 				}
 			],
 			"rolls": {
@@ -15,7 +15,7 @@
 				"max": 3,
 				"min": 1
 			},
-			"functions": [
+			"modifier": [
 				{
 					"function": "minecraft:apply_bonus",
 					"enchantment": "minecraft:looting",

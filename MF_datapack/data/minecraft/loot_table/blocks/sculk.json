@@ -28,7 +28,7 @@
 						},
 						{
 							"type": "minecraft:item",
-							"functions": [
+							"modifier": [
 								{
 									"function": "minecraft:set_count",
 									"count": 4

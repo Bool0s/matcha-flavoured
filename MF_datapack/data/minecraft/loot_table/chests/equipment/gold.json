@@ -6,7 +6,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:golden_helmet",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -42,7 +42,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:golden_chestplate",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -78,7 +78,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:golden_leggings",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -114,7 +114,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:golden_boots",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -159,7 +159,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:golden_pickaxe",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -216,7 +216,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:golden_axe",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -263,7 +263,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:golden_shovel",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -319,7 +319,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "golden_hoe",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -365,7 +365,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:golden_spear",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -406,7 +406,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:golden_sword",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {

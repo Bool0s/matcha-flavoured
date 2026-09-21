@@ -1,6 +1,6 @@
 {
 	"type": "minecraft:block",
-	"functions": [],
+	"modifier": [],
 	"pools": [
 		{
 			"bonus_rolls": 0,
@@ -19,7 +19,7 @@
 								}
 							},
 							"name": "minecraft:beetroot",
-							"functions": [
+							"modifier": [
 								{
 									"function": "minecraft:apply_bonus",
 									"enchantment": "matcha:electrum_tool",

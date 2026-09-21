@@ -7,7 +7,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "resin_clump",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {

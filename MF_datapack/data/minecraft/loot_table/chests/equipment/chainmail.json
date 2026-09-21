@@ -6,7 +6,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:chainmail_helmet",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -51,7 +51,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:chainmail_chestplate",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -96,7 +96,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:chainmail_leggings",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -141,7 +141,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:chainmail_boots",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {

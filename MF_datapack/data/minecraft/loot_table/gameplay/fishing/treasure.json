@@ -7,7 +7,7 @@
 				{
 					"type": "minecraft:item",
 					"weight": 14,
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"damage": {
@@ -28,7 +28,7 @@
 				{
 					"type": "minecraft:item",
 					"weight": 10,
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:enchant_with_levels",
 							"levels": 30,
@@ -46,7 +46,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:goat_horn",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_instrument",
 							"options": "#minecraft:regular_goat_horns"
@@ -59,7 +59,7 @@
 					"type": "minecraft:item",
 					"name": "minecraft:emerald",
 					"weight": 24,
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
@@ -74,7 +74,7 @@
 					"name": "minecraft:chest",
 					"weight": 1,
 					"quality": 3,
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_contents",
 							"component": "minecraft:container",

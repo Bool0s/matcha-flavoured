@@ -16,7 +16,7 @@
 				{
 					"type": "minecraft:item",
 					"quality": 1,
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": {
@@ -32,7 +32,7 @@
 				{
 					"type": "minecraft:item",
 					"quality": 2,
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": {
@@ -47,7 +47,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": 2,
@@ -59,7 +59,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": {
@@ -86,7 +86,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": {
@@ -101,7 +101,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": {
@@ -116,7 +116,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": {
@@ -131,7 +131,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": {
@@ -146,7 +146,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": {
@@ -161,7 +161,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": {
@@ -176,7 +176,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": {
@@ -191,7 +191,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": {

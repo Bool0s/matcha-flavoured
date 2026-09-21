@@ -28,7 +28,7 @@
 						{
 							"type": "minecraft:loot_table",
 							"value": "matcha:materials/raw_diamond",
-							"functions": [
+							"modifier": [
 								{
 									"enchantment": "minecraft:fortune",
 									"formula": "minecraft:ore_drops",

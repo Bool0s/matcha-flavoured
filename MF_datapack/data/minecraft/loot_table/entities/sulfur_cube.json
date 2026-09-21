@@ -10,7 +10,7 @@
 					"condition": {
 						"type": "minecraft:killed_by_player"
 					},
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
@@ -36,7 +36,7 @@
 					"condition": {
 						"type": "minecraft:killed_by_player"
 					},
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {

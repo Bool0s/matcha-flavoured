@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "functions": [
+                    "modifier": [
                         {
                             "count": {
                                 "type": "minecraft:uniform",
@@ -63,7 +63,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "functions": [
+                    "modifier": [
                         {
                             "count": {
                                 "type": "minecraft:uniform",

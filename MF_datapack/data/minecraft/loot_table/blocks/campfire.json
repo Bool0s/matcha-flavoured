@@ -9,7 +9,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "functions": [
+              "modifier": [
                 {
                   "function": "minecraft:set_components",
                   "components": {

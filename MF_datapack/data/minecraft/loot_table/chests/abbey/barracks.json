@@ -7,7 +7,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:bow",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_damage",
 							"damage": {
@@ -35,7 +35,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:iron_sword",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_damage",
 							"damage": {
@@ -92,7 +92,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": {
@@ -108,7 +108,7 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": {
@@ -125,7 +125,7 @@
 				{
 					"type": "minecraft:item",
 					"quality": 1,
-					"functions": [
+					"modifier": [
 						{
 							"add": false,
 							"count": {
@@ -143,7 +143,7 @@
 					"type": "minecraft:item",
 					"name": "minecraft:rabbit_hide",
 					"weight": 10,
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
@@ -162,7 +162,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:arrow",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {

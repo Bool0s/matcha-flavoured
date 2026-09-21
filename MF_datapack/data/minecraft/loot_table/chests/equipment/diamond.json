@@ -6,7 +6,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_helmet",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -39,7 +39,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_chestplate",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -72,7 +72,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_leggings",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -105,7 +105,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_boots",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -138,7 +138,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_sword",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -171,7 +171,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_spear",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -204,7 +204,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_pickaxe",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -257,7 +257,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_axe",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -306,7 +306,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_shovel",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
@@ -355,7 +355,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_hoe",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {

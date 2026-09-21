@@ -8,7 +8,7 @@
 				{
 					"type": "minecraft:loot_table",
 					"value": "matcha:treasure/crystal_heart",
-					"functions": []
+					"modifier": []
 				}
 			]
 		}

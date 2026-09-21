@@ -8,7 +8,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:arrow",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
@@ -57,7 +57,7 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:bone",
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {
@@ -106,7 +106,7 @@
 					"type": "minecraft:item",
 					"name": "minecraft:glowstone_dust",
 					"weight": 10,
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_count",
 							"count": {

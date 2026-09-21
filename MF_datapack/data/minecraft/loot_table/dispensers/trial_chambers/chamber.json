@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "count": 1.0,
               "function": "minecraft:set_count"
@@ -16,7 +16,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "count": {
                 "type": "minecraft:uniform",
@@ -31,7 +31,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
                 "function": "minecraft:set_components",
                 "components": {
@@ -52,7 +52,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "count": {
                 "type": "minecraft:uniform",
@@ -67,7 +67,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "count": {
                 "type": "minecraft:uniform",
@@ -82,7 +82,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "function": "minecraft:set_potion",
               "id": "minecraft:slowness"
@@ -100,7 +100,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "function": "minecraft:set_potion",
               "id": "minecraft:poison"
@@ -118,7 +118,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "function": "minecraft:set_potion",
               "id": "minecraft:weakness"
@@ -136,7 +136,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "function": "minecraft:set_potion",
               "id": "minecraft:slowness"
@@ -154,7 +154,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "function": "minecraft:set_potion",
               "id": "minecraft:poison"
@@ -172,7 +172,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "function": "minecraft:set_potion",
               "id": "minecraft:weakness"
@@ -190,7 +190,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "function": "minecraft:set_potion",
               "id": "minecraft:healing"

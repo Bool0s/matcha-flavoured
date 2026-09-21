@@ -9,7 +9,7 @@
 					"type": "minecraft:item",
 					"name": "minecraft:paper",
 					"weight": 1,
-					"functions": [
+					"modifier": [
 						{
 							"function": "minecraft:set_components",
 							"components": {
