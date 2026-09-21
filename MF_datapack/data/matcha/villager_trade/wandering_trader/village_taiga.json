@@ -1,31 +1,34 @@
 {
-	"given_item_modifiers": [
-		{
-			"decoration": "minecraft:village_taiga",
-			"destination": "minecraft:on_taiga_village_maps",
-			"function": "minecraft:exploration_map",
-			"search_radius": 100
-		},
-		{
-			"function": "minecraft:set_name",
-			"name": {
-				"translate": "filled_map.village_taiga"
+	"given_item_modifier": {
+		"type": "sequence",
+		"functions": [
+			{
+				"decoration": "minecraft:village_taiga",
+				"destination": "minecraft:on_taiga_village_maps",
+				"type": "minecraft:exploration_map",
+				"search_radius": 100
 			},
-			"target": "item_name"
-		},
-		{
-			"function": "minecraft:filtered",
-			"item_filter": {
-				"items": "minecraft:filled_map",
-				"predicates": {
-					"minecraft:map_id": {}
+			{
+				"type": "minecraft:set_name",
+				"name": {
+					"translate": "filled_map.village_taiga"
+				},
+				"target": "item_name"
+			},
+			{
+				"type": "minecraft:filtered",
+				"item_filter": {
+					"items": "minecraft:filled_map",
+					"predicates": {
+						"minecraft:map_id": {}
+					}
+				},
+				"on_fail": {
+					"type": "minecraft:discard"
 				}
-			},
-			"on_fail": {
-				"function": "minecraft:discard"
 			}
-		}
-	],
+		]
+	},
 	"gives": {
 		"id": "minecraft:map"
 	},
