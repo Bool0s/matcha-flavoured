@@ -25,18 +25,6 @@
 				"recipes": "matcha:smithing/shakudo_mattock"
 			}
 		},
-		"bronze_dolabra": {
-			"trigger": "minecraft:recipe_crafted",
-			"conditions": {
-				"recipes": "matcha:smithing/bronze_dolabra"
-			}
-		},
-		"bronze_mattock": {
-			"trigger": "minecraft:recipe_crafted",
-			"conditions": {
-				"recipes": "matcha:smithing/bronze_mattock"
-			}
-		},
 		"electrum_mattock": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
@@ -78,8 +66,6 @@
 		[
 			"shakudo_mattock",
 			"shakudo_dolabra",
-			"bronze_dolabra",
-			"bronze_mattock",
 			"steel_dolabra",
 			"steel_mattock",
 			"electrum_dolabra",
