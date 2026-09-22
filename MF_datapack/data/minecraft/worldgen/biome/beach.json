@@ -94,6 +94,11 @@
         "maxCount": 5,
         "minCount": 2,
         "weight": 5
+      },
+      {
+        "weight": 20,
+        "type": "minecraft:chicken",
+        "count": 4
       }
     ],
     "misc": [],
