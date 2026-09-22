@@ -4,79 +4,79 @@
 		"adamant_axe": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/adamant_axe"
+				"recipes": "matcha:smithing/adamant_axe"
 			}
 		},
 		"adamant_pickaxe": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/adamant_pickaxe"
+				"recipes": "matcha:smithing/adamant_pickaxe"
 			}
 		},
 		"adamant_shovel": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/adamant_shovel"
+				"recipes": "matcha:smithing/adamant_shovel"
 			}
 		},
 		"adamant_hoe": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/adamant_hoe"
+				"recipes": "matcha:smithing/adamant_hoe"
 			}
 		},
 		"adamant_sword": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/adamant_sword"
+				"recipes": "matcha:smithing/adamant_sword"
 			}
 		},
 		"adamant_dolabra": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/adamant_dolabra"
+				"recipes": "matcha:smithing/adamant_dolabra"
 			}
 		},
 		"adamant_mattock": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/adamant_mattock"
+				"recipes": "matcha:smithing/adamant_mattock"
 			}
 		},
 		"adamant_spear": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/adamant_spear"
+				"recipes": "matcha:smithing/adamant_spear"
 			}
 		},
 		"adamant_helmet": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/adamant_helmet"
+				"recipes": "matcha:smithing/adamant_helmet"
 			}
 		},
 		"adamant_chestplate": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/adamant_chestplate"
+				"recipes": "matcha:smithing/adamant_chestplate"
 			}
 		},
 		"adamant_leggings": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/adamant_leggings"
+				"recipes": "matcha:smithing/adamant_leggings"
 			}
 		},
 		"adamant_boots": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/adamant_boots"
+				"recipes": "matcha:smithing/adamant_boots"
 			}
 		},
 		"adamant_claymore": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "matcha:smithing/adamant_claymore"
+				"recipes": "matcha:smithing/adamant_claymore"
 			}
 		}
 	},

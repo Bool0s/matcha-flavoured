@@ -7,73 +7,64 @@
 					"type": "minecraft:item",
 					"name": "minecraft:iron_block",
 					"weight": 8,
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 5,
-								"max": 12
-							}
+					"modifier": {
+						"type": "minecraft:set_count",
+						"count": {
+							"type": "minecraft:uniform",
+							"min": 5,
+							"max": 12
 						}
-					]
+					}
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 9,
-								"min": 5
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 9,
+							"min": 5
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:diamond",
 					"weight": 5
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 16,
-								"min": 12
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 16,
+							"min": 12
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:iron_ingot",
 					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 7,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 7,
+							"min": 2
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:gold_ingot",
 					"weight": 15
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 3,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 3,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:emerald",
 					"weight": 2
 				},
@@ -89,12 +80,10 @@
 					"type": "minecraft:loot_table",
 					"value": "minecraft:chests/equipment/diamond",
 					"weight": 20,
-					"functions": [
-						{
-							"function": "minecraft:enchant_randomly",
-							"options": "#minecraft:on_random_loot"
-						}
-					]
+					"modifier": {
+						"type": "minecraft:enchant_randomly",
+						"options": "#minecraft:on_random_loot"
+					}
 				}
 			],
 			"rolls": {

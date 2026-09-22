@@ -8,20 +8,18 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:chicken_spawn_egg",
-					"functions": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:item_name": {
-									"translate": "item.kleispack.fish.axolotl"
-								},
-								"minecraft:item_model": "matcha:axolotl",
-								"minecraft:entity_data": {
-									"id": "minecraft:axolotl"
-								}
+					"modifier": {
+						"type": "minecraft:set_components",
+						"components": {
+							"minecraft:item_name": {
+								"translate": "item.kleispack.fish.axolotl"
+							},
+							"minecraft:item_model": "matcha:axolotl",
+							"minecraft:entity_data": {
+								"id": "minecraft:axolotl"
 							}
 						}
-					]
+					}
 				}
 			]
 		}

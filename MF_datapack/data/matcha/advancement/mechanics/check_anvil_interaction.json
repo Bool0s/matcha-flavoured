@@ -2,8 +2,7 @@
 	"parent": "minecraft:recipes/root",
 	"criteria": {
 		"inventory_changed": {
-			"trigger": "minecraft:inventory_changed",
-			"conditions": {}
+			"trigger": "minecraft:inventory_changed"
 		}
 	},
 	"requirements": [

@@ -9,17 +9,14 @@
           "children": [
             {
               "type": "minecraft:item",
-              "functions": [
-                {
-                  "function": "minecraft:set_components",
-                  "components": {
-                    "minecraft:block_state": {
-                      "lit": "false"
-                    }
-                  }
-                }
-              ],
-              "conditions": [],
+              "modifier": {
+				"type": "minecraft:set_components",
+				"components": {
+				  "minecraft:block_state": {
+					"lit": "false"
+				  }
+				}
+			  },
               "name": "minecraft:campfire"
             }
           ]

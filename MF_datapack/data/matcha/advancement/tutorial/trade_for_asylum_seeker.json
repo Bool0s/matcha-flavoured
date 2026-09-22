@@ -4,7 +4,6 @@
 		"traded": {
 			"trigger": "minecraft:villager_trade",
 			"conditions": {
-				"villager": {},
 				"item": {
 					"items": "minecraft:villager_spawn_egg"
 				}

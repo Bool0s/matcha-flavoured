@@ -7,36 +7,34 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:wooden_shovel",
-					"functions": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-                                "minecraft:max_damage": 200,
-                                "minecraft:lore": [
-                                    {
-                                        "text": "⛏ 2",
-                                        "color": "blue",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": "🗡 2.5",
-                                        "color": "dark_green",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": "🕒 1",
-                                        "color": "dark_green",
-                                        "italic": false
-                                    }
-                                ],
-                                "minecraft:tooltip_display": {
-                                    "hidden_components": [
-                                        "minecraft:attribute_modifiers"
-                                    ]
-                                }
-                            }
+					"modifier": {
+						"type": "minecraft:set_components",
+						"components": {
+							"minecraft:max_damage": 200,
+							"minecraft:lore": [
+								{
+									"text": "⛏ 2",
+									"color": "blue",
+									"italic": false
+								},
+								{
+									"text": "🗡 2.5",
+									"color": "dark_green",
+									"italic": false
+								},
+								{
+									"text": "🕒 1",
+									"color": "dark_green",
+									"italic": false
+								}
+							],
+							"minecraft:tooltip_display": {
+								"hidden_components": [
+									"minecraft:attribute_modifiers"
+								]
+							}
 						}
-					]
+					}
 				}
 			]
 		}

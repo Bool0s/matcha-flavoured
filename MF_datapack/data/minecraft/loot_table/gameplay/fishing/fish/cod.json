@@ -8,19 +8,17 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:cod",
-					"functions": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:lore": [
-									{
-										"translate": "adv.kleispack.fishing.rarity.1",
-										"italic": false
-									}
-								]
-							}
+					"modifier": {
+						"type": "minecraft:set_components",
+						"components": {
+							"minecraft:lore": [
+								{
+									"translate": "adv.kleispack.fishing.rarity.1",
+									"italic": false
+								}
+							]
 						}
-					]
+					}
 				}
 			]
 		}

@@ -7,16 +7,14 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:nautilus_shell",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"type": "minecraft:uniform",
-								"min": 0,
-								"max": 2
-							}
+					"modifier": {
+						"type": "minecraft:set_count",
+						"count": {
+							"type": "minecraft:uniform",
+							"min": 0,
+							"max": 2
 						}
-					]
+					}
 				}
 			]
 		},
@@ -27,15 +25,14 @@
 				{
 					"type": "minecraft:loot_table",
 					"value": "matcha:materials/raw_diamond",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 2,
-								"max": 4
-							}
+					"modifier": {
+						"type": "minecraft:set_count",
+						"count": {
+							"type": "minecraft:uniform",
+							"min": 2,
+							"max": 4
 						}
-					]
+					}
 				}
 			]
 		},
@@ -43,8 +40,7 @@
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
-					"value": "matcha:chests/common/treasure_ores",
-					"functions": []
+					"value": "matcha:chests/common/treasure_ores"
 				}
 			],
 			"rolls": {
@@ -57,17 +53,15 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 4,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:book",
 					"weight": 10
 				}
@@ -83,24 +77,21 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 3,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 3,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:emerald",
 					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
 					"quality": 3,
-					"functions": [],
 					"name": "minecraft:prismarine_crystals",
 					"weight": 1
 				}
@@ -125,49 +116,41 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"add": false,
-							"count": 1,
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": 1,
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:copper_nautilus_armor",
 					"weight": 20
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"add": false,
-							"count": 1,
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": 1,
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:iron_nautilus_armor",
 					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"add": false,
-							"count": 1,
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": 1,
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:golden_nautilus_armor",
 					"weight": 5
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"add": false,
-							"count": 1,
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": 1,
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:diamond_nautilus_armor",
 					"weight": 2
 				}

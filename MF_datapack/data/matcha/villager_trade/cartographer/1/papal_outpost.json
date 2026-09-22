@@ -1,37 +1,40 @@
 {
-	"given_item_modifiers": [
-		{
-			"decoration": "minecraft:red_x",
-			"destination": "minecraft:on_papal_outpost_explorer_maps",
-			"function": "minecraft:exploration_map",
-			"search_radius": 100
-		},
-		{
-			"function": "minecraft:set_name",
-			"name": {
-				"translate": "filled_map.papal_outpost"
+	"given_item_modifier": {
+		"type": "sequence",
+		"functions": [
+			{
+				"decoration": "minecraft:red_x",
+				"destination": "#minecraft:on_papal_outpost_explorer_maps",
+				"type": "minecraft:exploration_map",
+				"search_radius": 100
 			},
-			"target": "item_name"
-		},
-		{
-			"function": "minecraft:filtered",
-			"item_filter": {
-				"items": "minecraft:filled_map",
-				"predicates": {
-					"minecraft:map_id": {}
+			{
+				"type": "minecraft:set_name",
+				"name": {
+					"translate": "filled_map.papal_outpost"
+				},
+				"target": "item_name"
+			},
+			{
+				"type": "minecraft:filtered",
+				"item_filter": {
+					"items": "minecraft:filled_map",
+					"predicates": {
+						"minecraft:map_id": {}
+					}
+				},
+				"on_fail": {
+					"type": "minecraft:discard"
 				}
 			},
-			"on_fail": {
-				"function": "minecraft:discard"
+			{
+				"type": "minecraft:set_components",
+				"components": {
+					"minecraft:item_model": "matcha:papal_outpost_map"
+				}
 			}
-		},
-		{
-			"function": "minecraft:set_components",
-			"components": {
-				"minecraft:item_model": "matcha:papal_outpost_map"
-			}
-		}
-	],
+		]
+	},
 	"gives": {
 		"id": "minecraft:map"
 	},

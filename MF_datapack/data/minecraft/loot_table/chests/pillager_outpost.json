@@ -6,50 +6,44 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 4,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:bone",
 					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 4,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:glowstone_dust",
 					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
 					"quality": 1,
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 1,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"add": false,
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 1,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:emerald",
 					"weight": 2
 				},
@@ -57,16 +51,14 @@
 					"type": "minecraft:item",
 					"name": "minecraft:rabbit_hide",
 					"weight": 10,
-					"conditions": [],
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 4,
-								"max": 8
-							}
+					"modifier": {
+						"type": "minecraft:set_count",
+						"count": {
+							"type": "minecraft:uniform",
+							"min": 4,
+							"max": 8
 						}
-					]
+					}
 				}
 			],
 			"rolls": 3
@@ -77,15 +69,14 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:arrow",
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 8,
-								"max": 16
-							}
+					"modifier": {
+						"type": "minecraft:set_count",
+						"count": {
+							"type": "minecraft:uniform",
+							"min": 8,
+							"max": 16
 						}
-					]
+					}
 				}
 			]
 		},
@@ -96,13 +87,12 @@
 					"name": "minecraft:goat_horn"
 				}
 			],
-			"functions": [
-				{
-					"function": "minecraft:set_instrument",
-					"options": "#minecraft:regular_goat_horns"
-				}
-			],
+			"modifier": {
+				"type": "minecraft:set_instrument",
+				"options": "#minecraft:regular_goat_horns"
+			},
 			"rolls": {
+				"type": "minecraft:uniform",
 				"max": 1,
 				"min": 1
 			}
@@ -115,12 +105,10 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": 2,
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": 2,
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:sentry_armor_trim_smithing_template"
 				}
 			],

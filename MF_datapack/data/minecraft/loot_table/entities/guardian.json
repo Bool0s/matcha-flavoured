@@ -6,58 +6,60 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"add": false,
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 1,
-								"min": 0
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"add": false,
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 1,
+									"min": 0
+								},
+								"type": "minecraft:set_count"
 							},
-							"function": "minecraft:set_count"
-						},
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 1,
-								"min": 0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:enchanted_count_increase"
-						}
-					],
+							{
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 1,
+									"min": 0
+								},
+								"enchantment": "minecraft:looting",
+								"type": "minecraft:enchanted_count_increase"
+							}
+						]
+					},
 					"name": "minecraft:wet_sponge"
 				}
 			],
 			"rolls": 1,
-			"conditions": [
-				{
-					"condition": "minecraft:killed_by_player"
-				}
-			]
+			"condition": {
+				"type": "minecraft:killed_by_player"
+			}
 		},
 		{
 			"bonus_rolls": 0,
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 1,
-								"min": 0
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 1,
+									"min": 0
+								},
+								"enchantment": "minecraft:looting",
+								"type": "minecraft:enchanted_count_increase"
 							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:enchanted_count_increase"
-						},
-						{
-							"conditions": [
-								{
-									"condition": "minecraft:any_of",
+							{
+								"condition": {
+									"type": "minecraft:any_of",
 									"terms": [
 										{
-											"condition": "minecraft:entity_properties",
+											"type": "minecraft:entity_properties",
 											"entity": "this",
 											"predicate": {
 												"flags": {
@@ -66,7 +68,7 @@
 											}
 										},
 										{
-											"condition": "minecraft:entity_properties",
+											"type": "minecraft:entity_properties",
 											"entity": "direct_attacker",
 											"predicate": {
 												"equipment": {
@@ -83,11 +85,11 @@
 											}
 										}
 									]
-								}
-							],
-							"function": "minecraft:furnace_smelt"
-						}
-					],
+								},
+								"type": "minecraft:furnace_smelt"
+							}
+						]
+					},
 					"name": "minecraft:cod",
 					"weight": 2
 				},

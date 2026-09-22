@@ -9,64 +9,65 @@
 					"children": [
 						{
 							"type": "minecraft:item",
-							"conditions": [
-								{
-									"condition": "minecraft:match_tool",
-									"predicate": {
-										"predicates": {
-											"minecraft:enchantments": [
-												{
-													"enchantments": "minecraft:silk_touch",
-													"levels": {
-														"min": 1
-													}
+							"condition": {
+								"type": "minecraft:match_tool",
+								"predicate": {
+									"predicates": {
+										"minecraft:enchantments": [
+											{
+												"enchantments": "minecraft:silk_touch",
+												"levels": {
+													"min": 1
 												}
-											]
-										}
+											}
+										]
 									}
 								}
-							],
+							},
 							"name": "minecraft:melon"
 						},
 						{
 							"type": "minecraft:loot_table",
 							"value": "matcha:food/melon_slice",
-							"functions": [
-								{
-									"add": false,
-									"count": {
-										"type": "minecraft:uniform",
-										"max": 7,
-										"min": 3
+							"modifier": {
+								"type": "minecraft:sequence",
+								"functions": [
+									{
+										"add": false,
+										"count": {
+											"type": "minecraft:uniform",
+											"max": 7,
+											"min": 3
+										},
+										"type": "minecraft:set_count"
 									},
-									"function": "minecraft:set_count"
-								},
-								{
-									"enchantment": "minecraft:fortune",
-									"formula": "minecraft:uniform_bonus_count",
-									"function": "minecraft:apply_bonus",
-									"parameters": {
-										"bonusMultiplier": 1
+									{
+										"enchantment": "minecraft:fortune",
+										"formula": "minecraft:uniform_bonus_count",
+										"type": "minecraft:apply_bonus",
+										"parameters": {
+											"bonusMultiplier": 1
+										}
+									},
+									{
+										"type": "minecraft:apply_bonus",
+										"enchantment": "matcha:electrum_tool",
+										"formula": "minecraft:uniform_bonus_count",
+										"parameters": {
+											"bonusMultiplier": 1
+										}
+									},
+									{
+										"type": "minecraft:limit_count",
+										"limit": {
+											"max": 9
+										}
+									},
+									{
+										"type": "minecraft:explosion_decay"
 									}
-								},
-								{
-									"function": "minecraft:apply_bonus",
-									"enchantment": "matcha:electrum_tool",
-									"formula": "minecraft:uniform_bonus_count",
-									"parameters": {
-										"bonusMultiplier": 1
-									}
-								},
-								{
-									"function": "minecraft:limit_count",
-									"limit": {
-										"max": 9
-									}
-								},
-								{
-									"function": "minecraft:explosion_decay"
-								}
-							]
+								]
+							  }
 						}
 					]
 				}

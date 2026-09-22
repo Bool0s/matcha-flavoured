@@ -8,23 +8,21 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:cod",
-					"functions": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:item_name": {
-									"translate": "item.kleispack.fish.flying_fish"
-								},
-								"minecraft:item_model": "matcha:flying_fish",
-								"minecraft:lore": [
-									{
-										"translate": "adv.kleispack.fishing.rarity.2",
-										"italic": false
-									}
-								]
-							}
+					"modifier": {
+						"type": "minecraft:set_components",
+						"components": {
+							"minecraft:item_name": {
+								"translate": "item.kleispack.fish.flying_fish"
+							},
+							"minecraft:item_model": "matcha:flying_fish",
+							"minecraft:lore": [
+								{
+									"translate": "adv.kleispack.fishing.rarity.2",
+									"italic": false
+								}
+							]
 						}
-					]
+					}
 				}
 			]
 		}

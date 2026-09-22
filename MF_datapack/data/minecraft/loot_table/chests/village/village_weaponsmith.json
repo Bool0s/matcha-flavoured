@@ -5,46 +5,40 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 3,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 3,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:diamond",
 					"weight": 3
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 5,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 5,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:iron_ingot",
 					"weight": 10
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 3,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 3,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:gold_ingot",
 					"weight": 5
 				},
@@ -60,31 +54,27 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 7,
-								"min": 3
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 7,
+							"min": 3
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:obsidian",
 					"weight": 5
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 7,
-								"min": 3
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 7,
+							"min": 3
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:oak_sapling",
 					"weight": 5
 				},
@@ -125,12 +115,10 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": 1,
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": 1,
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:bundle"
 				},
 				{

@@ -7,14 +7,12 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:vindicator_spawn_egg",
-					"functions": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"!minecraft:entity_data": {}
-							}
+					"modifier": {
+						"type": "minecraft:set_components",
+						"components": {
+							"!minecraft:entity_data": {}
 						}
-					]
+					}
 				}
 			]
 		}

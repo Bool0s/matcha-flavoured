@@ -5,46 +5,40 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 4,
+							"min": 2
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:diamond",
 					"weight": 5
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 15,
-								"min": 3
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 15,
+							"min": 3
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:iron_ingot",
 					"weight": 5
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 25,
-								"min": 12
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 25,
+							"min": 12
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:gold_ingot",
 					"weight": 15
 				},
@@ -55,16 +49,14 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 7,
-								"min": 3
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 7,
+							"min": 3
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:nether_wart",
 					"weight": 5
 				},
@@ -95,16 +87,14 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 4,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 4,
+							"min": 2
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:obsidian",
 					"weight": 2
 				},

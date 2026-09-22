@@ -5,31 +5,27 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 3,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 3,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:book",
 					"weight": 20
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 7,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 7,
+							"min": 2
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:paper",
 					"weight": 20
 				},
@@ -44,13 +40,11 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"function": "minecraft:enchant_with_levels",
-							"levels": 30,
-							"options": "#minecraft:on_random_loot"
-						}
-					],
+					"modifier": {
+						"type": "minecraft:enchant_with_levels",
+						"levels": 30,
+						"options": "#minecraft:on_random_loot"
+					},
 					"name": "minecraft:book",
 					"weight": 10
 				}
@@ -72,6 +66,7 @@
 		},
 		{
 			"rolls": {
+				"type": "minecraft:uniform",
 				"min": 0,
 				"max": 1
 			},

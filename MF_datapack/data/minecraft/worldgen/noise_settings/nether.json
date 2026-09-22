@@ -1,5 +1,4 @@
 {
-  "aquifers_enabled": false,
   "default_block": {
     "id": "minecraft:netherrack"
   },
@@ -13,74 +12,72 @@
   "legacy_random_source": true,
   "noise": {
     "height": 128,
-    "min_y": 0,
-    "size_horizontal": 1,
-    "size_vertical": 2
+    "min_y": 0
   },
   "noise_router": {
-    "barrier": 0.0,
     "continents": 0.0,
     "depth": 0.0,
     "erosion": 0.0,
     "final_density": {
-      "type": "minecraft:squeeze",
-      "input": {
-        "type": "minecraft:interpolated",
-		"cell_size_xz": 1,
-		"cell_size_y": 1,
-        "input": {
-          "type": "minecraft:mul",
-          "left": 0.64,
-          "right": {
-            "type": "minecraft:blend_density",
-            "input": {
-              "type": "minecraft:add",
-              "left": 2.5,
-              "right": {
-                "type": "minecraft:mul",
-                "left": {
-                  "type": "minecraft:gradient",
-				  "axis": "y",
-                  "from_value": 0.0,
-                  "from_coordinate": -8,
-                  "to_value": 1.0,
-                  "to_coordinate": 24,
-				  "tiling": "clamp_to_edge"
-                },
-                "right": {
-                  "type": "minecraft:add",
-                  "left": -2.5,
-                  "right": {
-                    "type": "minecraft:add",
-                    "left": 0.9375,
-                    "right": {
-                      "type": "minecraft:mul",
-                      "left": {
-                        "type": "minecraft:gradient",
-						"axis": "y",
-                        "from_value": 1.0,
-                        "from_coordinate": 104,
-                        "to_value": 0.0,
-                        "to_coordinate": 128,
-						"tiling": "clamp_to_edge"
-                      },
-                      "right": {
-                        "type": "minecraft:add",
-                        "left": -0.9375,
-                        "right": "minecraft:nether/base_3d_noise"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "fluid_level_floodedness": 0.0,
-    "fluid_level_spread": 0.0,
-    "lava": 0.0,
+	  "type": "add",
+	  "left": {
+		"type": "minecraft:squeeze",
+		"input": {
+		  "type": "minecraft:interpolated",
+		  "cell_size_xz": 1,
+		  "cell_size_y": 1,
+		  "input": {
+			"type": "minecraft:mul",
+			"left": 0.64,
+			"right": {
+			  "type": "minecraft:blend_density",
+			  "input": {
+				"type": "minecraft:add",
+				"left": 2.5,
+				"right": {
+				  "type": "minecraft:mul",
+				  "left": {
+					"type": "minecraft:gradient",
+					"axis": "y",
+					"from_value": 0.0,
+					"from_coordinate": -8,
+					"to_value": 1.0,
+					"to_coordinate": 24,
+					"tiling": "clamp_to_edge"
+				  },
+				  "right": {
+					"type": "minecraft:add",
+					"left": -2.5,
+					"right": {
+					  "type": "minecraft:add",
+					  "left": 0.9375,
+					  "right": {
+						"type": "minecraft:mul",
+						"left": {
+						  "type": "minecraft:gradient",
+						  "axis": "y",
+						  "from_value": 1.0,
+						  "from_coordinate": 104,
+						  "to_value": 0.0,
+						  "to_coordinate": 128,
+						  "tiling": "clamp_to_edge"
+						},
+						"right": {
+						  "type": "minecraft:add",
+						  "left": -0.9375,
+						  "right": "minecraft:nether/base_3d_noise"
+						}
+					  }
+					}
+				  }
+				}
+			  }
+			}
+		  }
+		}
+	  },
+	  "right": {"type": "beardifier"}
+	},
     "chunk_surface_level": 0.0,
     "ridges": 0.0,
     "temperature": {

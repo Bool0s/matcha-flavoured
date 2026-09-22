@@ -5,16 +5,14 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 2,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 2,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:obsidian",
 					"weight": 40
 				},
@@ -50,16 +48,14 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 8,
-								"min": 2
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 8,
+							"min": 2
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:raw_gold",
 					"weight": 5
 				},
@@ -72,12 +68,10 @@
 					"type": "minecraft:loot_table",
 					"value": "matcha:equipment/gold/armour",
 					"weight": 80,
-					"functions": [
-						{
-							"function": "minecraft:enchant_randomly",
-							"options": "#minecraft:on_random_loot"
-						}
-					]
+					"modifier": {
+						"type": "minecraft:enchant_randomly",
+						"options": "#minecraft:on_random_loot"
+					}
 				}
 			],
 			"rolls": {
@@ -93,16 +87,14 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 2,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 2,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:lodestone",
 					"weight": 2
 				}

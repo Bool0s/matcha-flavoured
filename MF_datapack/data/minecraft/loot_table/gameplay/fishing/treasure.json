@@ -7,34 +7,35 @@
 				{
 					"type": "minecraft:item",
 					"weight": 14,
-					"functions": [
-						{
-							"add": false,
-							"damage": {
-								"type": "minecraft:uniform",
-								"max": 0.25,
-								"min": 0
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"add": false,
+								"damage": {
+									"type": "minecraft:uniform",
+									"max": 0.25,
+									"min": 0
+								},
+								"type": "minecraft:set_damage"
 							},
-							"function": "minecraft:set_damage"
-						},
-						{
-							"function": "minecraft:enchant_with_levels",
-							"levels": 30,
-							"options": "#minecraft:on_random_loot"
-						}
-					],
+							{
+								"type": "minecraft:enchant_with_levels",
+								"levels": 30,
+								"options": "#minecraft:on_random_loot"
+							}
+						]
+					},
 					"name": "minecraft:fishing_rod"
 				},
 				{
 					"type": "minecraft:item",
 					"weight": 10,
-					"functions": [
-						{
-							"function": "minecraft:enchant_with_levels",
-							"levels": 30,
-							"options": "#minecraft:on_random_loot"
-						}
-					],
+					"modifier": {
+						"type": "minecraft:enchant_with_levels",
+						"levels": 30,
+						"options": "#minecraft:on_random_loot"
+					},
 					"name": "minecraft:book"
 				},
 				{
@@ -46,12 +47,10 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:goat_horn",
-					"functions": [
-						{
-							"function": "minecraft:set_instrument",
-							"options": "#minecraft:regular_goat_horns"
-						}
-					],
+					"modifier": {
+						"type": "minecraft:set_instrument",
+						"options": "#minecraft:regular_goat_horns"
+					},
 					"weight": 5,
 					"quality": -1
 				},
@@ -59,33 +58,30 @@
 					"type": "minecraft:item",
 					"name": "minecraft:emerald",
 					"weight": 24,
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 1,
-								"max": 2
-							}
+					"modifier": {
+						"type": "minecraft:set_count",
+						"count": {
+							"type": "minecraft:uniform",
+							"min": 1,
+							"max": 2
 						}
-					]
+					}
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:chest",
 					"weight": 1,
 					"quality": 3,
-					"functions": [
-						{
-							"function": "minecraft:set_contents",
-							"component": "minecraft:container",
-							"entries": [
-								{
-									"type": "minecraft:loot_table",
-									"value": "matcha:chests/fishing/treasure"
-								}
-							]
-						}
-					]
+					"modifier": {
+						"type": "minecraft:set_contents",
+						"component": "minecraft:container",
+						"entries": [
+							{
+								"type": "minecraft:loot_table",
+								"value": "matcha:chests/fishing/treasure"
+							}
+						]
+					}
 				},
 				{
 					"type": "minecraft:loot_table",

@@ -7,26 +7,27 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:gunpowder",
-					"conditions": [
-						{
-							"condition": "minecraft:killed_by_player"
-						}
-					],
-					"functions": [
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 1,
-								"max": 2
+					"condition": {
+						"type": "minecraft:killed_by_player"
+					},
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"type": "minecraft:set_count",
+								"count": {
+									"type": "minecraft:uniform",
+									"min": 1,
+									"max": 2
+								}
+							},
+							{
+								"type": "minecraft:enchanted_count_increase",
+								"count": 1,
+								"enchantment": "minecraft:looting"
 							}
-						},
-						{
-							"function": "minecraft:enchanted_count_increase",
-							"count": 1,
-							"enchantment": "minecraft:looting",
-							"conditions": []
-						}
-					]
+						]
+					}
 				}
 			]
 		},
@@ -36,35 +37,36 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:slime_ball",
-					"conditions": [
-						{
-							"condition": "minecraft:killed_by_player"
-						}
-					],
-					"functions": [
-						{
-							"function": "minecraft:set_components",
-							"components": {
-								"minecraft:item_model": "matcha:sulfur_goo",
-								"minecraft:item_name": {
-									"translate": "item.kleispack.sulfur_goo"
+					"condition": {
+						"type": "minecraft:killed_by_player"
+					},
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"type": "minecraft:set_components",
+								"components": {
+									"minecraft:item_model": "matcha:sulfur_goo",
+									"minecraft:item_name": {
+										"translate": "item.kleispack.sulfur_goo"
+									}
 								}
+							},
+							{
+								"type": "minecraft:set_count",
+								"count": {
+									"type": "minecraft:uniform",
+									"min": 1,
+									"max": 2
+								}
+							},
+							{
+								"type": "minecraft:enchanted_count_increase",
+								"count": 2,
+								"enchantment": "minecraft:looting"
 							}
-						},
-						{
-							"function": "minecraft:set_count",
-							"count": {
-								"min": 1,
-								"max": 2
-							}
-						},
-						{
-							"function": "minecraft:enchanted_count_increase",
-							"count": 2,
-							"enchantment": "minecraft:looting",
-							"conditions": []
-						}
-					]
+						]
+					}
 				}
 			]
 		}

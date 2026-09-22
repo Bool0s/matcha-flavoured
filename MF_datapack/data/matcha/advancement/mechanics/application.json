@@ -3,16 +3,14 @@
 		"use_item": {
 			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
-				"location": [
-					{
-						"condition": "minecraft:match_tool",
-						"predicate": {
-							"components": {
-								"minecraft:item_model": "matcha:application"
-							}
+				"location": {
+					"type": "minecraft:match_tool",
+					"predicate": {
+						"components": {
+							"minecraft:item_model": "matcha:application"
 						}
 					}
-				]
+				}
 			}
 		}
 	},

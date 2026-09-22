@@ -9,29 +9,26 @@
 					"children": [
 						{
 							"type": "minecraft:item",
-							"conditions": [
-								{
-									"condition": "minecraft:match_tool",
-									"predicate": {
-										"predicates": {
-											"minecraft:enchantments": [
-												{
-													"enchantments": "minecraft:silk_touch",
-													"levels": {
-														"min": 1
-													}
+							"condition": {
+								"type": "minecraft:match_tool",
+								"predicate": {
+									"predicates": {
+										"minecraft:enchantments": [
+											{
+												"enchantments": "minecraft:silk_touch",
+												"levels": {
+													"min": 1
 												}
-											]
-										}
+											}
+										]
 									}
 								}
-							],
+							},
 							"name": "minecraft:calibrated_sculk_sensor"
 						},
 						{
 							"type": "minecraft:item",
-							"conditions": [],
-							"functions": [],
+							"modifier": [],
 							"name": "minecraft:echo_shard"
 						}
 					]

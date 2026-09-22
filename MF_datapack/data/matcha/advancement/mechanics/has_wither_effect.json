@@ -2,7 +2,6 @@
 	"criteria": {
 		"has_wither_effect": {
 			"conditions": {
-				"effects": {}
 			},
 			"trigger": "minecraft:effects_changed"
 		}

@@ -4,15 +4,13 @@
 		"opened_door": {
 			"trigger": "minecraft:any_block_use",
 			"conditions": {
-				"location": [
-					{
-						"condition": "minecraft:block_state_property",
-						"block": "minecraft:oak_door",
-						"properties": {
-							"open": "true"
-						}
+				"location": {
+					"type": "minecraft:match_block",
+					"blocks": "minecraft:oak_door",
+					"state": {
+						"open": "true"
 					}
-				]
+				}
 			}
 		}
 	},

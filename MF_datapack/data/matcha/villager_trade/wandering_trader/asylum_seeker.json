@@ -16,42 +16,27 @@
 		"count": 1,
 		"id": "minecraft:villager_spawn_egg"
 	},
-    "given_item_modifiers": [
-		{
-            "function": "set_count",
-            "count": {
-				"type": "uniform",
-				"min": 1,
-				"max": 8
-			}
-        },
-		{
-			"function": "filtered",
-			"item_filter": {
-				"count": 1
+    "given_item_modifier": {
+		"type": "sequence",
+		"functions": [
+			{
+				"type": "set_count",
+				"count": {
+					"type": "uniform",
+					"min": 1,
+					"max": 8
+				}
 			},
-			"on_pass": {
-				"function": "set_lore",
-				"lore": [
-					{
-						"translate": "item.kleispack.asylum_seeker.cause.1",
-						"color": "dark_gray",
-						"italic": false
-					}
-				],
-				"mode": "insert",
-				"offset": 0
-			},
-			"on_fail": {
-				"function": "filtered",
+			{
+				"type": "filtered",
 				"item_filter": {
-					"count": 2
+					"count": 1
 				},
 				"on_pass": {
-					"function": "set_lore",
+					"type": "set_lore",
 					"lore": [
 						{
-							"translate": "item.kleispack.asylum_seeker.cause.2",
+							"translate": "item.kleispack.asylum_seeker.cause.1",
 							"color": "dark_gray",
 							"italic": false
 						}
@@ -60,15 +45,15 @@
 					"offset": 0
 				},
 				"on_fail": {
-					"function": "filtered",
+					"type": "filtered",
 					"item_filter": {
-						"count": 3
+						"count": 2
 					},
 					"on_pass": {
-						"function": "set_lore",
+						"type": "set_lore",
 						"lore": [
 							{
-								"translate": "item.kleispack.asylum_seeker.cause.3",
+								"translate": "item.kleispack.asylum_seeker.cause.2",
 								"color": "dark_gray",
 								"italic": false
 							}
@@ -77,15 +62,15 @@
 						"offset": 0
 					},
 					"on_fail": {
-						"function": "filtered",
+						"type": "filtered",
 						"item_filter": {
-							"count": 4
+							"count": 3
 						},
 						"on_pass": {
-							"function": "set_lore",
+							"type": "set_lore",
 							"lore": [
 								{
-									"translate": "item.kleispack.asylum_seeker.cause.4",
+									"translate": "item.kleispack.asylum_seeker.cause.3",
 									"color": "dark_gray",
 									"italic": false
 								}
@@ -94,15 +79,15 @@
 							"offset": 0
 						},
 						"on_fail": {
-							"function": "filtered",
+							"type": "filtered",
 							"item_filter": {
-								"count": 5
+								"count": 4
 							},
 							"on_pass": {
-								"function": "set_lore",
+								"type": "set_lore",
 								"lore": [
 									{
-										"translate": "item.kleispack.asylum_seeker.cause.5",
+										"translate": "item.kleispack.asylum_seeker.cause.4",
 										"color": "dark_gray",
 										"italic": false
 									}
@@ -111,15 +96,15 @@
 								"offset": 0
 							},
 							"on_fail": {
-								"function": "filtered",
+								"type": "filtered",
 								"item_filter": {
-									"count": 6
+									"count": 5
 								},
 								"on_pass": {
-									"function": "set_lore",
+									"type": "set_lore",
 									"lore": [
 										{
-											"translate": "item.kleispack.asylum_seeker.cause.6",
+											"translate": "item.kleispack.asylum_seeker.cause.5",
 											"color": "dark_gray",
 											"italic": false
 										}
@@ -128,15 +113,15 @@
 									"offset": 0
 								},
 								"on_fail": {
-									"function": "filtered",
+									"type": "filtered",
 									"item_filter": {
-										"count": 7
+										"count": 6
 									},
 									"on_pass": {
-										"function": "set_lore",
+										"type": "set_lore",
 										"lore": [
 											{
-												"translate": "item.kleispack.asylum_seeker.cause.7",
+												"translate": "item.kleispack.asylum_seeker.cause.6",
 												"color": "dark_gray",
 												"italic": false
 											}
@@ -145,93 +130,74 @@
 										"offset": 0
 									},
 									"on_fail": {
-										"function": "set_lore",
-										"lore": [
-											{
-												"translate": "item.kleispack.asylum_seeker.cause.8",
-												"color": "dark_gray",
-												"italic": false
-											}
-										],
-										"mode": "insert",
-										"offset": 0
+										"type": "filtered",
+										"item_filter": {
+											"count": 7
+										},
+										"on_pass": {
+											"type": "set_lore",
+											"lore": [
+												{
+													"translate": "item.kleispack.asylum_seeker.cause.7",
+													"color": "dark_gray",
+													"italic": false
+												}
+											],
+											"mode": "insert",
+											"offset": 0
+										},
+										"on_fail": {
+											"type": "set_lore",
+											"lore": [
+												{
+													"translate": "item.kleispack.asylum_seeker.cause.8",
+													"color": "dark_gray",
+													"italic": false
+												}
+											],
+											"mode": "insert",
+											"offset": 0
+										}
 									}
 								}
 							}
 						}
 					}
 				}
-			}
-		},
-        {
-            "function": "set_count",
-            "count": {
-				"type": "uniform",
-				"min": 1,
-				"max": 9
-			}
-        },
-		{
-			"function": "filtered",
-			"item_filter": {
+			},
+			{
+				"type": "set_count",
 				"count": {
+					"type": "uniform",
 					"min": 1,
-					"max": 7
+					"max": 9
 				}
 			},
-			"on_pass": [
-				{
-					"function": "set_count",
+			{
+				"type": "filtered",
+				"item_filter": {
 					"count": {
-						"type": "uniform",
 						"min": 1,
-						"max": 6
+						"max": 7
 					}
 				},
-				{
-					"function": "filtered",
-					"item_filter": {
-						"count": 1
-					},
-					"on_pass": [
-						{
-							"function": "set_components",
-							"components": {
-								"minecraft:entity_data": {
-									"id": "minecraft:villager",
-									"active_effects": [
-										{
-											"id": "minecraft:invisibility",
-											"amplifier": 0,
-											"duration": 1,
-											"show_particles": false
-										}
-									],
-									"VillagerData": {}
-								}
-							}
-						},
-						{
-							"function": "set_lore",
-							"lore": [
-								{
-									"translate": "item.kleispack.asylum_seeker.culture.none",
-									"color": "dark_gray",
-									"italic": false
-								}
-							],
-							"mode": "insert",
-							"offset": 0
+				"on_pass": [
+					{
+						"type": "set_count",
+						"count": {
+							"type": "uniform",
+							"min": 1,
+							"max": 6
 						}
-					],
-					"on_fail": {
-						"function": "filtered",
+					},
+					{
+						"type": "filtered",
 						"item_filter": {
-							"count": 2
+							"count": 1
 						},
 						"on_pass": [
 							{
-								"function": "set_components",
+								"type": "set_components",
 								"components": {
 									"minecraft:entity_data": {
 										"id": "minecraft:villager",
@@ -243,17 +209,15 @@
 												"show_particles": false
 											}
 										],
-										"VillagerData": {
-											"type": "minecraft:desert"
-										}
+										"VillagerData": {}
 									}
 								}
 							},
 							{
-								"function": "set_lore",
+								"type": "set_lore",
 								"lore": [
 									{
-										"translate": "item.kleispack.asylum_seeker.culture.desert",
+										"translate": "item.kleispack.asylum_seeker.culture.none",
 										"color": "dark_gray",
 										"italic": false
 									}
@@ -263,13 +227,13 @@
 							}
 						],
 						"on_fail": {
-							"function": "filtered",
+							"type": "filtered",
 							"item_filter": {
-								"count": 3
+								"count": 2
 							},
 							"on_pass": [
 								{
-									"function": "set_components",
+									"type": "set_components",
 									"components": {
 										"minecraft:entity_data": {
 											"id": "minecraft:villager",
@@ -282,16 +246,16 @@
 												}
 											],
 											"VillagerData": {
-												"type": "minecraft:swamp"
+												"type": "minecraft:desert"
 											}
 										}
 									}
 								},
 								{
-									"function": "set_lore",
+									"type": "set_lore",
 									"lore": [
 										{
-											"translate": "item.kleispack.asylum_seeker.culture.swamp",
+											"translate": "item.kleispack.asylum_seeker.culture.desert",
 											"color": "dark_gray",
 											"italic": false
 										}
@@ -301,13 +265,13 @@
 								}
 							],
 							"on_fail": {
-								"function": "filtered",
+								"type": "filtered",
 								"item_filter": {
-									"count": 4
+									"count": 3
 								},
 								"on_pass": [
 									{
-										"function": "set_components",
+										"type": "set_components",
 										"components": {
 											"minecraft:entity_data": {
 												"id": "minecraft:villager",
@@ -320,16 +284,16 @@
 													}
 												],
 												"VillagerData": {
-													"type": "minecraft:plains"
+													"type": "minecraft:swamp"
 												}
 											}
 										}
 									},
 									{
-										"function": "set_lore",
+										"type": "set_lore",
 										"lore": [
 											{
-												"translate": "item.kleispack.asylum_seeker.culture.plains",
+												"translate": "item.kleispack.asylum_seeker.culture.swamp",
 												"color": "dark_gray",
 												"italic": false
 											}
@@ -339,13 +303,13 @@
 									}
 								],
 								"on_fail": {
-									"function": "filtered",
+									"type": "filtered",
 									"item_filter": {
-										"count": 5
+										"count": 4
 									},
 									"on_pass": [
 										{
-											"function": "set_components",
+											"type": "set_components",
 											"components": {
 												"minecraft:entity_data": {
 													"id": "minecraft:villager",
@@ -358,16 +322,16 @@
 														}
 													],
 													"VillagerData": {
-														"type": "minecraft:taiga"
+														"type": "minecraft:plains"
 													}
 												}
 											}
 										},
 										{
-											"function": "set_lore",
+											"type": "set_lore",
 											"lore": [
 												{
-													"translate": "item.kleispack.asylum_seeker.culture.taiga",
+													"translate": "item.kleispack.asylum_seeker.culture.plains",
 													"color": "dark_gray",
 													"italic": false
 												}
@@ -376,138 +340,139 @@
 											"offset": 0
 										}
 									],
-									"on_fail": [
-										{
-											"function": "set_components",
-											"components": {
-												"minecraft:entity_data": {
-													"id": "minecraft:villager",
-													"active_effects": [
-														{
-															"id": "minecraft:invisibility",
-															"amplifier": 0,
-															"duration": 1,
-															"show_particles": false
+									"on_fail": {
+										"type": "filtered",
+										"item_filter": {
+											"count": 5
+										},
+										"on_pass": [
+											{
+												"type": "set_components",
+												"components": {
+													"minecraft:entity_data": {
+														"id": "minecraft:villager",
+														"active_effects": [
+															{
+																"id": "minecraft:invisibility",
+																"amplifier": 0,
+																"duration": 1,
+																"show_particles": false
+															}
+														],
+														"VillagerData": {
+															"type": "minecraft:taiga"
 														}
-													],
-													"VillagerData": {
-														"type": "minecraft:jungle"
 													}
 												}
+											},
+											{
+												"type": "set_lore",
+												"lore": [
+													{
+														"translate": "item.kleispack.asylum_seeker.culture.taiga",
+														"color": "dark_gray",
+														"italic": false
+													}
+												],
+												"mode": "insert",
+												"offset": 0
 											}
-										},
-										{
-											"function": "set_lore",
-											"lore": [
-												{
-													"translate": "item.kleispack.asylum_seeker.culture.jungle",
-													"color": "dark_gray",
-													"italic": false
+										],
+										"on_fail": [
+											{
+												"type": "set_components",
+												"components": {
+													"minecraft:entity_data": {
+														"id": "minecraft:villager",
+														"active_effects": [
+															{
+																"id": "minecraft:invisibility",
+																"amplifier": 0,
+																"duration": 1,
+																"show_particles": false
+															}
+														],
+														"VillagerData": {
+															"type": "minecraft:jungle"
+														}
+													}
 												}
-											],
-											"mode": "insert",
-											"offset": 0
-										}
-									]
+											},
+											{
+												"type": "set_lore",
+												"lore": [
+													{
+														"translate": "item.kleispack.asylum_seeker.culture.jungle",
+														"color": "dark_gray",
+														"italic": false
+													}
+												],
+												"mode": "insert",
+												"offset": 0
+											}
+										]
+									}
 								}
 							}
 						}
-					}
-				},
-				{
-					"function": "set_lore",
-					"lore": [
-						{
-							"translate": "item.kleispack.asylum_seeker.adult",
-							"color": "dark_gray",
-							"italic": false
-						}
-					],
-					"mode": "insert",
-					"offset": 0
-				}
-			],
-			"on_fail": [
-				{
-					"function": "set_count",
-					"count": {
-						"type": "uniform",
-						"min": 1,
-						"max": 9
-					}
-				},
-				{
-					"function": "filtered",
-					"item_filter": {
-						"count": 1
 					},
-					"on_pass": {
-						"function": "set_lore",
+					{
+						"type": "set_lore",
 						"lore": [
 							{
-								"translate": "item.kleispack.asylum_seeker.cause.9",
+								"translate": "item.kleispack.asylum_seeker.adult",
 								"color": "dark_gray",
 								"italic": false
 							}
 						],
-						"mode": "replace_section",
-						"offset": 0,
-						"size": 1
+						"mode": "insert",
+						"offset": 0
 					}
-				},
-				{
-					"function": "set_count",
-					"count": {
-						"type": "uniform",
-						"min": 1,
-						"max": 6
-					}
-				},
-				{
-					"function": "filtered",
-					"item_filter": {
-						"count": 1
+				],
+				"on_fail": [
+					{
+						"type": "set_count",
+						"count": {
+							"type": "uniform",
+							"min": 1,
+							"max": 9
+						}
 					},
-					"on_pass": [
-						{
-							"function": "set_components",
-							"components": {
-								"minecraft:entity_data": {
-									"id": "minecraft:villager",
-									"active_effects": [
-										{
-											"id": "minecraft:invisibility",
-											"amplifier": 0,
-											"duration": 1,
-											"show_particles": false
-										}
-									],
-									"Age": -216000,
-									"VillagerData": {}
-								}
-							}
+					{
+						"type": "filtered",
+						"item_filter": {
+							"count": 1
 						},
-						{
-							"function": "set_lore",
+						"on_pass": {
+							"type": "set_lore",
 							"lore": [
 								{
-									"translate": "item.kleispack.asylum_seeker.culture.none",
+									"translate": "item.kleispack.asylum_seeker.cause.9",
 									"color": "dark_gray",
 									"italic": false
 								}
 							],
-							"mode": "insert",
-							"offset": 0
+							"mode": "replace_section",
+							"offset": 0,
+							"size": 1
 						}
-					],
-					"on_fail": {
-						"function": "filtered",
+					},
+					{
+						"type": "set_count",
+						"count": {
+							"type": "uniform",
+							"min": 1,
+							"max": 6
+						}
+					},
+					{
+						"type": "filtered",
 						"item_filter": {
-							"count": 2
+							"count": 1
 						},
 						"on_pass": [
 							{
-								"function": "set_components",
+								"type": "set_components",
 								"components": {
 									"minecraft:entity_data": {
 										"id": "minecraft:villager",
@@ -520,17 +485,15 @@
 											}
 										],
 										"Age": -216000,
-										"VillagerData": {
-											"type": "minecraft:desert"
-										}
+										"VillagerData": {}
 									}
 								}
 							},
 							{
-								"function": "set_lore",
+								"type": "set_lore",
 								"lore": [
 									{
-										"translate": "item.kleispack.asylum_seeker.culture.desert",
+										"translate": "item.kleispack.asylum_seeker.culture.none",
 										"color": "dark_gray",
 										"italic": false
 									}
@@ -540,13 +503,13 @@
 							}
 						],
 						"on_fail": {
-							"function": "filtered",
+							"type": "filtered",
 							"item_filter": {
-								"count": 3
+								"count": 2
 							},
 							"on_pass": [
 								{
-									"function": "set_components",
+									"type": "set_components",
 									"components": {
 										"minecraft:entity_data": {
 											"id": "minecraft:villager",
@@ -560,16 +523,16 @@
 											],
 											"Age": -216000,
 											"VillagerData": {
-												"type": "minecraft:swamp"
+												"type": "minecraft:desert"
 											}
 										}
 									}
 								},
 								{
-									"function": "set_lore",
+									"type": "set_lore",
 									"lore": [
 										{
-											"translate": "item.kleispack.asylum_seeker.culture.swamp",
+											"translate": "item.kleispack.asylum_seeker.culture.desert",
 											"color": "dark_gray",
 											"italic": false
 										}
@@ -579,13 +542,13 @@
 								}
 							],
 							"on_fail": {
-								"function": "filtered",
+								"type": "filtered",
 								"item_filter": {
-									"count": 4
+									"count": 3
 								},
 								"on_pass": [
 									{
-										"function": "set_components",
+										"type": "set_components",
 										"components": {
 											"minecraft:entity_data": {
 												"id": "minecraft:villager",
@@ -599,16 +562,16 @@
 												],
 												"Age": -216000,
 												"VillagerData": {
-													"type": "minecraft:plains"
+													"type": "minecraft:swamp"
 												}
 											}
 										}
 									},
 									{
-										"function": "set_lore",
+										"type": "set_lore",
 										"lore": [
 											{
-												"translate": "item.kleispack.asylum_seeker.culture.plains",
+												"translate": "item.kleispack.asylum_seeker.culture.swamp",
 												"color": "dark_gray",
 												"italic": false
 											}
@@ -618,13 +581,13 @@
 									}
 								],
 								"on_fail": {
-									"function": "filtered",
+									"type": "filtered",
 									"item_filter": {
-										"count": 5
+										"count": 4
 									},
 									"on_pass": [
 										{
-											"function": "set_components",
+											"type": "set_components",
 											"components": {
 												"minecraft:entity_data": {
 													"id": "minecraft:villager",
@@ -638,16 +601,16 @@
 													],
 													"Age": -216000,
 													"VillagerData": {
-														"type": "minecraft:taiga"
+														"type": "minecraft:plains"
 													}
 												}
 											}
 										},
 										{
-											"function": "set_lore",
+											"type": "set_lore",
 											"lore": [
 												{
-													"translate": "item.kleispack.asylum_seeker.culture.taiga",
+													"translate": "item.kleispack.asylum_seeker.culture.plains",
 													"color": "dark_gray",
 													"italic": false
 												}
@@ -656,64 +619,104 @@
 											"offset": 0
 										}
 									],
-									"on_fail": [
-										{
-											"function": "set_components",
-											"components": {
-												"minecraft:entity_data": {
-													"id": "minecraft:villager",
-													"active_effects": [
-														{
-															"id": "minecraft:invisibility",
-															"amplifier": 0,
-															"duration": 1,
-															"show_particles": false
+									"on_fail": {
+										"type": "filtered",
+										"item_filter": {
+											"count": 5
+										},
+										"on_pass": [
+											{
+												"type": "set_components",
+												"components": {
+													"minecraft:entity_data": {
+														"id": "minecraft:villager",
+														"active_effects": [
+															{
+																"id": "minecraft:invisibility",
+																"amplifier": 0,
+																"duration": 1,
+																"show_particles": false
+															}
+														],
+														"Age": -216000,
+														"VillagerData": {
+															"type": "minecraft:taiga"
 														}
-													],
-													"Age": -216000,
-													"VillagerData": {
-														"type": "minecraft:jungle"
 													}
 												}
+											},
+											{
+												"type": "set_lore",
+												"lore": [
+													{
+														"translate": "item.kleispack.asylum_seeker.culture.taiga",
+														"color": "dark_gray",
+														"italic": false
+													}
+												],
+												"mode": "insert",
+												"offset": 0
 											}
-										},
-										{
-											"function": "set_lore",
-											"lore": [
-												{
-													"translate": "item.kleispack.asylum_seeker.culture.jungle",
-													"color": "dark_gray",
-													"italic": false
+										],
+										"on_fail": [
+											{
+												"type": "set_components",
+												"components": {
+													"minecraft:entity_data": {
+														"id": "minecraft:villager",
+														"active_effects": [
+															{
+																"id": "minecraft:invisibility",
+																"amplifier": 0,
+																"duration": 1,
+																"show_particles": false
+															}
+														],
+														"Age": -216000,
+														"VillagerData": {
+															"type": "minecraft:jungle"
+														}
+													}
 												}
-											],
-											"mode": "insert",
-											"offset": 0
-										}
-									]
+											},
+											{
+												"type": "set_lore",
+												"lore": [
+													{
+														"translate": "item.kleispack.asylum_seeker.culture.jungle",
+														"color": "dark_gray",
+														"italic": false
+													}
+												],
+												"mode": "insert",
+												"offset": 0
+											}
+										]
+									}
 								}
 							}
 						}
+					},
+					{
+						"type": "set_lore",
+						"lore": [
+							{
+								"translate": "item.kleispack.asylum_seeker.child",
+								"color": "dark_gray",
+								"italic": false
+							}
+						],
+						"mode": "insert",
+						"offset": 0
 					}
-				},
-				{
-					"function": "set_lore",
-					"lore": [
-						{
-							"translate": "item.kleispack.asylum_seeker.child",
-							"color": "dark_gray",
-							"italic": false
-						}
-					],
-					"mode": "insert",
-					"offset": 0
-				}
-			]
-		},
-		{
-			"function": "set_count",
-			"count": 1
-		}
-    ],
+				]
+			},
+			{
+				"type": "set_count",
+				"count": 1
+			}
+		]
+	},
 	"max_uses": 1,
 	"wants": {
 		"id": "minecraft:emerald"

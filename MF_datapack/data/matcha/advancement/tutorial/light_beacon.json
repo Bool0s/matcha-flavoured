@@ -4,16 +4,14 @@
 		"placed_beacon": {
 			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
-				"location": [
-					{
-						"condition": "minecraft:match_tool",
-						"predicate": {
-							"components": {
-								"minecraft:item_model": "matcha:beacon_kindling"
-							}
+				"location": {
+					"type": "minecraft:match_tool",
+					"predicate": {
+						"components": {
+							"minecraft:item_model": "matcha:beacon_kindling"
 						}
 					}
-				]
+				}
 			}
 		}
 	},

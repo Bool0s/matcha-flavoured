@@ -11,33 +11,34 @@
 			"rolls": 1
 		},
 		{
-			"conditions": [
-				{
-					"condition": "minecraft:killed_by_player"
-				}
-			],
+			"condition": {
+				"type": "minecraft:killed_by_player"
+			},
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 1,
-								"min": 0
+					"modifier": {
+						"type": "minecraft:sequence",
+						"functions": [
+							{
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 1,
+									"min": 0
+								},
+								"type": "minecraft:set_count"
 							},
-							"function": "minecraft:set_count"
-						},
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 1,
-								"min": 0
-							},
-							"enchantment": "minecraft:looting",
-							"function": "minecraft:enchanted_count_increase"
-						}
-					],
+							{
+								"count": {
+									"type": "minecraft:uniform",
+									"max": 1,
+									"min": 0
+								},
+								"enchantment": "minecraft:looting",
+								"type": "minecraft:enchanted_count_increase"
+							}
+						]
+					},
 					"name": "minecraft:emerald"
 				}
 			],
@@ -51,21 +52,24 @@
 					"value": "matcha:treasure/divine_fragment"
 				}
 			],
-			"conditions": [
-				{
-					"condition": "minecraft:killed_by_player"
-				},
-				{
-					"condition": "minecraft:random_chance_with_enchanted_bonus",
-					"unenchanted_chance": 0.25,
-					"enchanted_chance": {
-						"type": "minecraft:linear",
-						"base": 0.35,
-						"per_level_above_first": 0.1
+			"condition": {
+				"type": "minecraft:all_of",
+				"terms": [
+					{
+						"type": "minecraft:killed_by_player"
 					},
-					"enchantment": "minecraft:looting"
-				}
-			]
+					{
+						"type": "minecraft:random_chance_with_enchanted_bonus",
+						"unenchanted_chance": 0.25,
+						"enchanted_chance": {
+							"type": "minecraft:linear",
+							"base": 0.35,
+							"per_level_above_first": 0.1
+						},
+						"enchantment": "minecraft:looting"
+					}
+				]
+			}
 		}
 	],
 	"random_sequence": "minecraft:entities/evoker"

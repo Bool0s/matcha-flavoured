@@ -6,8 +6,7 @@
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
-					"value": "matcha:food/glow_berries",
-					"functions": []
+					"value": "matcha:food/glow_berries"
 				}
 			],
 			"rolls": 1

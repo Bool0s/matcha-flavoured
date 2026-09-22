@@ -7,7 +7,6 @@
 				{
 					"type": "minecraft:loot_table",
 					"value": "matcha:chests/uncommon/treasure_ores",
-					"functions": [],
 					"weight": 6
 				}
 			]
@@ -16,14 +15,14 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"functions": [
+					"modifier": [
 						{
 							"count": {
 								"type": "minecraft:uniform",
 								"max": 3,
 								"min": 1
 							},
-							"function": "minecraft:set_count"
+							"type": "minecraft:set_count"
 						}
 					],
 					"name": "minecraft:bamboo",
@@ -31,46 +30,40 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 3,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 3,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:emerald",
 					"weight": 5
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 6,
-								"min": 4
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 6,
+							"min": 4
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:bone",
 					"weight": 20
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"count": {
-								"type": "minecraft:uniform",
-								"max": 5,
-								"min": 1
-							},
-							"function": "minecraft:set_count"
-						}
-					],
+					"modifier": {
+						"count": {
+							"type": "minecraft:uniform",
+							"max": 5,
+							"min": 1
+						},
+						"type": "minecraft:set_count"
+					},
 					"name": "minecraft:leather",
 					"weight": 3
 				},
@@ -92,13 +85,11 @@
 				},
 				{
 					"type": "minecraft:item",
-					"functions": [
-						{
-							"function": "minecraft:enchant_with_levels",
-							"levels": 30,
-							"options": "#minecraft:on_random_loot"
-						}
-					],
+					"modifier": {
+						"type": "minecraft:enchant_with_levels",
+						"levels": 30,
+						"options": "#minecraft:on_random_loot"
+					},
 					"name": "minecraft:book"
 				}
 			],
