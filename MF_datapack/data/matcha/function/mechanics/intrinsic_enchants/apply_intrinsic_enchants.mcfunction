@@ -1,4 +1,4 @@
-$item modify entity @s container.$(slot) [{"function": "set_components", "components": {"minecraft:enchantments": $(enchantments), "!minecraft:stored_enchantments": {}}}, {"function": "set_custom_data", "tag": {"has_intrinsic_enchants": 0b}}]
+$item modify entity @s container.$(slot) [{"type": "set_components", "components": {"minecraft:enchantments": $(enchantments), "!minecraft:stored_enchantments": {}}}, {"type": "set_custom_data", "tag": {"has_intrinsic_enchants": 0b}}]
 
 data remove storage minecraft:intrinsic_enchants slot
 data remove storage minecraft:intrinsic_enchants enchantments
