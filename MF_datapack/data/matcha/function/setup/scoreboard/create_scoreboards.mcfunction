@@ -60,11 +60,15 @@ scoreboard objectives add warding_equipment dummy
 scoreboard players set $Max warding_equipment 3
 
 
+# Traversal Enchant (Bool0s, I added the scoreboard so it should be good here!)
+scoreboard objectives add traversal dummy
+scoreboard players set 0 traversal 0
+
 # Adamant Armour
 scoreboard objectives add adamant_armour dummy
 scoreboard players set 0 adamant_armour 0
 
-# Shakudo TO BE CHANGED
+# Shakudo TO BE CHANGED (Did I ever change it?)
 scoreboard objectives add shakudo_regen dummy
 scoreboard players set 0 shakudo_regen 0
 
