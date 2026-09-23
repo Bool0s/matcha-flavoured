@@ -1,6 +1,4 @@
 ## Major Additions and Changes
-- Seagulls!
-    - Seagulls spawn in beaches at their roosts, they produce normal chicken products as well as bonemeal
 
 ## Worldgen
 - Dappled forest's canopy moved up, and changed to be closed (Inspired by [Conure's](https://www.youtube.com/watch?v=k0_Y0RJRAPU) video of the same concept)
@@ -54,6 +52,15 @@
 - Add in TankyAibem & Linkershim's dope ass portal things
 - Polish-up villages
 - Abbey, but better c:
+### The Bird Project
+- Birds no longer give live birth
+- Disable breeding, let chickens only come from eggs
+- Add all eggs to farmer trade 1c + Egg -> Fertilised Egg
+- Roosts for all birds
+    - Have different prefabs for each bird type. All birds will set their roost to the roost mama (or marker)
+    - Have baby chicks that never grow up, but can be fed golden dandelions
+    - OR a random tick thing (timer at some large time) that allows chicken to reproduce if no entities nearby are babies, and maybe if there are only few chickens (~<5-8) (STRETCH)
+    - Could change raw chicken to chicken cutlet, allows happy chickens (happiness score increase if fed and cooldown is not reached) to drop more product (STRETCH) 
 
 ## Low-Priority Bugs
 - Add predicate for surface spawn that excludes structures
